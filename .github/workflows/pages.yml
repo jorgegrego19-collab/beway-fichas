@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - BEWAY-9-Fichas-GitHub-Pages.zip
+      - BEWAY-Fichas-GitHub-Pages.zip
       - .github/workflows/pages.yml
   workflow_dispatch:
 permissions:
@@ -22,8 +22,8 @@ jobs:
     steps:
       - name: Obtener el paquete de fichas
         uses: actions/checkout@v6
-      - name: Extraer las nueve fichas y sus recursos
-        run: unzip -q BEWAY-9-Fichas-GitHub-Pages.zip -d build
+      - name: Extraer las diez fichas y sus recursos
+        run: unzip -q BEWAY-Fichas-GitHub-Pages.zip -d build
       - name: Configurar Pages
         uses: actions/configure-pages@v5
       - name: Preparar la web
