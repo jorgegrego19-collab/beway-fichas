@@ -1,0 +1,334 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "directory": {
+      "type": "beway-directorio",
+      "blocks": {
+        "empresa_01": {
+          "type": "empresa",
+          "name": "BME",
+          "settings": {
+            "name": "Instituto BME",
+            "sector": "Banca y mercados financieros",
+            "category": "Banca",
+            "description": "Explora los mercados financieros y la formación de Instituto BME.",
+            "cover_asset": "beway-bme-palacio-bolsa.jpg",
+            "cover_url": "",
+            "cover_style": "photo",
+            "cover_color": "#0b2442",
+            "logo_asset": "logo-bme.png",
+            "tag": "",
+            "profile_url": "/pages/instituto-bme",
+            "is_demo": true,
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": ""
+          }
+        },
+        "empresa_02": {
+          "type": "empresa",
+          "name": "McGraw Hill",
+          "settings": {
+            "name": "McGraw Hill",
+            "sector": "Educación y editorial",
+            "category": "Editorial",
+            "description": "Conoce el mundo editorial, participa en desafíos y descubre nuevas formas de aprender.",
+            "cover_asset": "mcgraw-hill-logo.png",
+            "cover_url": "",
+            "cover_style": "brand",
+            "cover_color": "#101115",
+            "logo_asset": "mcgraw-hill-logo.png",
+            "tag": "",
+            "profile_url": "/pages/mcgraw-hill",
+            "is_demo": true,
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": ""
+          }
+        },
+        "empresa_03": {
+          "type": "empresa",
+          "name": "Centro de Estudios Garrigues",
+          "settings": {
+            "name": "Centro de Estudios Garrigues",
+            "sector": "Derecho y formación profesional",
+            "category": "Consultoría",
+            "description": "Derecho, empresa y nuevas experiencias de aprendizaje en el Centro de Estudios Garrigues.",
+            "cover_asset": "beway-ceg-campus.jpg",
+            "cover_url": "",
+            "cover_style": "photo",
+            "cover_color": "#162238",
+            "logo_asset": "logo-garrigues-dark.svg",
+            "tag": "",
+            "profile_url": "/pages/garrigues",
+            "is_demo": true,
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": ""
+          }
+        },
+        "empresa_05": {
+          "type": "empresa",
+          "name": "Google",
+          "settings": {
+            "name": "Google",
+            "sector": "Tecnología",
+            "category": "Tecnología",
+            "description": "Organizando la información del mundo para hacerla universalmente accesible.",
+            "cover_asset": "beway-google-google-g.svg",
+            "cover_url": "",
+            "cover_style": "brand",
+            "cover_color": "#101115",
+            "logo_asset": "logo-google.webp",
+            "tag": "",
+            "profile_url": "/pages/google",
+            "is_demo": true,
+            "m1": "4",
+            "m2": "3",
+            "m3": "6",
+            "m4": "8",
+            "m5": "18"
+          }
+        },
+        "empresa_ibm": {
+          "type": "empresa",
+          "name": "IBM",
+          "settings": {
+            "name": "IBM",
+            "sector": "Consultoría tecnológica e inteligencia artificial",
+            "category": "Tecnología",
+            "description": "Aprende consultoría tecnológica, descubre los IBM watsonx Hackathons y desarrolla proyectos con la comunidad.",
+            "cover_asset": "",
+            "cover_url": "https://cdn.shopify.com/s/files/1/1087/4041/1732/files/beway-ibm-logo.svg?v=1792583967",
+            "cover_style": "brand_inverse",
+            "cover_color": "#001141",
+            "logo": "shopify://shop_images/beway-ibm-logo.svg",
+            "logo_asset": "",
+            "tag": "",
+            "profile_url": "/pages/ibm",
+            "is_demo": true,
+            "m1": "1",
+            "m2": "1",
+            "m3": "",
+            "m4": "3",
+            "m5": ""
+          }
+        },
+        "empresa_auren": {
+          "type": "empresa",
+          "name": "Auren",
+          "settings": {
+            "name": "Auren",
+            "sector": "Auditoría y consultoría",
+            "category": "Consultoría",
+            "description": "Auditoría, consultoría y experiencias prácticas para descubrir el mundo profesional.",
+            "cover_asset": "beway-auren-auren-logo.svg",
+            "cover_url": "",
+            "cover_style": "brand",
+            "cover_color": "#101115",
+            "logo_asset": "logo-auren-dark.svg",
+            "tag": "",
+            "profile_url": "/pages/auren",
+            "is_demo": true,
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": ""
+          }
+        },
+        "empresa_pwc": {
+          "type": "empresa",
+          "name": "PWC",
+          "settings": {
+            "name": "PWC",
+            "sector": "Auditoría y servicios profesionales",
+            "category": "Consultoría",
+            "description": "Descubre la auditoría financiera, el análisis de datos y PwC Challenge: La carrera de tu futuro.",
+            "cover_asset": "bw-pwc-pwc-logo.svg",
+            "cover_url": "",
+            "cover_style": "brand",
+            "cover_color": "#ffffff",
+            "logo_asset": "bw-pwc-pwc-logo.svg",
+            "tag": "",
+            "profile_url": "/pages/pwc",
+            "is_demo": true,
+            "m1": "1",
+            "m2": "1",
+            "m3": "",
+            "m4": "3",
+            "m5": ""
+          }
+        },
+        "empresa_04": {
+          "type": "empresa",
+          "name": "Banco Santander",
+          "settings": {
+            "name": "Banco Santander",
+            "sector": "Banca",
+            "category": "Banca",
+            "description": "Aprende a gestionar un banco, participa en el reto de Openbank y descubre las becas de Santander.",
+            "cover_asset": "bw-san-santander-logo.png",
+            "cover_url": "",
+            "cover_style": "brand",
+            "cover_color": "#141519",
+            "logo_asset": "logo-santander.webp",
+            "tag": "",
+            "profile_url": "/pages/santander",
+            "is_demo": true,
+            "m1": "1",
+            "m2": "1",
+            "m3": "0",
+            "m4": "0",
+            "m5": "6"
+          }
+        },
+        "empresa_11": {
+          "type": "empresa",
+          "name": "L'Oréal",
+          "settings": {
+            "name": "L'Oréal",
+            "sector": "Beauty & Cosmetics",
+            "category": "Consumo",
+            "description": "Beauty-tech, ciencia y creatividad para reinventar la industria de la belleza.",
+            "cover_asset": "beway-loreal-hero-beauty.jpg",
+            "cover_url": "",
+            "cover_style": "photo",
+            "cover_color": "#111111",
+            "logo_asset": "logo-loreal.webp",
+            "tag": "",
+            "profile_url": "/pages/loreal",
+            "is_demo": false,
+            "m1": "1",
+            "m2": "1",
+            "m3": "0",
+            "m4": "3",
+            "m5": "0"
+          }
+        },
+        "empresa_08": {
+          "type": "empresa",
+          "name": "Netflix",
+          "settings": {
+            "name": "Netflix",
+            "sector": "Entretenimiento & Streaming",
+            "category": "Entretenimiento",
+            "description": "Tecnología y creatividad para contar historias que conectan al mundo.",
+            "cover_asset": "cover-netflix-original.webp",
+            "cover_url": "",
+            "cover_style": "photo",
+            "cover_color": "#50080e",
+            "logo_asset": "logo-netflix.webp",
+            "tag": "",
+            "profile_url": "",
+            "is_demo": true,
+            "m1": "2",
+            "m2": "2",
+            "m3": "3",
+            "m4": "4",
+            "m5": "9"
+          }
+        },
+        "empresa_14": {
+          "type": "empresa",
+          "name": "Deloitte",
+          "settings": {
+            "name": "Deloitte",
+            "sector": "Consulting & Advisory",
+            "category": "Consultoría",
+            "description": "Consultoría estratégica, tecnológica y de auditoría con impacto global.",
+            "cover_asset": "",
+            "cover_url": "",
+            "cover_style": "photo",
+            "cover_color": "#18583f",
+            "logo_asset": "logo-deloitte.webp",
+            "tag": "",
+            "profile_url": "",
+            "is_demo": true,
+            "m1": "4",
+            "m2": "4",
+            "m3": "6",
+            "m4": "7",
+            "m5": "20"
+          }
+        },
+        "empresa_15": {
+          "type": "empresa",
+          "name": "McKinsey",
+          "settings": {
+            "name": "McKinsey & Company",
+            "sector": "Consultoría estratégica",
+            "category": "Consultoría",
+            "description": "Explora el Curso de Consultoría Estratégica de ocho horas, un challenge individual y tres miniproyectos.",
+            "cover_asset": "",
+            "cover_url": "https://jorgegrego19-collab.github.io/beway-fichas/McKinseyxBeway/assets/mckinsey-logo.svg",
+            "cover_style": "brand_inverse",
+            "cover_color": "#051c2c",
+            "logo_asset": "logo-mckinsey.webp",
+            "tag": "",
+            "profile_url": "/pages/mckinsey",
+            "is_demo": true,
+            "m1": "1",
+            "m2": "1",
+            "m3": "",
+            "m4": "3",
+            "m5": ""
+          }
+        }
+      },
+      "block_order": [
+        "empresa_01",
+        "empresa_02",
+        "empresa_03",
+        "empresa_05",
+        "empresa_ibm",
+        "empresa_auren",
+        "empresa_pwc",
+        "empresa_04",
+        "empresa_11",
+        "empresa_15",
+        "empresa_08",
+        "empresa_14"
+      ],
+      "settings": {
+        "show_demo_notice": false,
+        "demo_notice": "Vista de demostración. Las empresas y actividades de ejemplo no representan acuerdos ni oportunidades confirmadas.",
+        "search_placeholder": "Buscar empresa, industria o programa...",
+        "hero_image": "shopify://shop_images/Logotipo_BEWAY_sobre_fondo_blanco.png",
+        "kicker": "ECOSISTEMA BEWAY",
+        "headline": "Conecta con las empresas que están construyendo el futuro.",
+        "description": "Aporta valor a las grandes corporaciones y redefine las nuevas organizaciones.",
+        "explore_cta": "Explorar empresas",
+        "account_button": true,
+        "filter_intro": "Explora las empresas y descubre sus experiencias.",
+        "show_activity_metrics": true,
+        "about_kicker": "QUÉ ES BEWAY",
+        "about_title": "Un ecosistema que une empresas, talento y aprendizaje.",
+        "about_description": "BEWAY conecta a quienes contratan, aprenden e innovan en un único espacio profesional.",
+        "show_footer_stats": false,
+        "footer_heading": "BEWAY EN CIFRAS",
+        "stat_1": "—",
+        "stat_2": "—",
+        "stat_3": "—",
+        "stat_4": "—"
+      }
+    }
+  },
+  "order": [
+    "directory"
+  ]
+}

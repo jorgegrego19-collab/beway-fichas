@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code | default: 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#051c2c">
+  <meta name="description" content="McKinsey en BEWAY: propuesta de Curso de Consultoría Estratégica de 8 horas, challenge individual y experiencias para universitarios de España y Latinoamérica.">
+  <title>{{ page_title | escape }} · BEWAY</title>
+  <link rel="icon" type="image/svg+xml" href="https://jorgegrego19-collab.github.io/beway-fichas/McKinseyxBeway/assets/mckinsey-logo.svg">
+  {{ 'bw-mck-style.css' | asset_url | stylesheet_tag }}
+  
+
+<link rel="canonical" href="{{ canonical_url | escape }}">
+{% render 'beway-formal-icons' %}
+{{ content_for_header }}
+<script src="{{ 'bw-mck-app.js' | asset_url }}" defer></script>
+</head>
+<body>{{ content_for_layout }}</body>
+</html>
