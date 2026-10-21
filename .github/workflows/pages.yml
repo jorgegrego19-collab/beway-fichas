@@ -1,0 +1,35 @@
+name: Publicar fichas BEWAY
+on:
+  push:
+    branches: [main]
+    paths:
+      - BEWAY-9-Fichas-GitHub-Pages.zip
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener el paquete de fichas
+        uses: actions/checkout@v6
+      - name: Extraer las nueve fichas y sus recursos
+        run: unzip -q BEWAY-9-Fichas-GitHub-Pages.zip -d build
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Preparar la web
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/public
+      - name: Publicar
+        uses: actions/deploy-pages@v4
+        id: deployment
