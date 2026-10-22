@@ -1,6 +1,6 @@
 # BEWAY · Fichas de empresas
 
-Las once fichas están publicadas en GitHub Pages.
+Las doce fichas están publicadas en GitHub Pages.
 
 [Directorio de empresas](https://jorgegrego19-collab.github.io/beway-fichas/)
 
@@ -16,8 +16,9 @@ Las once fichas están publicadas en GitHub Pages.
 | PwC | [Abrir ficha](https://jorgegrego19-collab.github.io/beway-fichas/PwCxBeway/) |
 | Centro de Estudios Garrigues | [Abrir ficha](https://jorgegrego19-collab.github.io/beway-fichas/CentroGarriguesxBeway/) |
 | Instituto BME | [Abrir ficha](https://jorgegrego19-collab.github.io/beway-fichas/InstitutoBMExBeway/) |
-
 | McKinsey & Company | [Abrir ficha](https://jorgegrego19-collab.github.io/beway-fichas/McKinseyxBeway/) |
+
+| Deloitte | [Abrir ficha](https://jorgegrego19-collab.github.io/beway-fichas/DeloittexBeway/) |
 
 ## Código y publicación
 
@@ -28,3 +29,5 @@ Los enlaces de «Explora empresas» de las fichas llevan al directorio de este r
 Las incorporaciones y actualizaciones de `public/` se aplican después del paquete original. La ficha de McKinsey conserva el curso de ocho horas, el challenge individual, los miniproyectos y los cinco perfiles de CLH.
 
 Los cinco perfiles de embajadores se han contrastado con la web pública de CLH (`https://clhglobal.org/`, recurso público `/assets/index-BJPu6vcs.js`) el 21 de octubre de 2026. Se utilizan únicamente nombre, universidad, país, área y enlaces profesionales públicos. Las fotografías se muestran desde las direcciones públicas de CLH; no se copian a este repositorio. Se excluyen campos internos y vídeos no utilizados.
+
+La ficha de Deloitte incluye el Curso de Auditoría Financiera (ocho horas en dos días), el Deloitte Financial Challenge de España, tres miniproyectos y cinco perfiles propuestos de CLH. Su integración en Shopify se prepara en `shopify/` para el tema BEWAY en borrador.

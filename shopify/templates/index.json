@@ -227,20 +227,20 @@
             "name": "Netflix",
             "sector": "Entretenimiento & Streaming",
             "category": "Entretenimiento",
-            "description": "Tecnología y creatividad para contar historias que conectan al mundo.",
-            "cover_asset": "cover-netflix-original.webp",
+            "description": "Explora cursos de guion, presupuestos y marketing audiovisual, tres challenges y un miniproyecto de catálogo por mercados.",
+            "cover_asset": "beway-netflix-mark.svg",
             "cover_url": "",
-            "cover_style": "photo",
-            "cover_color": "#50080e",
+            "cover_style": "brand",
+            "cover_color": "#101114",
             "logo_asset": "logo-netflix.webp",
             "tag": "",
-            "profile_url": "",
+            "profile_url": "/pages/netflix",
             "is_demo": true,
-            "m1": "2",
-            "m2": "2",
-            "m3": "3",
-            "m4": "4",
-            "m5": "9"
+            "m1": "3",
+            "m2": "3",
+            "m3": "",
+            "m4": "1",
+            "m5": ""
           }
         },
         "empresa_14": {
@@ -248,22 +248,22 @@
           "name": "Deloitte",
           "settings": {
             "name": "Deloitte",
-            "sector": "Consulting & Advisory",
+            "sector": "Auditoría financiera y servicios profesionales",
             "category": "Consultoría",
-            "description": "Consultoría estratégica, tecnológica y de auditoría con impacto global.",
-            "cover_asset": "",
+            "description": "Descubre el Curso de Auditoría Financiera de ocho horas en dos días, el Deloitte Financial Challenge y tres miniproyectos.",
+            "cover_asset": "bw-deloitte-cover.svg",
             "cover_url": "",
             "cover_style": "photo",
-            "cover_color": "#18583f",
-            "logo_asset": "logo-deloitte.webp",
+            "cover_color": "#101410",
+            "logo_asset": "bw-deloitte-logo-square.svg",
             "tag": "",
-            "profile_url": "",
+            "profile_url": "/pages/deloitte",
             "is_demo": true,
-            "m1": "4",
-            "m2": "4",
-            "m3": "6",
-            "m4": "7",
-            "m5": "20"
+            "m1": "1",
+            "m2": "1",
+            "m3": "",
+            "m4": "3",
+            "m5": ""
           }
         },
         "empresa_15": {
@@ -298,11 +298,11 @@
         "empresa_ibm",
         "empresa_auren",
         "empresa_pwc",
+        "empresa_14",
         "empresa_04",
         "empresa_11",
         "empresa_15",
-        "empresa_08",
-        "empresa_14"
+        "empresa_08"
       ],
       "settings": {
         "show_demo_notice": false,

@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#86bc25"><title>Deloitte · BEWAY</title><meta name="description" content="Deloitte en BEWAY: curso propuesto de Auditoría Financiera de 8 horas en 2 días, Financial Challenge, miniproyectos y cinco embajadores de CLH."><link rel="icon" href="assets/deloitte-mark.svg" type="image/svg+xml"><style>
+@font-face{font-family:'BEWAY Deloitte DM Sans';font-style:normal;font-weight:100 1000;font-display:swap;src:url('../assets/media/9fea608a947e67020c33cad9.woff2') format('woff2');}
+@font-face{font-family:'BEWAY Deloitte Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url('../assets/media/a30ddcd349703aff7464c34b.woff2') format('woff2');}
+#beway-deloitte{--red:#86bc25;--ink:#171b25;--muted:#656b77;--line:#e6e8ec;--blue:#163fbf;--page:#fff;--radius:20px}
+#beway-deloitte,#beway-deloitte *{box-sizing:border-box}
+#beway-deloitte{scroll-behavior:smooth;scroll-padding-top:90px}
+#beway-deloitte{margin:0;background:var(--page);color:var(--ink);font:16px/1.65 'BEWAY Deloitte DM Sans',Arial,sans-serif}
+#beway-deloitte button,#beway-deloitte a{-webkit-tap-highlight-color:transparent}
+#beway-deloitte button,#beway-deloitte input{font:inherit}
+#beway-deloitte button,#beway-deloitte a{touch-action:manipulation}
+#beway-deloitte button{cursor:pointer}
+#beway-deloitte a{color:inherit;text-decoration:none}
+#beway-deloitte button:focus-visible,#beway-deloitte a:focus-visible,#beway-deloitte summary:focus-visible{outline:3px solid #518cff;outline-offset:5px}
+#beway-deloitte h1,#beway-deloitte h2,#beway-deloitte h3,#beway-deloitte p{margin:0}
+#beway-deloitte h1,#beway-deloitte h2,#beway-deloitte h3{font-family:'BEWAY Deloitte Manrope',Arial,sans-serif;line-height:1.15}
+#beway-deloitte h2{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-1.4px}
+#beway-deloitte h3{font-size:22px;letter-spacing:-.5px}
+#beway-deloitte .topbar{height:82px;display:flex;align-items:center;gap:56px;max-width:1440px;padding:0 5%;margin:auto}
+#beway-deloitte .beway{display:flex;align-items:center;font-family:'BEWAY Deloitte Manrope',Arial,sans-serif;font-weight:800;font-size:28px;letter-spacing:-1.5px;line-height:1}
+#beway-deloitte .brandmark{background:#1644e8;color:white;font-size:26px;border-radius:8px;width:33px;height:34px;display:grid;place-items:center;margin-right:9px;font-weight:800;font-style:italic}
+#beway-deloitte .brandperiod{color:#1644e8}
+#beway-deloitte .top-context{display:flex;gap:18px;font-size:14px;color:var(--muted)}
+#beway-deloitte .top-context strong{font-weight:550;color:var(--ink)}
+#beway-deloitte .slash{color:#b8bdc8}
+#beway-deloitte .demo-pill{margin-left:auto;border:1px solid var(--line);border-radius:100px;padding:4px 12px;font-size:12px;color:#6d7480}
+#beway-deloitte .hero{position:relative;isolation:isolate;background:#101114;min-height:550px;overflow:hidden;color:white;max-width:1440px;margin:0 auto}
+#beway-deloitte .hero-image{position:absolute;right:0;top:0;width:69%;height:100%;object-fit:cover;object-position:center 25%;z-index:-3}
+#beway-deloitte .hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#0d1015 5%,#101115f7 27%,#101115c7 43%,#10111526 77%),linear-gradient(0deg,#101115b8,transparent 45%)}
+#beway-deloitte .hero-content{padding:46px 5% 40px;max-width:720px}
+#beway-deloitte .wordmark{font-family:Impact,'Arial Narrow',sans-serif;font-size:38px;color:#86bc25;letter-spacing:2px;margin-bottom:30px;line-height:1}
+#beway-deloitte .eyebrow{font-size:12px;font-weight:700;letter-spacing:1.8px;margin-bottom:18px;color:#6d7480}
+#beway-deloitte .eyebrow.light{color:#b6bbc5}
+#beway-deloitte .hero h1{font-size:clamp(42px,4.6vw,64px);letter-spacing:-2.6px;line-height:1.07;font-weight:800}
+#beway-deloitte .hero-copy{color:#d1d3d9;max-width:405px;margin-top:22px;font-size:17px;line-height:1.6}
+#beway-deloitte .hero-actions{display:flex;gap:12px;margin-top:30px}
+#beway-deloitte .btn{border:0;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:13px 20px;font-weight:650;font-size:14px;line-height:1.5;transition:background .2s,transform .2s}
+#beway-deloitte .btn:hover{transform:translateY(-2px)}
+#beway-deloitte .btn.primary{color:white;background:var(--red)}
+#beway-deloitte .btn.primary:hover{background:#6c9c16}
+#beway-deloitte .btn.glass{color:white;background:#ffffff12;border:1px solid #ffffff36}
+#beway-deloitte .btn.glass:hover{background:#ffffff24}
+#beway-deloitte .btn.white{background:white;color:#171b25}
+#beway-deloitte .btn.outline{border:1px solid #d9dce3;background:white}
+#beway-deloitte .hero-meta{display:flex;align-items:center;gap:12px;font-size:12px;color:#bbc0ca;margin-top:25px}
+#beway-deloitte .hero-meta i{height:3px;width:3px;background:#727883;border-radius:50%}
+#beway-deloitte .hero-caption{position:absolute;right:32px;bottom:30px;font-size:10px;letter-spacing:2px;writing-mode:vertical-rl;color:#d3d3d3}
+#beway-deloitte .section-nav{height:68px;display:flex;align-items:stretch;justify-content:center;gap:36px;border-bottom:1px solid var(--line);background:#ffffffed;backdrop-filter:blur(16px);position:sticky;top:0;z-index:10;padding:0 24px;overflow:auto}
+#beway-deloitte .section-nav a{white-space:nowrap;display:flex;align-items:center;font-size:14px;color:#777c87;border-bottom:3px solid transparent;padding-top:3px}
+#beway-deloitte .section-nav a.active{color:#151820;border-color:var(--red);font-weight:700}
+#beway-deloitte .section-nav a:hover{color:var(--red)}
+#beway-deloitte .section-nav a span{font-size:10px;background:#f0f1f4;color:#6e7480;margin-left:7px;padding:1px 6px;border-radius:4px}
+#beway-deloitte .page-content{max-width:1280px;margin:auto;padding:0 44px}
+#beway-deloitte .section{padding:68px 0;border-bottom:1px solid var(--line);scroll-margin-top:10px}
+#beway-deloitte .about{display:grid;grid-template-columns:1fr 1.25fr;gap:60px}
+#beway-deloitte .about-copy p{font-size:17px}
+#beway-deloitte .about-copy .muted{font-size:15px;margin-top:14px}
+#beway-deloitte .muted{color:var(--muted)}
+#beway-deloitte .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:23px}
+#beway-deloitte .chips span{font-size:12px;padding:5px 11px;background:#f4f5f7;border-radius:5px;color:#555d6b}
+#beway-deloitte .section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}
+#beway-deloitte .section-heading>p{font-size:15px;color:var(--muted);line-height:1.6}
+#beway-deloitte .challenge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#beway-deloitte .challenge-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+#beway-deloitte .challenge-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px #15213d10}
+#beway-deloitte .challenge-art{height:185px;position:relative;overflow:hidden;background:#17171d;color:white;padding:22px}
+#beway-deloitte .challenge-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:brightness(.7);transition:transform .6s}
+#beway-deloitte .challenge-card:hover img{transform:scale(1.04)}
+#beway-deloitte .challenge-art:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0a0d19b3,transparent)}
+#beway-deloitte .card-num{position:absolute;bottom:10px;right:18px;font:800 72px/1 'BEWAY Deloitte Manrope',sans-serif;letter-spacing:-5px;color:#ffffffc7;z-index:1}
+#beway-deloitte .art-tag{position:relative;z-index:1;font-size:10px;letter-spacing:1.6px;background:#080b159c;padding:5px 8px;border:1px solid #ffffff30;border-radius:4px}
+#beway-deloitte .challenge-info{padding:24px;flex:1;display:flex;flex-direction:column}
+#beway-deloitte .challenge-info .eyebrow{color:var(--red);font-size:10px;margin-bottom:12px}
+#beway-deloitte .challenge-info h3{font-size:23px;line-height:1.25;min-height:58px}
+#beway-deloitte .challenge-info>p:not(.eyebrow){font-size:14px;color:var(--muted);margin:14px 0 24px}
+#beway-deloitte .challenge-info button{display:flex;align-items:center;justify-content:space-between;text-align:left;width:100%;margin-top:auto;background:transparent;border:0;border-top:1px solid var(--line);padding:17px 0 0;font-size:14px;font-weight:650}
+#beway-deloitte .challenge-info button span{font-size:22px;color:var(--red)}
+#beway-deloitte .participation-bar{display:flex;justify-content:space-between;gap:20px;margin-top:23px;font-size:12px;color:#7c818b}
+#beway-deloitte .participation-bar b{font-weight:600;color:#4e5563}
+#beway-deloitte .bar-dot{margin:0 8px;color:#aaa}
+#beway-deloitte .onboarding{display:grid;grid-template-columns:1.08fr 1fr;border:0;background:#111318;color:white;border-radius:20px;margin:68px 0 0;padding:0;overflow:hidden}
+#beway-deloitte .onboard-cover{position:relative;min-height:405px;overflow:hidden}
+#beway-deloitte .onboard-cover img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:45%;filter:brightness(.68)}
+#beway-deloitte .onboard-cover:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#101218b3,transparent 65%);pointer-events:none}
+#beway-deloitte .play-circle{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);z-index:2;border-radius:50%;border:1px solid #ffffff80;background:#ffffff26;backdrop-filter:blur(6px);color:white;width:74px;height:74px;font-size:23px;padding-left:7px;transition:background .2s}
+#beway-deloitte .play-circle:hover{background:var(--red)}
+#beway-deloitte .cover-label{position:absolute;z-index:1;left:24px;bottom:50px;font-size:10px;letter-spacing:1.3px}
+#beway-deloitte .duration{position:absolute;z-index:1;left:24px;bottom:24px;font-size:11px;color:#c8cbd2}
+#beway-deloitte .onboard-content{padding:38px}
+#beway-deloitte .onboard-content h2{font-size:32px}
+#beway-deloitte .onboard-content>p:not(.eyebrow):not(.micro){color:#b3b8c2;font-size:15px;margin-top:18px}
+#beway-deloitte .onboard-stats{display:flex;justify-content:space-between;gap:12px;margin:25px 0}
+#beway-deloitte .onboard-stats strong{display:block;font-size:19px;font-weight:600}
+#beway-deloitte .onboard-stats span{font-size:11px;color:#999fab}
+#beway-deloitte .micro{font-size:12px;color:#8b919e;line-height:1.6;margin-top:16px}
+#beway-deloitte .outline-label{border:1px solid #dde0e6;padding:5px 10px;border-radius:5px;white-space:nowrap;font-size:11px;color:#818793}
+#beway-deloitte .opportunities{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#beway-deloitte .opportunity{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fbfbfc}
+#beway-deloitte .job-symbol{height:36px;width:36px;background:#eef0f5;display:grid;place-items:center;margin-bottom:22px;border-radius:8px;color:#364055;font-size:19px}
+#beway-deloitte .opportunity h3{font-size:19px;line-height:1.4;min-height:54px}
+#beway-deloitte .opportunity .job-type{color:var(--red);font-size:11px;letter-spacing:.6px;margin:13px 0 8px}
+#beway-deloitte .opportunity p{font-size:14px;color:var(--muted)}
+#beway-deloitte .text-button{border:0;background:none;padding:0;color:inherit;font-weight:600;font-size:14px;text-decoration:underline;text-underline-offset:5px}
+#beway-deloitte .opportunity button{margin-top:22px}
+#beway-deloitte .section-note{font-size:12px;color:#8a909a;margin-top:20px}
+#beway-deloitte .section-note a{color:#384d78;text-decoration:underline;text-underline-offset:3px}
+#beway-deloitte .ambassador-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+#beway-deloitte .ambassador{padding:24px 18px;border-radius:12px;border:1px solid var(--line)}
+#beway-deloitte .avatar{height:54px;width:54px;display:grid;place-items:center;border-radius:50%;font:700 18px 'BEWAY Deloitte Manrope',sans-serif;letter-spacing:-1px;margin-bottom:20px}
+#beway-deloitte .ambassador h3{font-size:16px;margin-bottom:9px}
+#beway-deloitte .ambassador p{font-size:12px;color:#818792;min-height:39px}
+#beway-deloitte .ambassador .campus{font-size:11px;color:#4e586b;display:block;margin-top:15px}
+#beway-deloitte .ambassador button{font-size:12px;margin-top:18px}
+#beway-deloitte .shop{display:grid;grid-template-columns:1fr .85fr .9fr;gap:38px;align-items:center;border-bottom:0}
+#beway-deloitte .shop h2{font-size:34px}
+#beway-deloitte .shop-intro>p:not(.eyebrow){font-size:15px;color:var(--muted);margin:18px 0 20px}
+#beway-deloitte .benefit-card{background:#fff3eb;border:1px solid #f2dce0;border-radius:16px;padding:28px}
+#beway-deloitte .benefit-card .outline-label{border-color:#e8c4ca;color:#a34a53;font-size:10px}
+#beway-deloitte .discount{font:800 76px/1.15 'BEWAY Deloitte Manrope',sans-serif;letter-spacing:-5px;color:#86bc25;margin:16px 0 8px}
+#beway-deloitte .discount span{font-size:43px;letter-spacing:-2px}
+#beway-deloitte .benefit-card h3{font-size:16px}
+#beway-deloitte .benefit-card p{font-size:13px;color:#8b686d;margin-top:13px}
+#beway-deloitte .locked-benefit{display:block;border-top:1px solid #eacdd1;margin-top:20px;padding-top:15px;font-size:11px;color:#9c676e}
+#beway-deloitte .shop-categories .eyebrow{font-size:10px}
+#beway-deloitte .shop-categories>a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px;gap:20px}
+#beway-deloitte .shop-categories>a:hover{color:var(--red)}
+#beway-deloitte .shop-categories .shop-link{border:0;color:var(--red);font-weight:650;margin-top:10px}
+#beway-deloitte footer{border-top:1px solid var(--line);max-width:1440px;margin:auto;display:flex;align-items:center;padding:35px 5%;gap:32px}
+#beway-deloitte footer .beway{font-size:22px}
+#beway-deloitte footer .brandmark{font-size:20px;width:26px;height:27px}
+#beway-deloitte footer p{font-size:13px;color:#6d7480}
+#beway-deloitte footer>span{margin-left:auto;color:#90959e;font-size:11px}
+#beway-deloitte dialog{border:0;border-radius:20px;width:min(920px,calc(100% - 32px));max-height:90dvh;padding:0;color:var(--ink);box-shadow:0 25px 100px #0005}
+#beway-deloitte dialog::backdrop{background:#070b15bb;backdrop-filter:blur(7px)}
+#beway-deloitte .dialog-head{display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fffffff5;backdrop-filter:blur(10px);z-index:2;padding:16px 28px;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:1px;color:#767e8b}
+#beway-deloitte .icon-button{height:34px;width:34px;border:1px solid var(--line);border-radius:50%;background:white;font-size:15px;color:#525b6b}
+#beway-deloitte .dialog-inner{padding:35px}
+#beway-deloitte .dialog-inner h2{max-width:720px}
+#beway-deloitte .dialog-lead{color:var(--muted);margin:18px 0 26px;font-size:17px}
+#beway-deloitte .detail-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
+#beway-deloitte .detail-grid h3,#beway-deloitte .detail-block h3{font-size:18px;margin:25px 0 12px}
+#beway-deloitte .detail-grid p,#beway-deloitte .detail-grid li,#beway-deloitte .detail-block p,#beway-deloitte .detail-block li{font-size:15px;color:#5f6876}
+#beway-deloitte .detail-grid ul,#beway-deloitte .detail-block ul{padding-left:22px;margin:10px 0}
+#beway-deloitte .detail-grid li{margin-bottom:8px}
+#beway-deloitte .deliverable{padding:20px;background:#f6f7f9;border-radius:12px}
+#beway-deloitte .deliverable h3:first-child{margin-top:0}
+#beway-deloitte .deliverable strong{color:#202735}
+#beway-deloitte .detail-bottom{margin-top:30px;border-top:1px solid var(--line);padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+#beway-deloitte .detail-bottom p{font-size:12px;color:#858c97}
+#beway-deloitte .video-wrap{background:#0b0b0e;border-radius:10px;overflow:hidden;aspect-ratio:16/9;margin:24px 0}
+#beway-deloitte .video-wrap video{width:100%;height:100%;display:block}
+#beway-deloitte .chapter-heading{display:flex;justify-content:space-between;align-items:center;margin-top:28px}
+#beway-deloitte .chapter-heading h3{font-size:20px}
+#beway-deloitte .chapter-heading span{font-size:12px;color:#8a909a}
+#beway-deloitte .chapter-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+#beway-deloitte .chapter{display:flex;gap:14px;align-items:start;border:1px solid var(--line);padding:17px;border-radius:10px;background:#fafbfc}
+#beway-deloitte .chapter-number{font:700 22px 'BEWAY Deloitte Manrope',sans-serif;color:#a9afb9}
+#beway-deloitte .chapter h4{font:650 14px/1.4 'BEWAY Deloitte Manrope',sans-serif;margin:0 0 7px}
+#beway-deloitte .chapter p{font-size:12px;color:#8e949e;margin:0}
+#beway-deloitte .lock-label{font-size:10px;color:#9ba0aa;display:block;margin-top:8px}
+#beway-deloitte .chapter .lock{margin-left:auto;color:#969ca7}
+#beway-deloitte .dialog-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+#beway-deloitte .persona-big{width:72px;height:72px;font-size:24px}
+#beway-deloitte .benefit-steps{counter-reset:steps;padding:0;list-style:none}
+#beway-deloitte .benefit-steps li{display:flex;gap:15px;margin:18px 0;color:#626c7b}
+#beway-deloitte .benefit-steps li:before{counter-increment:steps;content:counter(steps);border-radius:50%;background:#f5ebed;color:#aa3500;min-width:30px;height:30px;text-align:center;font-weight:700}
+#beway-deloitte .status-box{border-left:3px solid #86bc25;background:#fff5f5;padding:15px 20px;margin-top:22px;font-size:14px;color:#87545a}
+body.beway-deloitte-modal-open{overflow:hidden}
+@media(min-width:1500px){#beway-deloitte .hero{border-radius:16px}
+#beway-deloitte .topbar{padding:0 32px}}
+@media(max-width:1050px){#beway-deloitte .hero-content{max-width:620px}
+#beway-deloitte .hero h1{font-size:51px}
+#beway-deloitte .hero-image{width:75%}
+#beway-deloitte .section-nav{justify-content:flex-start;gap:28px}
+#beway-deloitte .page-content{padding:0 30px}
+#beway-deloitte .about{gap:35px}
+#beway-deloitte .section-heading>p{max-width:280px}
+#beway-deloitte .onboard-content{padding:30px}
+#beway-deloitte .onboard-content h2{font-size:28px}
+#beway-deloitte .shop{gap:22px;grid-template-columns:1fr 1fr}
+#beway-deloitte .shop-categories{grid-column:1/-1;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+#beway-deloitte .shop-categories .micro{max-width:300px}
+#beway-deloitte .ambassador-grid{gap:9px}
+#beway-deloitte .ambassador{padding:20px 12px}
+#beway-deloitte .hero-caption{display:none}
+#beway-deloitte .participation-bar{flex-direction:column;gap:5px}}
+@media(max-width:700px){#beway-deloitte .topbar{height:66px;padding:0 20px;gap:22px}
+#beway-deloitte .beway{font-size:24px}
+#beway-deloitte .top-context{display:none}
+#beway-deloitte .hero{min-height:600px}
+#beway-deloitte .hero-image{width:100%;height:60%;object-position:center 22%}
+#beway-deloitte .hero-shade{background:linear-gradient(0deg,#101115 25%,#101115e8 45%,#10111530 85%)}
+#beway-deloitte .hero-content{padding:28px 24px}
+#beway-deloitte .wordmark{font-size:30px;margin-bottom:145px}
+#beway-deloitte .hero .eyebrow{font-size:10px;margin-bottom:14px}
+#beway-deloitte .hero h1{font-size:43px;letter-spacing:-1.7px}
+#beway-deloitte .hero-copy{font-size:15px;max-width:340px;margin-top:15px}
+#beway-deloitte .hero-actions{gap:9px;flex-wrap:wrap;margin-top:22px}
+#beway-deloitte .btn{font-size:12px;padding:12px 15px;gap:10px}
+#beway-deloitte .hero-meta{margin-top:20px;font-size:11px}
+#beway-deloitte .section-nav{height:58px;gap:26px;padding:0 22px}
+#beway-deloitte .section-nav a{font-size:13px}
+#beway-deloitte .page-content{padding:0 22px}
+#beway-deloitte .section{padding:44px 0}
+#beway-deloitte .about{grid-template-columns:1fr;gap:24px}
+#beway-deloitte .about h2 br{display:none}
+#beway-deloitte .about-copy p{font-size:16px}
+#beway-deloitte .section-heading{display:block;margin-bottom:24px}
+#beway-deloitte .section-heading>p{margin-top:15px;max-width:none;font-size:14px}
+#beway-deloitte .section-heading>.outline-label{display:inline-block;margin-top:17px}
+#beway-deloitte h2{font-size:30px;letter-spacing:-1px}
+#beway-deloitte .challenge-grid{grid-template-columns:1fr}
+#beway-deloitte .challenge-art{height:205px}
+#beway-deloitte .challenge-info h3{min-height:0;font-size:24px}
+#beway-deloitte .challenge-info>p:not(.eyebrow){font-size:15px}
+#beway-deloitte .challenge-info button{font-size:15px}
+#beway-deloitte .participation-bar{font-size:12px;margin-top:20px;line-height:1.7}
+#beway-deloitte .onboarding{grid-template-columns:1fr;margin-top:44px;padding:0}
+#beway-deloitte .onboard-cover{min-height:270px}
+#beway-deloitte .onboard-content{padding:28px}
+#beway-deloitte .onboard-content h2{font-size:30px}
+#beway-deloitte .onboard-content .btn{font-size:14px}
+#beway-deloitte .opportunities{grid-template-columns:1fr}
+#beway-deloitte .opportunity h3{min-height:0}
+#beway-deloitte .opportunity{padding:24px}
+#beway-deloitte .job-symbol{margin-bottom:14px}
+#beway-deloitte .ambassador-grid{grid-template-columns:1fr 1fr;gap:12px}
+#beway-deloitte .ambassador{padding:20px}
+#beway-deloitte .ambassador h3{font-size:16px}
+#beway-deloitte .ambassador p{font-size:12px}
+#beway-deloitte .shop{grid-template-columns:1fr;gap:28px}
+#beway-deloitte .shop-categories{display:block}
+#beway-deloitte .shop h2{font-size:32px}
+#beway-deloitte .benefit-card{padding:28px}
+#beway-deloitte .benefit-card h3{font-size:19px}
+#beway-deloitte .locked-benefit{font-size:12px}
+#beway-deloitte .shop-categories .micro{max-width:none}
+#beway-deloitte footer{display:flex;flex-wrap:wrap;gap:20px;padding:28px 22px}
+#beway-deloitte footer p{font-size:12px}
+#beway-deloitte footer>span{width:100%;margin:0}
+#beway-deloitte dialog{max-height:95dvh;width:calc(100% - 16px);border-radius:14px}
+#beway-deloitte .dialog-head{padding:13px 18px;font-size:10px}
+#beway-deloitte .dialog-inner{padding:24px 20px}
+#beway-deloitte .dialog-inner h2{font-size:29px}
+#beway-deloitte .dialog-lead{font-size:15px}
+#beway-deloitte .detail-grid{grid-template-columns:1fr;gap:15px}
+#beway-deloitte .detail-bottom{align-items:start;flex-direction:column}
+#beway-deloitte .chapter-list{grid-template-columns:1fr}
+#beway-deloitte .chapter-heading{display:block}
+#beway-deloitte .chapter-heading span{display:block;margin-top:8px}
+#beway-deloitte .chapter h4{font-size:14px}
+#beway-deloitte .chapter p{font-size:12px}
+#beway-deloitte .dialog-actions .btn{font-size:14px}}
+@media(prefers-reduced-motion:reduce){#beway-deloitte,#beway-deloitte *{scroll-behavior:auto!important;transition:none!important}}
+#beway-deloitte .chips span{font-size:14px}
+#beway-deloitte .challenge-info .eyebrow,#beway-deloitte .art-tag{font-size:12px;letter-spacing:1px}
+#beway-deloitte .opportunity .job-type{font-size:12px}
+#beway-deloitte .ambassador p{font-size:14px}
+#beway-deloitte .ambassador .campus,#beway-deloitte .ambassador button{font-size:14px}
+#beway-deloitte .ambassador p{min-height:48px}
+#beway-deloitte .shop-categories .eyebrow{font-size:12px}
+#beway-deloitte .chapter h4{font-size:16px}
+#beway-deloitte .chapter p{font-size:14px}
+#beway-deloitte .lock-label{font-size:12px}
+#beway-deloitte .onboard-stats span{font-size:12px}
+#beway-deloitte .section-note{font-size:13px}
+#beway-deloitte .outline-label{font-size:12px}
+#beway-deloitte .topbar .demo-pill{font-size:12px}
+#beway-deloitte .hero{background:#0d0d10}
+#beway-deloitte .hero-brand{position:absolute;right:4%;top:50%;transform:translateY(-51%) rotate(-7deg);font:900 620px/.9 Impact,'Arial Black',sans-serif;color:#86bc25;letter-spacing:-30px;z-index:-3;text-shadow:35px 15px 0 #7a0710}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#101115 15%,#101115e6 39%,#10111530 80%),linear-gradient(0deg,#10111580,transparent 40%)}
+#beway-deloitte .challenge-art{background:#12141b;height:190px}
+#beway-deloitte .challenge-art:after{display:none}
+#beway-deloitte .challenge-type{position:absolute;left:23px;bottom:20px;font:800 29px/1.06 'BEWAY Deloitte Manrope',Arial,sans-serif;letter-spacing:-1px;color:#fff}
+#beway-deloitte .challenge-card:nth-child(2) .challenge-art{background:#cf0b19}
+#beway-deloitte .challenge-card:nth-child(3) .challenge-art{background:#222737}
+#beway-deloitte .card-num{font-size:88px;color:#ffffff20;bottom:12px;right:20px}
+#beway-deloitte .art-tag{background:transparent;border:0;padding:0;color:#ffffffa8}
+#beway-deloitte .onboard-cover{background:#1a1c23}
+#beway-deloitte .onboard-type{position:absolute;inset:35px;display:flex;flex-direction:column;justify-content:center;border-left:3px solid #86bc25;padding-left:26px}
+#beway-deloitte .onboard-type>span{font-size:12px;letter-spacing:2px;color:#f32230}
+#beway-deloitte .onboard-type strong{font:800 42px/1.12 'BEWAY Deloitte Manrope',Arial,sans-serif;letter-spacing:-1.5px;margin:20px 0 100px;color:white}
+#beway-deloitte .onboard-type small{display:none}
+#beway-deloitte .onboard-cover:after{display:none}
+#beway-deloitte .play-circle{top:auto;bottom:60px;left:62px;transform:none;width:54px;height:54px;font-size:18px;background:#86bc25;border:0}
+#beway-deloitte .cover-label{display:none}
+#beway-deloitte .duration{left:132px;bottom:75px}
+#beway-deloitte .onboard-type strong{margin-bottom:90px}
+@media(max-width:700px){#beway-deloitte .hero-brand{font-size:350px;right:-5%;top:120px;transform:rotate(-8deg);letter-spacing:-15px}
+#beway-deloitte .hero-shade{background:linear-gradient(0deg,#101115 25%,#101115ed 48%,#10111510 100%)}
+#beway-deloitte .onboard-type{inset:25px}
+#beway-deloitte .onboard-type strong{font-size:35px;margin-top:14px;margin-bottom:80px}
+#beway-deloitte .play-circle{bottom:25px;left:54px;width:46px;height:46px}
+#beway-deloitte .duration{left:116px;bottom:36px}
+#beway-deloitte .onboard-cover{min-height:290px}}
+#beway-deloitte .beway-logo{display:block;width:56px;height:56px;object-fit:contain;margin-right:5px}
+#beway-deloitte .brandperiod{color:#00bbc7}
+#beway-deloitte footer .beway-logo{width:42px;height:42px}
+@media(max-width:700px){#beway-deloitte .beway-logo{width:45px;height:45px}}
+#beway-deloitte .hero-content{padding-top:56px;padding-bottom:54px}
+#beway-deloitte .mh-wordmark{margin-bottom:47px}
+#beway-deloitte .hero-actions{margin-top:30px}
+#beway-deloitte .hero-copy{max-width:430px}
+#beway-deloitte .mini-project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#beway-deloitte .mini-project{padding:25px;border:1px solid var(--line);border-radius:13px;display:flex;flex-direction:column;background:#fbfbfc}
+#beway-deloitte .mini-project .project-label{font-size:11px;letter-spacing:1.1px;font-weight:650;color:#7d8593;margin:18px 0 12px}
+#beway-deloitte .project-symbol{width:40px;height:40px;display:grid;place-items:center;border-radius:9px;background:#edf0f4;color:#596476;font:700 22px 'BEWAY Deloitte Manrope',Arial,sans-serif}
+#beway-deloitte .mini-project h3{font-size:23px;line-height:1.25;min-height:59px}
+#beway-deloitte .mini-project>p:not(.project-label){font-size:14px;line-height:1.75;color:#737c8a;margin:15px 0 20px}
+#beway-deloitte .project-skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;margin-bottom:18px}
+#beway-deloitte .project-skills span{font-size:10px;line-height:1.4;padding:5px 7px;background:#f0f2f6;border-radius:4px;color:#5b6574}
+#beway-deloitte .project-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;gap:9px;margin-bottom:20px}
+#beway-deloitte .project-facts strong{font-size:12px;display:block;color:#505a6b;font-weight:650}
+#beway-deloitte .project-facts small{font-size:10px;color:#969daa;display:block}
+#beway-deloitte .mini-project>button{text-align:left;display:flex;justify-content:space-between;gap:10px;border:0;background:none;padding:0;font-weight:650;font-size:13px;color:#202836}
+#beway-deloitte .mini-project>button span{font-size:20px;color:var(--red)}
+#beway-deloitte .real-ambassadors .ambassador{padding:23px 18px;display:flex;flex-direction:column;align-items:flex-start}
+#beway-deloitte .member-photo{width:78px;height:78px;border-radius:50%;object-fit:cover;object-position:50% 25%;display:block;margin-bottom:20px;border:1px solid #e9ecf1}
+#beway-deloitte .member-photo{overflow:hidden}
+#beway-deloitte .member-photo>img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+#beway-deloitte .member-photo-zoom>img{object-position:50% 50%;transform:scale(3);transform-origin:50% 65%}
+#beway-deloitte .real-ambassadors .ambassador h3{font-size:16px;line-height:1.4;min-height:44px;margin-bottom:8px;letter-spacing:-.3px}
+#beway-deloitte .real-ambassadors .ambassador p{font-size:13px;min-height:45px;line-height:1.65}
+#beway-deloitte .real-ambassadors .ambassador .campus{font-size:11px;color:#5a6575;margin-top:14px;line-height:1.6}
+#beway-deloitte .real-ambassadors .ambassador button{font-size:12px;margin-top:18px;line-height:1.6}
+#beway-deloitte .member-badge{display:inline-block;padding:3px 8px;background:#edf7fa;color:#39727c;font-size:10px;border-radius:5px;margin-bottom:18px;letter-spacing:.8px}
+#beway-deloitte .member-profile-top{display:flex;gap:22px;align-items:center;margin-bottom:25px}
+#beway-deloitte .member-profile-top .member-photo{width:104px;height:104px;margin:0;flex-shrink:0}
+#beway-deloitte .member-profile-top h2{font-size:29px}
+#beway-deloitte .member-profile-top .member-badge{margin-top:13px;margin-bottom:0}
+#beway-deloitte .member-profile-top p{font-size:14px;color:var(--muted);margin-top:12px}
+#beway-deloitte .catalogue-card{background:#fff3eb;border:1px solid #f2ded0;border-radius:16px;padding:28px;display:flex;flex-direction:column;align-items:flex-start;transition:transform .2s,box-shadow .2s}
+#beway-deloitte .catalogue-card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #46121b0b}
+#beway-deloitte .catalogue-card>img{width:91px;height:91px;object-fit:contain;margin-bottom:25px}
+#beway-deloitte .catalogue-card-label{font-size:10px;letter-spacing:1.2px;color:#a05d65;margin-bottom:12px}
+#beway-deloitte .catalogue-card h3{font-size:22px;line-height:1.3;letter-spacing:-.7px}
+#beway-deloitte .catalogue-card-action{display:flex;justify-content:space-between;gap:35px;border-top:1px solid #e8cdd1;padding-top:17px;margin-top:24px;color:#a73300;font-size:13px;font-weight:650;width:100%}
+#beway-deloitte .ecommerce-section{align-items:center}
+#beway-deloitte .ecommerce-section .shop-categories>a{font-size:13px}
+#beway-deloitte .activity-status{display:inline-flex;align-items:center;gap:7px;color:#88626a;border:1px solid #eadfe1;border-radius:6px;padding:5px 10px;font-size:11px;margin:18px 0 5px}
+#beway-deloitte .challenge-summary{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:24px}
+#beway-deloitte .activity-block h3{font-size:18px;margin:25px 0 10px}
+#beway-deloitte .activity-block p,#beway-deloitte .activity-block li{font-size:14px;line-height:1.8;color:#667182}
+#beway-deloitte .activity-block ul,#beway-deloitte .activity-block ol{padding-left:22px}
+#beway-deloitte .activity-block li{margin-bottom:9px}
+#beway-deloitte .activity-deliverable{background:#f7f8fa;border:1px solid #e8ebf0;border-radius:12px;padding:20px;height:fit-content}
+#beway-deloitte .activity-deliverable h3:first-child{margin-top:0}
+#beway-deloitte .activity-deliverable h3{font-size:17px;margin-bottom:10px}
+#beway-deloitte .activity-deliverable p,#beway-deloitte .activity-deliverable li{font-size:13px;line-height:1.8;color:#647081}
+#beway-deloitte .activity-deliverable ul{padding-left:18px;margin-bottom:0}
+#beway-deloitte .project-case{background:#f6f7f9;border:1px solid #e7ebef;padding:23px;border-radius:12px;margin:24px 0}
+#beway-deloitte .project-case h3{font-size:18px;margin-bottom:12px}
+#beway-deloitte .project-case p,#beway-deloitte .project-case li{font-size:14px;color:#677183;line-height:1.8}
+#beway-deloitte .case-data{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+#beway-deloitte .case-data div{padding:12px;border:1px solid #e3e7ec;border-radius:7px;background:white;font-size:12px;color:#77818e}
+#beway-deloitte .case-data strong{display:block;font:700 18px 'BEWAY Deloitte Manrope',Arial,sans-serif;color:#334052;margin-top:4px}
+#beway-deloitte .project-form{margin-top:26px}
+#beway-deloitte .project-form label{display:block;font-weight:650;font-size:14px;margin-bottom:10px;color:#344052}
+#beway-deloitte .project-form .field{margin-top:23px}
+#beway-deloitte .project-form textarea{font:14px/1.75 'BEWAY Deloitte DM Sans',Arial,sans-serif;display:block;width:100%;resize:vertical;border:1px solid #dce1e8;border-radius:8px;padding:15px 17px;color:#394557;background:#fff;min-height:115px}
+#beway-deloitte .project-form textarea:focus{outline:2px solid #759bcf;outline-offset:2px}
+#beway-deloitte .project-form .dialog-actions{margin-top:24px}
+#beway-deloitte .project-save-status{font-size:12px;color:#597167;margin-top:15px;min-height:22px}
+#beway-deloitte .project-storage-note{font-size:11px;color:#9299a5;margin-top:13px;line-height:1.7}
+#beway-deloitte .no-open-convocation{font-size:12px;color:#8d95a0;border-left:2px solid #dce2ea;padding-left:14px;margin-top:25px;line-height:1.8}
+@media(max-width:1050px){#beway-deloitte .real-ambassadors .ambassador{padding:20px 13px}
+#beway-deloitte .member-photo{width:68px;height:68px}
+#beway-deloitte .real-ambassadors .ambassador h3{font-size:14px}
+#beway-deloitte .real-ambassadors .ambassador p{font-size:12px}
+#beway-deloitte .mini-project{padding:21px}
+#beway-deloitte .mini-project h3{font-size:21px}
+#beway-deloitte .mini-project>p:not(.project-label){font-size:13px}}
+@media(max-width:700px){#beway-deloitte .hero-content{padding-top:28px;padding-bottom:40px}
+#beway-deloitte .mh-wordmark{margin-bottom:169px}
+#beway-deloitte .hero{min-height:640px}
+#beway-deloitte .hero h1{font-size:40px;letter-spacing:-1.8px}
+#beway-deloitte .hero-copy{max-width:350px}
+#beway-deloitte .hero-actions{margin-top:24px}
+#beway-deloitte .mini-project-grid{grid-template-columns:1fr}
+#beway-deloitte .mini-project{padding:24px}
+#beway-deloitte .mini-project h3{min-height:0;font-size:24px}
+#beway-deloitte .mini-project>p:not(.project-label){font-size:14px}
+#beway-deloitte .project-skills span{font-size:11px}
+#beway-deloitte .project-facts strong{font-size:13px}
+#beway-deloitte .project-facts small{font-size:11px}
+#beway-deloitte .mini-project>button{font-size:14px}
+#beway-deloitte .real-ambassadors .ambassador{padding:20px 15px}
+#beway-deloitte .real-ambassadors .ambassador h3{font-size:15px;min-height:44px}
+#beway-deloitte .real-ambassadors .ambassador p{font-size:12px;min-height:44px}
+#beway-deloitte .real-ambassadors .ambassador button{font-size:12px}
+#beway-deloitte .member-photo{width:73px;height:73px}
+#beway-deloitte .catalogue-card{padding:27px}
+#beway-deloitte .catalogue-card>img{width:96px;height:96px}
+#beway-deloitte .catalogue-card h3{font-size:24px}
+#beway-deloitte .catalogue-card-action{font-size:14px}
+#beway-deloitte .ecommerce-section .shop-categories>a{font-size:14px}
+#beway-deloitte .challenge-summary{grid-template-columns:1fr;gap:15px}
+#beway-deloitte .member-profile-top{gap:16px;align-items:flex-start}
+#beway-deloitte .member-profile-top .member-photo{width:76px;height:76px}
+#beway-deloitte .member-profile-top h2{font-size:24px}
+#beway-deloitte .member-profile-top p{font-size:12px}
+#beway-deloitte .case-data{gap:8px}
+#beway-deloitte .case-data div{font-size:11px}
+#beway-deloitte .case-data strong{font-size:16px}
+#beway-deloitte .project-case{padding:19px}
+#beway-deloitte .project-form textarea{font-size:16px;min-height:125px}
+#beway-deloitte .project-form .dialog-actions{gap:10px}
+#beway-deloitte .project-form .dialog-actions button{font-size:12px}}
+#beway-deloitte{--red:#86bc25}
+#beway-deloitte .deloitte-wordmark{font-family:'BEWAY Deloitte Manrope',Arial,sans-serif;font-weight:750;color:#fff;font-size:32px;letter-spacing:-1px;margin-bottom:29px}
+#beway-deloitte .hero-brand.deloitte-brand{right:7%;top:50%;transform:translateY(-50%);width:370px;height:370px;letter-spacing:0;line-height:1;box-shadow:24px 24px 0 #9c3000;text-shadow:none}
+#beway-deloitte .deloitte-brand img{width:100%;height:100%;display:block;object-fit:contain}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#101115 13%,#101115ed 37%,#10111500 67%)}
+#beway-deloitte .hero-content{max-width:730px;position:relative}
+#beway-deloitte .hero-copy{max-width:440px}
+#beway-deloitte .hero-meta{margin-top:24px}
+#beway-deloitte .btn.primary:hover{background:#6c9c16}
+#beway-deloitte .inline-source{display:inline-block;font-size:13px;font-weight:600;margin-top:24px;border-bottom:1px solid #aeb5c3;padding-bottom:3px}
+#beway-deloitte .company-facts{grid-column:1/-1;display:grid;grid-template-columns:.7fr .85fr 1.7fr;border-top:1px solid var(--line);padding-top:25px;gap:32px;margin-top:-16px}
+#beway-deloitte .company-facts>div{display:flex;flex-direction:column;justify-content:center;gap:4px}
+#beway-deloitte .company-facts strong{font:750 30px/1.3 'BEWAY Deloitte Manrope',Arial,sans-serif;letter-spacing:-1px}
+#beway-deloitte .company-facts>div:last-child strong{font-size:20px;letter-spacing:-.5px}
+#beway-deloitte .company-facts span{font-size:13px;color:var(--muted)}
+#beway-deloitte .about-links{grid-column:1/-1;display:flex;gap:30px;margin-top:-28px}
+#beway-deloitte .about-links button{font-size:13px;color:#586171}
+#beway-deloitte .course-feature{margin:0}
+#beway-deloitte .course-section>.section-heading{margin-bottom:30px}
+#beway-deloitte .course-cover{min-height:460px;background:#17191f;display:flex;flex-direction:column;justify-content:space-between}
+#beway-deloitte .course-cover .onboard-type{inset:38px;bottom:160px;border-left:3px solid var(--red);justify-content:center}
+#beway-deloitte .course-cover .onboard-type>span{color:#b4de73;font-size:11px}
+#beway-deloitte .course-cover .onboard-type strong{margin:22px 0 0;font-size:48px;letter-spacing:-1.9px}
+#beway-deloitte .course-cover-footer{position:absolute;left:66px;right:38px;bottom:43px;display:flex;gap:27px;align-items:center;padding-top:24px;border-top:1px solid #ffffff24}
+#beway-deloitte .course-seal{font:750 50px/1 'BEWAY Deloitte Manrope',Arial,sans-serif;color:#fff;letter-spacing:-2px}
+#beway-deloitte .course-seal>span{display:block;letter-spacing:2px;font:600 10px/1.5 'BEWAY Deloitte DM Sans',Arial,sans-serif;margin-top:8px}
+#beway-deloitte .course-cover-footer>span:last-child{font-size:10px;letter-spacing:1.6px;line-height:1.9;color:#b6bac4}
+#beway-deloitte .course-feature .onboard-content{padding:38px}
+#beway-deloitte .course-feature .onboard-content h2{font-size:31px}
+#beway-deloitte .certificate-label{display:flex;align-items:center;gap:8px;color:#b4de73;font-size:12px;margin-top:20px}
+#beway-deloitte .course-feature .onboard-stats{border-top:1px solid #ffffff20;padding-top:21px;margin-top:24px;margin-bottom:26px}
+#beway-deloitte .course-feature .onboard-stats strong{font-size:18px}
+#beway-deloitte .course-feature .onboard-stats span{font-size:11px}
+#beway-deloitte .course-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px}
+#beway-deloitte .course-bottom p{font-size:13px;color:#69717d;line-height:1.9}
+#beway-deloitte .course-bottom p b{font-weight:600;color:#4d5767}
+#beway-deloitte .course-bottom a{font-size:13px;white-space:nowrap}
+#beway-deloitte .challenge-type{font-size:28px}
+#beway-deloitte .challenge-info h3{min-height:58px}
+#beway-deloitte .challenge-info .eyebrow{color:#aa3500}
+#beway-deloitte .challenge-card:nth-child(2) .challenge-art{background:#86bc25}
+#beway-deloitte .challenge-card:nth-child(3) .challenge-art{background:#243243}
+#beway-deloitte .opportunity h3{min-height:54px}
+#beway-deloitte .opportunity .job-type{color:#aa3500;font-size:11px}
+#beway-deloitte .opportunity .job-symbol{font-family:'BEWAY Deloitte Manrope',Arial,sans-serif;font-weight:700}
+#beway-deloitte .opportunity>p:not(.job-type){margin-top:10px}
+#beway-deloitte .ambassador-overview{display:grid;grid-template-columns:1.08fr 1fr;gap:70px}
+#beway-deloitte .ambassador-overview>div>p{font-size:16px;line-height:1.8}
+#beway-deloitte .ambassador-overview .muted{font-size:14px;margin-top:15px}
+#beway-deloitte .ambassador-overview .btn{margin-top:24px}
+#beway-deloitte .ambassador-overview p.section-note{font-size:12px;line-height:1.7;color:#818793;margin-top:17px}
+#beway-deloitte .ambassador-steps>div{display:flex;gap:22px;border-bottom:1px solid var(--line);padding:0 0 24px;margin-bottom:24px}
+#beway-deloitte .ambassador-steps>div:last-child{margin-bottom:0;border:0}
+#beway-deloitte .ambassador-steps>div>span{font:700 30px/1 'BEWAY Deloitte Manrope',Arial,sans-serif;color:#d5d8df;min-width:37px}
+#beway-deloitte .ambassador-steps h3{font-size:18px;letter-spacing:-.4px;margin-bottom:9px}
+#beway-deloitte .ambassador-steps p{font-size:14px;color:var(--muted);line-height:1.6}
+#beway-deloitte .resource-card{background:#fff3eb;border-color:#f2ded0}
+#beway-deloitte .resource-mark{font:750 72px/1.1 'BEWAY Deloitte Manrope',Arial,sans-serif;letter-spacing:-5px;color:#86bc25;margin:22px 0 16px;display:flex;justify-content:space-between;align-items:center}
+#beway-deloitte .resource-mark>span{font-size:35px;letter-spacing:0}
+#beway-deloitte .resource-card .locked-benefit{font-weight:600;font-size:12px;color:#aa3039}
+#beway-deloitte .resources-section .shop-categories>a{font-size:13px}
+#beway-deloitte .footer-meta{display:flex;flex-direction:column;align-items:flex-end;gap:8px;margin-left:auto;font-size:11px;color:#868d97}
+#beway-deloitte .source-button{background:none;padding:0;border:0;color:#596574;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+#beway-deloitte .course-modal-intro{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+#beway-deloitte .course-modal-intro span{font-size:12px;background:#f1f3f6;color:#596271;border-radius:5px;padding:6px 11px}
+#beway-deloitte .time-breakdown{display:grid;grid-template-columns:1fr 1fr 1fr;background:#f6f7f9;padding:20px;border-radius:12px;gap:15px;margin:24px 0}
+#beway-deloitte .time-breakdown strong{display:block;font:750 21px/1.3 'BEWAY Deloitte Manrope',Arial,sans-serif}
+#beway-deloitte .time-breakdown span{font-size:12px;color:#6c7483}
+#beway-deloitte .journey-head{margin:29px 0 13px;padding-top:10px}
+#beway-deloitte .journey-head span{font-size:10px;letter-spacing:1.5px;font-weight:700;color:#a22a34}
+#beway-deloitte .journey-head h3{font-size:21px;margin-top:6px}
+#beway-deloitte .module{border:1px solid #e3e6eb;border-radius:10px;margin-bottom:10px;overflow:hidden}
+#beway-deloitte .module summary{cursor:pointer;display:flex;gap:16px;align-items:center;list-style:none;padding:18px;background:#fafbfc}
+#beway-deloitte .module summary::-webkit-details-marker{display:none}
+#beway-deloitte .module-number{font:700 22px/1 'BEWAY Deloitte Manrope',Arial,sans-serif;color:#acb2bc}
+#beway-deloitte .module-summary-text{flex:1}
+#beway-deloitte .module h4{font:700 15px/1.4 'BEWAY Deloitte Manrope',Arial,sans-serif;margin:0 0 5px}
+#beway-deloitte .module small{font-size:11px;color:#7c8592}
+#beway-deloitte .module summary:after{content:'+';color:#9ca3af;font-size:23px;font-weight:400}
+#beway-deloitte .module[open] summary:after{content:'−'}
+#beway-deloitte .module-content{padding:20px 24px 22px 56px;border-top:1px solid var(--line)}
+#beway-deloitte .module-content>p{font-size:14px;color:#5f6979;line-height:1.8}
+#beway-deloitte .lesson-list{list-style:none;padding:0;margin:16px 0}
+#beway-deloitte .lesson-list li{display:flex;gap:14px;justify-content:space-between;font-size:13px;color:#5e6977;padding:9px 0;border-bottom:1px solid #eff0f3}
+#beway-deloitte .lesson-list li span:last-child{font-size:11px;color:#9aa0ac;white-space:nowrap}
+#beway-deloitte .module-resource{display:block;font-size:12px;color:#788292;margin-top:16px}
+#beway-deloitte .certificate-box{display:grid;grid-template-columns:38px 1fr;gap:16px;border:1px solid #efdee0;border-radius:12px;padding:22px;background:#fcf6f6;margin-top:28px}
+#beway-deloitte .certificate-box>span{width:34px;height:34px;display:grid;place-items:center;background:#f8e5e7;border-radius:50%;color:#b81d2b;font-size:18px}
+#beway-deloitte .certificate-box h3{font-size:16px;margin-bottom:8px}
+#beway-deloitte .certificate-box p{font-size:13px;color:#836870}
+#beway-deloitte .product-detail-links{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
+#beway-deloitte .product-detail-links>a{font-size:13px}
+#beway-deloitte .info-panel{border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:18px}
+#beway-deloitte .info-panel h3{font-size:18px;margin-bottom:10px}
+#beway-deloitte .info-panel p{font-size:14px;color:#667182}
+#beway-deloitte .info-panel time{display:block;font-size:11px;letter-spacing:.5px;color:#8b939f;margin-bottom:10px}
+#beway-deloitte .official-links{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+#beway-deloitte .official-links>a{border:1px solid var(--line);padding:18px;border-radius:9px;font-size:14px;display:flex;gap:16px;justify-content:space-between}
+#beway-deloitte .official-links>a span{color:#ad1726}
+#beway-deloitte .sources-list{list-style:none;padding:0;margin:20px 0}
+#beway-deloitte .sources-list li{display:flex;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}
+#beway-deloitte .sources-list li>span{font:650 15px 'BEWAY Deloitte Manrope',Arial,sans-serif;color:#a8afb9}
+#beway-deloitte .sources-list a{font-weight:600;font-size:14px;display:block;line-height:1.5}
+#beway-deloitte .sources-list small{font-size:11px;color:#838b98}
+#beway-deloitte .sources-note{font-size:12px;color:#89909c;margin-top:22px}
+#beway-deloitte .demo-context{border-left:2px solid #d8dde6;padding-left:14px;font-size:12px;color:#7d8695;margin:24px 0 0}
+@media(max-width:1100px){#beway-deloitte .hero-brand.deloitte-brand{right:5%;width:330px;height:330px}
+#beway-deloitte .hero h1{font-size:51px}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#101115 15%,#101115ed 38%,#10111522 82%)}
+#beway-deloitte .hero-copy{max-width:390px}
+#beway-deloitte .hero-content{max-width:650px}
+#beway-deloitte .course-feature .onboard-content{padding:30px}
+#beway-deloitte .course-feature .onboard-content h2{font-size:29px}
+#beway-deloitte .course-cover .onboard-type strong{font-size:43px}
+#beway-deloitte .ambassador-overview{gap:42px}}
+@media(max-width:700px){#beway-deloitte .hero{min-height:670px}
+#beway-deloitte .hero-brand.deloitte-brand{right:25px;top:27px;width:185px;height:185px;transform:none;box-shadow:13px 13px 0 #9c3000}
+#beway-deloitte .hero-shade{background:linear-gradient(0deg,#101115 42%,#101115c9 61%,#10111510 100%)}
+#beway-deloitte .deloitte-wordmark{font-size:25px;margin-bottom:152px;max-width:100px;line-height:1.12}
+#beway-deloitte .hero-content{padding:28px 24px 34px}
+#beway-deloitte .hero h1{font-size:43px}
+#beway-deloitte .hero-copy{font-size:15px;max-width:355px}
+#beway-deloitte .hero-actions{margin-top:23px}
+#beway-deloitte .hero-meta{margin-top:23px}
+#beway-deloitte .company-facts{gap:20px;grid-template-columns:1fr 1fr;padding-top:24px;margin-top:4px}
+#beway-deloitte .company-facts>div:last-child{grid-column:1/-1}
+#beway-deloitte .company-facts>div:last-child strong{font-size:18px}
+#beway-deloitte .company-facts strong{font-size:29px}
+#beway-deloitte .company-facts span{font-size:12px}
+#beway-deloitte .about-links{gap:18px;flex-wrap:wrap;margin-top:0}
+#beway-deloitte .about-links button{font-size:12px}
+#beway-deloitte .inline-source{margin-top:18px}
+#beway-deloitte .course-feature{margin-top:0}
+#beway-deloitte .course-cover{min-height:330px}
+#beway-deloitte .course-cover .onboard-type{inset:29px 28px 140px}
+#beway-deloitte .course-cover .onboard-type strong{font-size:40px;margin-top:15px}
+#beway-deloitte .course-cover .onboard-type>span{font-size:10px}
+#beway-deloitte .course-cover-footer{left:57px;right:28px;bottom:30px;padding-top:18px;gap:25px}
+#beway-deloitte .course-seal{font-size:44px}
+#beway-deloitte .course-cover-footer>span:last-child{font-size:9px;letter-spacing:1.1px}
+#beway-deloitte .course-feature .onboard-content{padding:28px}
+#beway-deloitte .course-feature .onboard-content h2{font-size:30px}
+#beway-deloitte .course-feature .onboard-stats{gap:10px;flex-wrap:wrap}
+#beway-deloitte .course-feature .onboard-stats strong{font-size:16px}
+#beway-deloitte .certificate-label{font-size:11px}
+#beway-deloitte .course-bottom{align-items:flex-start;flex-direction:column;gap:15px;padding-top:20px}
+#beway-deloitte .course-bottom p{font-size:12px}
+#beway-deloitte .challenge-info h3{min-height:0}
+#beway-deloitte .opportunity h3{min-height:0}
+#beway-deloitte .ambassador-overview{grid-template-columns:1fr;gap:35px}
+#beway-deloitte .ambassador-overview>div>p{font-size:15px}
+#beway-deloitte .ambassador-overview .muted{font-size:14px}
+#beway-deloitte .ambassador-steps>div{padding-bottom:20px;margin-bottom:20px;gap:16px}
+#beway-deloitte .ambassador-steps h3{font-size:18px}
+#beway-deloitte .resources-section .shop-categories>a{font-size:14px}
+#beway-deloitte .footer-meta{align-items:flex-start;width:100%;margin:0;gap:10px}
+#beway-deloitte .time-breakdown{gap:10px;padding:17px 12px}
+#beway-deloitte .time-breakdown strong{font-size:18px}
+#beway-deloitte .time-breakdown span{font-size:10px}
+#beway-deloitte .module summary{padding:16px 14px;gap:12px}
+#beway-deloitte .module h4{font-size:14px}
+#beway-deloitte .module-number{font-size:20px}
+#beway-deloitte .module-content{padding:18px}
+#beway-deloitte .lesson-list li{font-size:12px;gap:10px}
+#beway-deloitte .certificate-box{padding:18px;gap:12px;grid-template-columns:30px 1fr}
+#beway-deloitte .official-links{grid-template-columns:1fr}
+#beway-deloitte .course-modal-intro span{font-size:11px}
+#beway-deloitte .sources-list a{font-size:13px}}
+#beway-deloitte .hero-brand.deloitte-brand{width:390px;height:290px;background:#f7f5f3;box-shadow:20px 20px 0 #86bc25;display:grid;place-items:center;right:6%;border-radius:2px}
+#beway-deloitte .deloitte-brand-inner{width:100%;padding:38px;display:flex;flex-direction:column;align-items:center;gap:22px}
+#beway-deloitte .deloitte-brand-inner img{display:block;position:static;width:100%;height:auto;max-height:160px;object-fit:contain}
+#beway-deloitte .deloitte-brand-inner>span{font:600 8px/1.5 'BEWAY Deloitte DM Sans',Arial,sans-serif;letter-spacing:1px;color:#69717d;white-space:nowrap}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#101115 12%,#101115ed 38%,#10111500 72%)}
+#beway-deloitte .deloitte-wordmark{font-size:33px}
+#beway-deloitte .course-cover .onboard-type>span{color:#b4de73}
+#beway-deloitte .certificate-label{color:#b4de73}
+#beway-deloitte .challenge-card:nth-child(2) .challenge-art{background:#86bc25}
+#beway-deloitte .challenge-card:nth-child(3) .challenge-art{background:#263342}
+#beway-deloitte .deloitte-catalogue>img{width:150px;height:auto;aspect-ratio:98/45;object-fit:contain;margin:12px 0 30px}
+#beway-deloitte .module-timing{margin-top:14px;font-size:11px;color:#788292}
+#beway-deloitte .project-download{margin:20px 0}
+#beway-deloitte .project-download .btn{font-size:13px}
+#beway-deloitte .project-form textarea:focus-visible{outline:3px solid #518cff;outline-offset:3px}
+@media(max-width:1100px){#beway-deloitte .hero-brand.deloitte-brand{width:330px;height:250px;right:4%}
+#beway-deloitte .deloitte-brand-inner{padding:30px}
+#beway-deloitte .deloitte-brand-inner>span{font-size:7px}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#101115 12%,#101115ec 37%,#10111500 83%)}}
+@media(min-width:701px) and (max-width:1050px){#beway-deloitte .ecommerce-section .shop-categories{display:flex;flex-wrap:wrap;gap:10px 25px}
+#beway-deloitte .ecommerce-section .shop-categories>.eyebrow,#beway-deloitte .ecommerce-section .shop-categories>.micro{width:100%}
+#beway-deloitte .ecommerce-section .shop-categories>a{flex:1 1 25%;min-width:160px}}
+@media(max-width:700px){#beway-deloitte .hero{min-height:650px}
+#beway-deloitte .hero-brand.deloitte-brand{width:220px;height:165px;right:24px;top:27px;transform:none;box-shadow:10px 10px 0 #86bc25}
+#beway-deloitte .deloitte-brand-inner{padding:20px;gap:15px}
+#beway-deloitte .deloitte-brand-inner>span{font-size:4.4px;letter-spacing:.7px}
+#beway-deloitte .deloitte-wordmark{margin-bottom:150px;font-size:26px}
+#beway-deloitte .hero h1{font-size:clamp(32px,8vw,40px)}
+#beway-deloitte .hero-shade{background:linear-gradient(0deg,#101115 40%,#101115c9 61%,#10111500 100%)}
+#beway-deloitte .deloitte-catalogue>img{width:150px;height:auto}
+#beway-deloitte .course-cover .onboard-type strong{font-size:38px}
+#beway-deloitte .project-download .btn{width:100%;font-size:12px;gap:12px}
+#beway-deloitte .ecommerce-section .shop-categories{display:block}
+#beway-deloitte .hero-actions{flex-wrap:wrap}
+#beway-deloitte .hero-actions .btn{gap:14px}
+#beway-deloitte .top-context{gap:10px}
+#beway-deloitte .time-breakdown strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){#beway-deloitte{scroll-behavior:auto}
+#beway-deloitte,#beway-deloitte *,#beway-deloitte *:before,#beway-deloitte *:after{transition:none!important;animation:none!important}}
+html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0}#beway-deloitte{--red:#86bc25;--ink:#1a1a1a;--muted:#6b6b6b;--line:#e7e4e1}
+#beway-deloitte .skip-link{position:absolute;left:20px;top:-80px;background:#fff;border:2px solid #86bc25;padding:10px 18px;z-index:99}#beway-deloitte .skip-link:focus{top:10px}
+#beway-deloitte .hero{background:#151515;min-height:580px}#beway-deloitte .hero h1{font-size:clamp(42px,4.4vw,62px);letter-spacing:-2.6px;max-width:660px}
+#beway-deloitte .hero-content{padding-top:43px;padding-bottom:40px;max-width:790px}#beway-deloitte .deloitte-wordmark{font-family:Georgia,serif;font-weight:700;font-size:36px;letter-spacing:-2px;margin-bottom:29px;color:#fff}
+#beway-deloitte .hero-brand.deloitte-brand{width:360px;height:280px;right:7%;background:#fff;box-shadow:20px 20px 0 #86bc25;border-radius:0;z-index:-1}
+#beway-deloitte .deloitte-brand-inner{padding:42px 38px 29px;gap:24px}#beway-deloitte .deloitte-brand-inner img{width:246px;max-height:155px;height:155px}#beway-deloitte .deloitte-brand-inner>span{font-size:7px;letter-spacing:.7px;color:#545454}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#151515 12%,#151515ed 39%,#15151500 71%)}
+#beway-deloitte .hero-meta{flex-wrap:wrap;gap:10px;color:#b6b6b6;font-size:11px}
+#beway-deloitte .btn.primary{color:#161616;background:#86bc25}#beway-deloitte .btn.primary:hover{background:#a4d449}#beway-deloitte .btn:focus-visible{outline-color:#2479da}
+#beway-deloitte .company-facts{grid-template-columns:.75fr 1.05fr 1.25fr}#beway-deloitte .company-facts strong{font-size:28px}#beway-deloitte .company-facts>div:last-child strong{font-size:26px}
+#beway-deloitte .about-links button{color:#555}#beway-deloitte .section-nav a:hover{color:#426b15}#beway-deloitte .eyebrow{color:#73706d}
+#beway-deloitte .course-cover{background:#22201e;min-height:468px}#beway-deloitte .onboarding{background:#171717}#beway-deloitte .course-cover .onboard-type{bottom:160px;border-left-color:#86bc25}
+#beway-deloitte .course-cover .onboard-type strong{font-size:43px;letter-spacing:-1.8px}#beway-deloitte .course-cover .onboard-type>span{color:#b4de73}#beway-deloitte .certificate-label{color:#b4de73;font-size:12px}
+#beway-deloitte .course-seal>span{font-size:9px;letter-spacing:1.4px}#beway-deloitte .course-feature .onboard-content h2{font-size:36px;letter-spacing:-1.2px}#beway-deloitte .onboard-content>.eyebrow{color:#bbb3ac;font-size:10px;letter-spacing:1.4px}
+#beway-deloitte .onboard-content>p:not(.eyebrow):not(.micro){color:#c3beb9}#beway-deloitte .course-feature .onboard-content{padding:40px}#beway-deloitte .course-feature .onboard-stats span{color:#aaa5a0}#beway-deloitte .micro{color:#77736e}
+#beway-deloitte .onboard-content .micro{color:#aaa5a0}#beway-deloitte .course-bottom p{color:#6b6763}#beway-deloitte .course-bottom b{color:#44413d}
+#beway-deloitte .official-challenge{display:grid;grid-template-columns:1fr 1.13fr;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+#beway-deloitte .official-challenge-art{background:#86bc25;color:#171717;min-height:430px;padding:34px 36px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+#beway-deloitte .challenge-origin{font-size:9px;letter-spacing:1.3px;font-weight:700;border-bottom:1px solid #1a1a1a30;padding-bottom:18px}
+#beway-deloitte .official-challenge-art h3{font-size:48px;font-weight:800;line-height:1.06;letter-spacing:-2px;margin:27px 0 29px}
+#beway-deloitte .video-counter{display:flex;align-items:center;gap:15px;margin-top:auto}#beway-deloitte .record-dot{height:11px;width:11px;border-radius:50%;background:#1a1a1a}
+#beway-deloitte .video-counter strong{font:800 74px/1 'BEWAY Deloitte Manrope',sans-serif;letter-spacing:-4px}#beway-deloitte .video-counter>span:last-child{font-size:13px;line-height:1.5}
+#beway-deloitte .challenge-lang{font-size:9px;letter-spacing:1.2px;font-weight:650;margin-top:24px}
+#beway-deloitte .official-challenge-copy{padding:38px;background:#faf9f7;display:flex;flex-direction:column;justify-content:center}#beway-deloitte .official-challenge-copy .eyebrow{font-size:10px;color:#3d6412}
+#beway-deloitte .official-challenge-copy h3{font-size:29px;line-height:1.22;letter-spacing:-.9px;max-width:420px}#beway-deloitte .official-challenge-copy>p:not(.eyebrow){font-size:15px;color:#6b625b;margin-top:18px}
+#beway-deloitte .challenge-rounds{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid #e4dcd4;padding-top:20px;margin-top:27px}#beway-deloitte .challenge-rounds span{font:750 23px/1.2 'BEWAY Deloitte Manrope',sans-serif;color:#3d6412}#beway-deloitte .challenge-rounds p{font-size:11px;line-height:1.5;margin-top:9px;color:#5d554e}
+#beway-deloitte .official-challenge-copy .dialog-actions{align-items:center;gap:18px;margin-top:26px}#beway-deloitte .official-challenge-copy .text-button{font-size:12px}
+#beway-deloitte .challenge-eligibility{display:flex;gap:27px;align-items:flex-start;padding:20px 0 0}#beway-deloitte .eligibility-label{font-size:9px;letter-spacing:1px;font-weight:700;min-width:157px;color:#746b64;padding-top:3px}#beway-deloitte .challenge-eligibility p{font-size:12px;color:#746b64;line-height:1.75}#beway-deloitte .challenge-eligibility a{color:#3d6412;text-decoration:underline;text-underline-offset:3px}
+#beway-deloitte .project-symbol{background:#eff6e5;color:#3d6412}#beway-deloitte .mini-project{background:#fafbf8}#beway-deloitte .project-skills span{background:#edf1e8;color:#55604b}#beway-deloitte .member-badge{background:#eff6e5;color:#3d6412}
+#beway-deloitte .deloitte-catalogue{background:#eff6e5;border-color:#dce8cb}#beway-deloitte .deloitte-catalogue>img{width:130px;height:90px;aspect-ratio:auto;margin:5px 0 22px}#beway-deloitte .catalogue-card-label{color:#4f6b2b}#beway-deloitte .catalogue-card-action{border-color:#dce8cb;color:#3d6412}
+#beway-deloitte .ecommerce-section .shop-categories>a:hover{color:#3d6412}#beway-deloitte .section-note{color:#817a73}#beway-deloitte .source-button{color:#69625b}
+#beway-deloitte .project-form textarea:focus-visible{outline-color:#426b15}#beway-deloitte .module-content{padding-bottom:25px}#beway-deloitte .module summary{background:#fafbf8}#beway-deloitte .journey-head span{color:#426b15}#beway-deloitte .certificate-box{background:#f2f7ea;border-color:#dce8cb}#beway-deloitte .certificate-box>span{background:#86bc25;color:#171717}#beway-deloitte .sources-list a{color:#426b15}
+#beway-deloitte .prize-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}#beway-deloitte .prize-grid div{padding:17px;border:1px solid #eadfd6;background:#f2f7ea;border-radius:9px}#beway-deloitte .prize-grid strong{display:block;font-size:15px}#beway-deloitte .prize-grid span{display:block;font-size:12px;color:#766b60;margin-top:5px}
+#beway-deloitte .challenge-scope{background:#f6f2ed;padding:19px;border-radius:9px;margin:20px 0;font-size:13px;color:#665c52}#beway-deloitte .challenge-scope strong{display:block;color:#27231e;margin-bottom:5px}
+@media(min-width:1500px){#beway-deloitte .hero{max-width:1440px;border-radius:16px}}
+@media(max-width:1100px) and (min-width:701px){#beway-deloitte .hero-brand.deloitte-brand{right:4%;width:300px;height:245px}#beway-deloitte .deloitte-brand-inner{padding:30px}#beway-deloitte .deloitte-brand-inner img{width:210px;height:140px}#beway-deloitte .deloitte-brand-inner>span{font-size:6px}#beway-deloitte .hero h1{font-size:52px}#beway-deloitte .hero-content{max-width:660px}#beway-deloitte .hero-shade{background:linear-gradient(90deg,#151515 12%,#151515ee 38%,#15151500 85%)}#beway-deloitte .official-challenge-copy{padding:29px}#beway-deloitte .official-challenge-art{padding:30px}#beway-deloitte .official-challenge-art h3{font-size:43px}#beway-deloitte .official-challenge-copy h3{font-size:25px}#beway-deloitte .course-cover .onboard-type strong{font-size:37px}#beway-deloitte .course-feature .onboard-content{padding:30px}}
+@media(max-width:700px){html{scroll-padding-top:73px}#beway-deloitte .demo-pill{font-size:9px;padding:5px 9px}#beway-deloitte .hero{min-height:710px}#beway-deloitte .hero-brand.deloitte-brand{width:190px;height:160px;right:27px;top:27px;transform:none;box-shadow:10px 10px 0 #86bc25}#beway-deloitte .deloitte-brand-inner{padding:20px;gap:13px}#beway-deloitte .deloitte-brand-inner img{width:130px;height:92px}#beway-deloitte .deloitte-brand-inner>span{font-size:3.8px;letter-spacing:.3px}#beway-deloitte .deloitte-wordmark{font-size:28px;margin-bottom:161px}#beway-deloitte .hero-content{padding:28px 24px 35px}#beway-deloitte .hero h1{font-size:clamp(33px,8.6vw,44px);letter-spacing:-1.7px}#beway-deloitte .hero-shade{background:linear-gradient(0deg,#151515 40%,#151515c9 62%,#15151500 100%)}#beway-deloitte .hero-copy{font-size:15px;max-width:350px}#beway-deloitte .hero-meta{font-size:10px;gap:8px}#beway-deloitte .company-facts{grid-template-columns:1fr;gap:17px}#beway-deloitte .company-facts strong,#beway-deloitte .company-facts>div:last-child strong{font-size:25px}#beway-deloitte .course-cover{min-height:350px}#beway-deloitte .course-cover .onboard-type strong{font-size:38px}#beway-deloitte .course-feature .onboard-content{padding:28px}#beway-deloitte .course-feature .onboard-content h2{font-size:31px}#beway-deloitte .certificate-label{font-size:11px}#beway-deloitte .course-seal>span{font-size:8px}#beway-deloitte .course-cover-footer>span:last-child{font-size:8px}#beway-deloitte .official-challenge{grid-template-columns:1fr}#beway-deloitte .official-challenge-art{min-height:365px;padding:28px}#beway-deloitte .official-challenge-art h3{font-size:44px;margin:24px 0}#beway-deloitte .official-challenge-copy{padding:28px}#beway-deloitte .official-challenge-copy h3{font-size:27px}#beway-deloitte .challenge-rounds{gap:12px}#beway-deloitte .challenge-rounds p{font-size:11px}#beway-deloitte .challenge-eligibility{display:block}#beway-deloitte .eligibility-label{display:block;margin-bottom:8px}#beway-deloitte .challenge-eligibility p{font-size:11px}#beway-deloitte .prize-grid{grid-template-columns:1fr}#beway-deloitte .official-challenge-copy .dialog-actions{gap:20px}#beway-deloitte .shop h2{font-size:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  
+/* Deloitte identity and full-width BEWAY presentation. */
+#beway-deloitte{--red:#86bc25;--ink:#171b18;--muted:#666d64;--line:#e3e8de}
+#beway-deloitte .hero{max-width:none;border-radius:0;background:#101410}
+#beway-deloitte .topbar{max-width:none;padding-inline:5.5%}
+#beway-deloitte .page-content{max-width:1560px;padding-inline:5.5%}
+#beway-deloitte .hero-content{padding:54px 5.5% 48px;max-width:740px}
+#beway-deloitte .hero h1{font-size:clamp(42px,4.35vw,66px);letter-spacing:-2.5px;max-width:660px}
+#beway-deloitte .hero-copy{max-width:430px}
+#beway-deloitte .hero-brand.deloitte-brand{width:360px;height:280px;right:8%;background:#192218;border:1px solid #86bc2540;box-shadow:18px 18px 0 #86bc25;border-radius:2px;transform:translateY(-50%);text-shadow:none;letter-spacing:normal}
+#beway-deloitte .deloitte-brand-inner{padding:40px 34px;width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:25px}
+#beway-deloitte .deloitte-brand-inner img{display:block;width:100%;height:52px;max-height:52px;object-fit:contain;object-position:left center}
+#beway-deloitte .deloitte-brand-inner>span{font:650 10px/1.4 'BEWAY Deloitte DM Sans',Arial,sans-serif;letter-spacing:2px;color:#b9d993}
+#beway-deloitte .deloitte-brand-inner>p{font:550 20px/1.35 'BEWAY Deloitte Manrope',Arial,sans-serif;color:#f0f5eb}
+#beway-deloitte .deloitte-wordmark{margin-bottom:35px;line-height:1}
+#beway-deloitte .deloitte-wordmark img{display:block;width:146px;height:28px;object-fit:contain;object-position:left center}
+#beway-deloitte .hero-shade{background:linear-gradient(90deg,#101410 10%,#101410dd 40%,#10141000 72%)}
+#beway-deloitte .course-cover{background:#25311e}
+#beway-deloitte .onboarding{background:#151e13}
+#beway-deloitte .onboard-content>.eyebrow{color:#b3c2a6}
+#beway-deloitte .onboard-content>p:not(.eyebrow):not(.micro){color:#d0d8c9}
+#beway-deloitte .course-cover .onboard-type strong{font-size:43px}
+#beway-deloitte .course-feature .onboard-content h2{font-size:34px}
+#beway-deloitte .course-feature .onboard-stats span,#beway-deloitte .onboard-content .micro{color:#b0bda6}
+#beway-deloitte .official-challenge-art{background:#86bc25;color:#122007}
+#beway-deloitte .official-challenge-copy{background:#f7faf3}
+#beway-deloitte .official-challenge-copy>p:not(.eyebrow),#beway-deloitte .challenge-rounds p{color:#59634f}
+#beway-deloitte .challenge-subtitle{font:650 18px/1.5 'BEWAY Deloitte DM Sans',Arial,sans-serif}
+#beway-deloitte .challenge-visual{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto;padding:30px 0 8px;font:700 9px/1.3 'BEWAY Deloitte DM Sans',Arial,sans-serif;letter-spacing:1px}
+#beway-deloitte .challenge-visual i{width:14px;height:1px;background:currentColor}
+#beway-deloitte .challenge-scope{background:#f1f5eb;color:#556149}
+#beway-deloitte .event-box{padding:24px;border:1px solid #dce8cb;border-left:4px solid #86bc25;border-radius:8px;margin-block:24px;background:#fbfcf9}
+#beway-deloitte .event-box .eyebrow{font-size:10px}
+#beway-deloitte .event-box h3{font-size:24px;margin:8px 0 12px}
+#beway-deloitte .event-box p:last-child{font-size:14px;color:#62695a}
+#beway-deloitte .deloitte-catalogue{background:#172116;border:1px solid #33432c;color:#fff}
+#beway-deloitte .deloitte-catalogue>img{display:block;width:182px;height:34px;object-fit:contain;object-position:left center;margin:10px 0 38px}
+#beway-deloitte .deloitte-catalogue .catalogue-card-label{color:#b0d57b}
+#beway-deloitte .deloitte-catalogue .catalogue-card-action{color:#c1e89a;border-color:#ffffff30}
+#beway-deloitte .ui-icon{display:inline-block;width:16px;height:16px;flex:0 0 16px;vertical-align:-3px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#beway-deloitte .btn .ui-icon{margin-left:6px}
+#beway-deloitte .text-button .ui-icon,#beway-deloitte .inline-source .ui-icon,#beway-deloitte .source-button .ui-icon{margin-left:5px}
+#beway-deloitte .certificate-box>span .ui-icon{width:20px;height:20px}
+#beway-deloitte .member-photo img[src$='stephany-cajamarca.svg']{object-fit:contain}
+#beway-deloitte .member-photo-sebastian img{transform:scale(2.65);transform-origin:47% 50%}
+#beway-deloitte .beway-logo{object-fit:contain!important;object-position:center!important;border-radius:0!important;transform:none!important}
+#beway-deloitte .project-symbol{font-size:18px}
+@media(min-width:1700px){#beway-deloitte .hero-content{max-width:850px;padding-left:max(5.5%,calc((100vw - 1400px)/2))}#beway-deloitte .hero-brand.deloitte-brand{right:max(8%,calc((100vw - 1350px)/2));width:390px;height:300px}}
+@media(min-width:701px) and (max-width:1100px){#beway-deloitte .hero-brand.deloitte-brand{width:295px;height:245px;right:4%}#beway-deloitte .hero h1{font-size:48px;max-width:500px}#beway-deloitte .hero-content{max-width:660px}#beway-deloitte .deloitte-brand-inner{padding:30px;gap:20px}#beway-deloitte .deloitte-brand-inner>p{font-size:18px}}
+@media(max-width:700px){#beway-deloitte .hero{min-height:680px}#beway-deloitte .hero-content{padding:28px 24px 35px}#beway-deloitte .hero-brand.deloitte-brand{width:190px;height:160px;right:26px;top:27px;transform:none;box-shadow:9px 9px 0 #86bc25}#beway-deloitte .deloitte-brand-inner{padding:20px;gap:12px}#beway-deloitte .deloitte-brand-inner img{height:27px;max-height:27px;width:148px}#beway-deloitte .deloitte-brand-inner>span{font-size:7px;letter-spacing:1px}#beway-deloitte .deloitte-brand-inner>p{font-size:12px;line-height:1.4}#beway-deloitte .deloitte-wordmark{margin-bottom:160px}#beway-deloitte .deloitte-wordmark img{width:108px;height:21px}#beway-deloitte .hero h1{font-size:clamp(33px,8.4vw,44px);letter-spacing:-1.6px}#beway-deloitte .hero-shade{background:linear-gradient(0deg,#101410 43%,#101410b0 65%,#10141000 100%)}#beway-deloitte .page-content{padding-inline:24px}#beway-deloitte .topbar{padding-inline:20px}#beway-deloitte .course-cover .onboard-type strong{font-size:37px}#beway-deloitte .course-feature .onboard-content h2{font-size:30px}#beway-deloitte .challenge-visual{gap:10px}#beway-deloitte .event-box{padding:19px}}
+@media(max-width:390px){#beway-deloitte .demo-pill{max-width:118px;line-height:1.4;white-space:normal;text-align:center}#beway-deloitte .hero-brand.deloitte-brand{width:170px;right:24px}#beway-deloitte .deloitte-brand-inner{padding:17px}#beway-deloitte .deloitte-brand-inner img{width:132px}}
+</style></head><body>
+<div id="beway-deloitte">
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="topbar">
+    <a class="beway" href="#inicio" aria-label="BEWAY, inicio"><img class="beway-logo" src="../assets/media/6dc6125378ab7d65768e38a3.png" alt="" width="56" height="56">beway<span class="brandperiod">.</span></a>
+    <div class="top-context"><a href="https://jorgegrego19-collab.github.io/beway-fichas/" target="_blank" rel="noopener">Explora empresas</a><span class="slash">/</span><strong>Deloitte</strong></div>
+    <span class="demo-pill">Propuesta BEWAY × Deloitte</span>
+  </header>
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-brand deloitte-brand" aria-hidden="true"><div class="deloitte-brand-inner"><img src="assets/deloitte.svg" alt="" width="310" height="58"><span>AUDIT & ASSURANCE</span><p>La confianza empieza<br>por comprender.</p></div></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="wordmark deloitte-wordmark"><img src="assets/deloitte.svg" alt="Deloitte" width="146" height="28"></div>
+        <h1 id="hero-title">Aprende cómo<br>se audita una empresa.</h1>
+        <p class="hero-copy">Conoce Deloitte y descubre cómo los riesgos, los datos y las evidencias ayudan a construir confianza en la información financiera.</p>
+        <div class="hero-actions"><a class="btn primary" href="#curso">Descubre el curso <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a class="btn glass" href="#challenges">Conoce el challenge <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></a></div>
+        <p class="hero-meta">Auditoría financiera <i></i> Análisis de datos <i></i> Comunidad universitaria</p>
+      </div>
+    </section>
+    <nav class="section-nav" aria-label="Secciones de Deloitte">
+      <a href="#sobre" class="active" aria-current="location">Sobre Deloitte</a><a href="#curso">El curso <span>08 h</span></a><a href="#challenges">Challenge <span>01</span></a><a href="#miniproyectos">Miniproyectos</a><a href="#embajadores">Embajadores</a><a href="#servicios">Explora Deloitte</a>
+    </nav>
+    <div class="page-content" id="contenido">
+      <section id="sobre" class="section about">
+        <div><p class="eyebrow">01 / CONOCE DELOITTE</p><h2>Entender el negocio<br>da sentido a las cifras.</h2><a class="inline-source" href="https://www.deloitte.com/es/es.html" target="_blank" rel="noopener">Conoce la firma <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+        <div class="about-copy"><p>Deloitte es una organización internacional de servicios profesionales con actividad en auditoría y assurance, consultoría y asesoramiento fiscal y legal, entre otras áreas.</p><p class="muted">En auditoría, comprender cómo funciona una empresa permite identificar riesgos y decidir qué comprobar. El análisis de datos y la tecnología acompañan un trabajo que requiere evidencias y criterio profesional.</p><div class="chips"><span>Audit & Assurance</span><span>Consultoría</span><span>Tax & Legal</span><span>Datos e IA</span></div></div>
+        <div class="company-facts"><div><strong>8 horas</strong><span>para una primera aproximación a auditoría</span></div><div><strong>2 días</strong><span>de aprendizaje asíncrono con vídeos</span></div><div><strong>Un caso práctico</strong><span>desde el riesgo hasta las conclusiones</span></div></div>
+        <div class="about-links"><button class="text-button" data-info="auditoria">Cómo trabaja un auditor <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button class="text-button" data-info="digital">Datos, IA y Omnia <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button class="text-button" data-info="carrera">Formación y carrera <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div>
+      </section>
+      <section id="curso" class="section course-section">
+        <div class="section-heading"><div><p class="eyebrow">02 / APRENDE CON DELOITTE</p><h2>Comprende el recorrido<br>de una auditoría financiera.</h2></div><p>Una empresa, ocho módulos y un caso<br>que avanza contigo de principio a fin.</p></div>
+        <div class="onboarding course-feature">
+          <div class="onboard-cover course-cover"><div class="onboard-type"><span>DELOITTE EN BEWAY</span><strong>Aprende a apoyar<br>tus conclusiones<br>en evidencias.</strong></div><div class="course-cover-footer"><span class="course-seal" aria-hidden="true">8<span>HORAS EN TOTAL</span></span><span>VÍDEOS GRABADOS<br>Y APLICACIÓN PRÁCTICA</span></div></div>
+          <div class="onboard-content"><p class="eyebrow">PROPUESTA ACADÉMICA BEWAY × DELOITTE</p><h2>Curso de Auditoría Financiera</h2><p>Aprende a interpretar cuentas, identificar riesgos, revisar controles y documentar evidencias con un caso empresarial y ejercicios de análisis de datos.</p><div class="certificate-label"><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Acreditación de superación propuesta a Deloitte</div><div class="onboard-stats"><div><strong>8 horas</strong><span>vídeos y actividades</span></div><div><strong>2 días</strong><span>4 horas por jornada</span></div><div><strong>A tu ritmo</strong><span>100 % asíncrono</span></div></div><button class="btn white" data-course>Ver programa completo <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><p class="micro">Nivel inicial · Contabilidad básica recomendada · Caso guiado</p></div>
+        </div>
+        <div class="course-bottom"><p><b>Día 1:</b> empresa, cuentas, riesgos y controles.<br><b>Día 2:</b> evidencias, comprobaciones, datos y conclusiones.</p><a href="assets/programa-auditoria-deloitte.txt" download="Programa-Auditoria-Deloitte-BEWAY.txt" class="text-button">Descargar programa <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></a></div>
+      </section>
+      <section id="challenges" class="section">
+        <div class="section-heading"><div><p class="eyebrow">03 / DELOITTE FINANCIAL CHALLENGE</p><h2>Pon tu criterio a prueba<br>con un caso financiero.</h2></div><p>Una iniciativa de Deloitte España<br>para acercarte a Audit & Assurance.</p></div>
+        <article class="official-challenge">
+          <div class="official-challenge-art"><span class="challenge-origin">INICIATIVA OFICIAL · DELOITTE ESPAÑA</span><h3>Financial<br>Challenge</h3><div class="challenge-subtitle">Audit & Assurance</div><div class="challenge-visual" aria-hidden="true"><span>RIESGO</span><i></i><span>EVIDENCIA</span><i></i><span>CRITERIO</span></div><span class="challenge-lang">CASOS IFRS · TRABAJO EN EQUIPO</span></div>
+          <div class="official-challenge-copy"><p class="eyebrow">UN ACERCAMIENTO AL TRABAJO REAL</p><h3>Analiza el caso y explica cómo lo resolverías.</h3><p>Trabaja con estudiantes de otras universidades, contrasta tus ideas y conoce cómo se abordan los casos de la mano de profesionales de Deloitte.</p><div class="challenge-rounds"><div><span>01</span><p>Comprende el caso</p></div><div><span>02</span><p>Trabaja en equipo</p></div><div><span>03</span><p>Fundamenta tus decisiones</p></div></div><div class="dialog-actions"><a class="btn primary" href="https://www.deloitte.com/es/es/careers/explore-your-fit/students/deloitte-challenges.html" target="_blank" rel="noopener">Ver challenge oficial <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><button class="text-button" data-challenge>Cómo participar <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div></div>
+        </article>
+        <div class="challenge-eligibility"><span class="eligibility-label">ÁMBITO DE PARTICIPACIÓN</span><p>España · Estudiantes de últimos cursos de titulaciones financieras y perfiles según cada edición. El formato, la ubicación y la admisión se comprueban en la <a href="https://www.deloitte.com/es/es/careers/explore-your-fit/students/deloitte-challenges.html" target="_blank" rel="noopener">convocatoria oficial <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>.</p></div>
+      </section>
+      <section id="miniproyectos" class="section">
+        <div class="section-heading"><div><p class="eyebrow">04 / MINIPROYECTOS BEWAY</p><h2>Practica con las preguntas<br>que dejan los datos.</h2></div><p>Tres casos breves para relacionar<br>riesgos, evidencias y decisiones.</p></div>
+        <div class="mini-project-grid" id="mini-projects-grid"></div>
+        <p class="section-note">Casos ficticios de práctica. Actividades opcionales, independientes de las ocho horas del curso.</p>
+      </section>
+      <section id="embajadores" class="section ambassadors-section">
+        <div class="section-heading"><div><p class="eyebrow">05 / EMBAJADORES BEWAY</p><h2>Conecta con miembros<br>de tu comunidad.</h2></div><p>Cinco miembros de CLH para acercar<br>las actividades a sus campus.</p></div>
+        <div class="ambassador-grid real-ambassadors" id="ambassadors-grid"></div>
+        <p class="section-note">Selección propuesta de miembros de CLH para el programa de embajadores BEWAY.</p>
+      </section>
+      <section id="servicios" class="section shop ecommerce-section">
+        <div class="shop-intro"><p class="eyebrow">06 / SIGUE EXPLORANDO</p><h2>Encuentra tu siguiente<br>paso en Deloitte.</h2><p>Explora las oportunidades para estudiantes, conoce sus recursos formativos y descubre cómo la tecnología transforma la auditoría.</p><a class="text-button" href="https://www.deloitte.com/es/es/careers/explore-your-fit/estudiantes-y-primer-empleo.html" target="_blank" rel="noopener">Estudiantes y primer empleo <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div>
+        <a class="catalogue-card deloitte-catalogue" href="https://www.deloitte.com/global/en/services/audit-assurance-overview/services/ifrs-elearning.html" target="_blank" rel="noopener"><img src="assets/deloitte.svg" alt="Deloitte" width="182" height="34" loading="lazy"><span class="catalogue-card-label">RECURSOS FORMATIVOS OFICIALES</span><h3>Explora los módulos<br>de Deloitte sobre IFRS.</h3><span class="catalogue-card-action">Conocer la formación <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+        <div class="shop-categories"><p class="eyebrow">ELIGE POR DÓNDE EMPEZAR</p><a href="https://www.deloitte.com/es/es/careers/explore-your-fit/students/becas-estudiantes.html" target="_blank" rel="noopener"><span>Becas y prácticas</span><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><a href="https://www.deloitte.com/es/es/careers/explore-your-fit/students/deloitte-challenges.html" target="_blank" rel="noopener"><span>Deloitte Challenges</span><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><a href="https://www.deloitte.com/latam/es/about/press-room/deloitte-lanza-capacidades-de-inteligencia-agentica-conectada.html" target="_blank" rel="noopener"><span>Auditoría, IA y Omnia</span><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><a href="https://www.deloitte.com/southeast-asia/en/careers/explore-your-fit/students/audit-analytics.html" target="_blank" rel="noopener"><span>Audit Analytics · En inglés</span><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><p class="micro">Información, requisitos y solicitudes en los canales oficiales.</p></div>
+      </section>
+    </div>
+  </main>
+  <footer><a class="beway" href="#inicio"><img class="beway-logo" src="../assets/media/6dc6125378ab7d65768e38a3.png" alt="" width="56" height="56">beway<span class="brandperiod">.</span></a><p>Tu próximo paso empieza con curiosidad.</p><div class="footer-meta"><button class="source-button" data-sources>Fuentes y alcance de la propuesta <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><span>Deloitte en BEWAY · Propuesta de colaboración</span></div></footer>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><span id="dialog-kicker"></span><button class="icon-button" data-close aria-label="Cerrar ventana de detalle"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div id="dialog-body"></div></dialog>
+</div>
+<script>
+/* Deloitte en BEWAY · Interacciones de la ficha. */
+(() => {
+  'use strict';
+  const root = document.querySelector('#beway-deloitte');
+  if (!root) return;
+  const DATA = {"modules": [{"title": "El trabajo de un auditor y su criterio profesional", "description": "Comprende qué aporta una auditoría financiera y por qué la independencia, la ética y el escepticismo profesional atraviesan todo el encargo.", "lessons": ["Qué aporta una auditoría y quién utiliza sus resultados", "Independencia, ética y escepticismo profesional", "Cómo se organiza un equipo de auditoría", "Primeras preguntas sobre Conecta Retail"], "resource": "Glosario y mapa del proceso de auditoría."}, {"title": "Leer las cuentas y comprender el negocio", "description": "Interpreta un balance y una cuenta de resultados simplificados y relaciona las cifras con las operaciones de la empresa.", "lessons": ["Conocer el modelo de negocio antes de revisar cifras", "Balance, resultados y flujos de efectivo", "Ventas, gastos y estimaciones contables", "Lectura guiada de las cuentas de Conecta Retail"], "resource": "Estados financieros simplificados y explicación del caso."}, {"title": "Identificar riesgos y definir qué es relevante", "description": "Relaciona las señales del negocio con posibles incorrecciones y comprende cómo la materialidad ayuda a planificar el trabajo.", "lessons": ["Riesgos que pueden afectar a la información financiera", "Materialidad: por qué unas diferencias importan más", "Afirmaciones de los estados financieros", "Mapa de riesgos y prioridades del caso"], "resource": "Matriz de riesgos y ejemplo de materialidad."}, {"title": "Entender y revisar los controles internos", "description": "Reconoce controles en ventas, compras y pagos y comprende cómo se estudia su diseño y funcionamiento.", "lessons": ["El recorrido de una operación y sus autorizaciones", "Separación de funciones y trazabilidad", "Controles de acceso a los sistemas", "Recorrido y prueba comentada de un control"], "resource": "Matriz de riesgos y controles de Conecta Retail."}, {"title": "Obtener evidencia y seleccionar las pruebas", "description": "Comprende qué hace que una evidencia sea útil y cómo se seleccionan operaciones para comprobar una cuestión.", "lessons": ["Suficiencia, calidad y procedencia de la evidencia", "Documentos, confirmaciones, observación y recuentos", "Introducción al muestreo y sus limitaciones", "Elegir una prueba para responder a un riesgo"], "resource": "Comparativa de evidencias y muestra comentada."}, {"title": "Revisar ingresos, cuentas por cobrar y existencias", "description": "Sigue comprobaciones sencillas sobre ingresos y saldos y aprende a documentar las diferencias y las preguntas pendientes.", "lessons": ["Ingresos y operaciones próximas al cierre", "Cuentas por cobrar y confirmaciones", "Existencias, recuentos y posibles deterioros", "Papeles de trabajo de las pruebas del caso"], "resource": "Ejemplos de papeles de trabajo resueltos."}, {"title": "Analizar datos con Excel y apoyo tecnológico", "description": "Utiliza datos para detectar cuestiones que necesitan revisión y comprende las posibilidades y límites de la automatización y la IA.", "lessons": ["Integridad de datos y preparación de una tabla", "Filtros, tablas dinámicas y conciliaciones en Excel", "Duplicados, diferencias y fechas atípicas", "Automatización e IA con revisión del profesional"], "resource": "Hoja de cálculo de operaciones y análisis comentado."}, {"title": "Documentar hallazgos y comunicar conclusiones", "description": "Distingue hechos, hipótesis y cuestiones pendientes y comprende cómo se reúnen los resultados en el cierre de una auditoría.", "lessons": ["Redactar una observación con evidencias", "Diferencias detectadas y asuntos pendientes", "Estructura y lectura introductoria de un informe", "Cierre del caso y comunicación al equipo"], "resource": "Informe comentado y esquema para presentar conclusiones."}], "projects": [{"id": "riesgos-expansion", "symbol": "01", "label": "NEGOCIO · RIESGOS", "title": "Prioriza los riesgos de una empresa en expansión", "short": "Estudia cómo cambia el control de un negocio cuando empieza a operar en varios países.", "duration": "45–60 min", "level": "Inicial", "skills": ["Análisis de riesgos", "Control interno", "Prioridades"], "intro": "Construye una matriz con cinco riesgos y propón cómo comprobarlos.", "caseText": "Caso ficticio: Conecta Retail vende por internet en España, México y Colombia. Las ventas han crecido un 35 %, las devoluciones se registran una vez a la semana y una misma persona puede crear proveedores y autorizar pagos. Las conciliaciones de cobros llevan dos meses de retraso y cada país utiliza su propio archivo de inventario. Debes decidir dónde concentrarías una primera revisión.", "data": [["Mercados", "3 países"], ["Crecimiento de ventas", "35 %"], ["Tu objetivo", "5 riesgos"], ["Entrega", "Matriz de una página"]], "steps": ["Identifica cinco riesgos y relaciónalos con ventas, cobros, existencias o pagos.", "Explica qué información financiera podría verse afectada y prioriza los riesgos.", "Propón un control y una comprobación concreta para cada riesgo."], "fields": ["Los cinco riesgos y las partidas que podrían verse afectadas", "Su prioridad y el motivo de tu elección", "Control propuesto y evidencia que solicitarías"], "deliverable": "Una matriz de una página con riesgo, prioridad, control y evidencia necesaria."}, {"id": "ventas-cierre", "symbol": "02", "label": "DATOS · EXCEL", "title": "Revisa las ventas de fin de año", "short": "Busca operaciones que necesitan revisión y comprueba qué documentación falta para explicarlas.", "duration": "60–90 min", "level": "Inicial", "skills": ["Excel", "Ingresos", "Evidencias"], "intro": "Descarga las 40 operaciones y prepara tres observaciones fundamentadas.", "caseText": "Caso ficticio: Conecta Retail te entrega 40 registros de ventas próximos al cierre. Incluyen la fecha de factura, la fecha de expedición, el importe y el importe registrado. Hay referencias repetidas y operaciones con datos que requieren explicación. La fecha de expedición es una señal para revisar el contrato y la transferencia de control; por sí sola no determina cuándo se reconoce el ingreso.", "data": [["Archivo", "CSV para Excel"], ["Registros", "40 operaciones"], ["Tu objetivo", "3 observaciones"], ["Origen", "Datos ficticios"]], "asset": "assets/ventas-cierre.csv", "assetLabel": "Descargar las 40 operaciones · CSV", "steps": ["Revisa identificadores, referencias, importes y fechas; identifica duplicados y diferencias.", "Selecciona tres cuestiones y explica qué dato merece una comprobación adicional.", "Indica qué contrato, documento de entrega o conciliación pedirías antes de concluir."], "fields": ["Operaciones que has señalado y diferencias observadas", "Posible impacto y explicaciones alternativas", "Documentos o comprobaciones que faltan"], "deliverable": "El Excel marcado y una nota con tres observaciones, su posible impacto y las comprobaciones pendientes."}, {"id": "memo-hallazgos", "symbol": "03", "label": "CRITERIO · COMUNICACIÓN", "title": "Presenta tus hallazgos al equipo", "short": "Convierte varias diferencias en una nota que otro miembro del equipo pueda revisar.", "duration": "45–60 min", "level": "Inicial", "skills": ["Documentación", "Comunicación", "Juicio profesional"], "intro": "Distingue lo que puedes demostrar de lo que todavía debes investigar.", "caseText": "Caso ficticio: una factura de 20.000 € se registró como venta el 29 de diciembre y la mercancía se expidió el 5 de enero. Todavía no has leído el contrato. Además, el inventario contable de un almacén asciende a 50.000 € y el recuento físico preliminar a 45.000 €, pendiente de conciliación. Debes comunicar las diferencias sin dar por demostrada una incorrección ni su causa.", "data": [["Venta registrada", "20.000 €"], ["Expedición", "5 de enero"], ["Inventario contable", "50.000 €"], ["Recuento preliminar", "45.000 €"]], "steps": ["Relaciona cada diferencia con la documentación disponible.", "Separa los hechos, las hipótesis y la información que falta.", "Prepara una nota para el responsable del equipo con los siguientes pasos."], "fields": ["Hechos y evidencias disponibles", "Posible efecto y cuestiones que siguen abiertas", "Comprobaciones siguientes y mensaje al equipo"], "deliverable": "Una nota de una página. Puedes acompañarla de una explicación grabada de un minuto."}], "people": [{"id": "CLH-054", "name": "Sebastián Vigueras Araya", "country": "Chile", "university": "Pontificia Universidad Católica de Chile", "area": "Ingeniería e innovación", "slug": "sebastian-vigueras-araya", "image": "https://clhglobal.org/images/members/sebastian-vigueras-araya.webp", "linkedIn": "https://www.linkedin.com/in/sebasti%C3%A1n-vigueras-araya-6680b9295/"}, {"id": "CLH-026", "name": "Kevin Luna Palacios", "country": "El Salvador", "university": "ESEN", "area": "Software y ciberseguridad", "slug": "kevin-elias-luna-palacios", "image": "https://clhglobal.org/images/members/kevin-elias-luna-palacios.webp", "linkedIn": "https://www.linkedin.com/in/kevin-luna-a0b024325/?locale=es"}, {"id": "CLH-056", "name": "Sthephany Cajamarca", "country": "Ecuador", "university": "UEES", "area": "Negocios Internacionales", "slug": "stephany-cajamarca", "image": "assets/stephany-cajamarca.svg", "linkedIn": "https://www.linkedin.com/in/stephany-cajamarca-7548ab3b0/"}, {"id": "CLH-008", "name": "Cristóbal Vargas Marchant", "country": "Chile", "university": "Universidad de Chile", "area": "Economía y finanzas", "slug": "cristobal-vargas-marchant", "image": "https://clhglobal.org/images/members/cristobal-vargas-marchant.webp", "linkedIn": "https://www.linkedin.com/in/crist%C3%B3bal-vargas-marchant-4289151b5/"}, {"id": "CLH-034", "name": "Santiago Nariño Rivera", "country": "Colombia", "university": "Universidad del Rosario", "area": "Negocios y finanzas", "slug": "santiago-narino-rivera", "image": "https://clhglobal.org/images/members/santiago-narino-rivera.jpeg", "linkedIn": "https://www.linkedin.com/in/santiago-nari%C3%B1o-rivera-10351429b/"}], "sources": [["Deloitte España", "https://www.deloitte.com/es/es.html", "Presentación de la firma y sus servicios."], ["Deloitte Challenges", "https://www.deloitte.com/es/es/careers/explore-your-fit/students/deloitte-challenges.html", "Financial Challenge de Audit & Assurance: casos IFRS y requisitos generales."], ["Financial Challenge Madrid 2026", "https://empleo.es.deloitte.com/job/Madrid-Deloittte-Financial-Challenge-Madrid-2026/1443085833/", "Convocatoria presencial publicada para el 26 de octubre de 2026."], ["Deloitte IFRS e-learning", "https://www.deloitte.com/global/en/services/audit-assurance-overview/services/ifrs-elearning.html", "Formación digital con teoría, escenarios y ejemplos comentados."], ["Deloitte-SMU Audit Analytics", "https://www.deloitte.com/southeast-asia/en/careers/explore-your-fit/students/audit-analytics.html", "Referencia de formación en analítica aplicada a auditoría."], ["Deloitte Omnia", "https://www.deloitte.com/latam/es/about/press-room/deloitte-lanza-capacidades-de-inteligencia-agentica-conectada.html", "Datos, IA y revisión profesional en auditoría."], ["Master in Audit and Business Analytics", "https://www.comillas.edu/noticias/nuevo-programa-in-company-de-comillas-icade/", "Programa presentado en 2021 por ICADE, Deusto y Deloitte."], ["Máster en Auditoría de Comillas", "https://www.comillas.edu/postgrados/master-universitario-en-auditoria-de-cuentas-y-contabilidad-superior/", "Normas, áreas de auditoría, ética y analítica."], ["Maestría en Auditoría de San Marcos", "https://posgradocontabilidad.unmsm.edu.pe/age/", "Riesgos, control interno y auditoría financiera."], ["Comunidad de Líderes Hispanoamericanos", "https://clhglobal.org/", "Identidad, universidades, perfiles y fotografías disponibles de los miembros."]]};
+  const { modules, projects, people, sources } = DATA;
+  const officialChallenge = 'https://www.deloitte.com/es/es/careers/explore-your-fit/students/deloitte-challenges.html';
+  const challengeTerms = 'https://empleo.es.deloitte.com/job/Madrid-Deloittte-Financial-Challenge-Madrid-2026/1443085833/';
+  const escapeText = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const external = (label, url, cls = 'btn outline') => `<a class="${cls}" href="${url}" target="_blank" rel="noopener">${label} <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>`;
+  const dialog = root.querySelector('#detail-dialog');
+  const body = root.querySelector('#dialog-body');
+  let previousFocus;
+
+  function show(kicker, html) {
+    if (!dialog.open) previousFocus = document.activeElement;
+    root.querySelector('#dialog-kicker').textContent = kicker;
+    body.innerHTML = `<div class="dialog-inner">${html}</div>`;
+    const title = body.querySelector('h2');
+    if (title) title.id = 'dialog-title';
+    if (!dialog.open) dialog.showModal();
+    document.body.classList.add('beway-deloitte-modal-open');
+    dialog.scrollTop = 0;
+    root.querySelector('[data-close]').focus();
+  }
+  function close() {
+    dialog.close();
+    document.body.classList.remove('beway-deloitte-modal-open');
+    if (previousFocus?.isConnected) previousFocus.focus();
+  }
+  root.querySelector('[data-close]').addEventListener('click', close);
+  dialog.addEventListener('cancel', event => { event.preventDefault(); close(); });
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const r = dialog.getBoundingClientRect();
+    if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) close();
+  });
+
+
+  function moduleHTML(m, i) {
+    return `<details class="module"><summary><span class="module-number">${String(i + 1).padStart(2, '0')}</span><div class="module-summary-text"><h4>${m.title}</h4><small>60 min · 40 min de vídeo + 20 min de aplicación</small></div></summary><div class="module-content"><p>${m.description}</p><ul class="lesson-list">${m.lessons.map(t => `<li><span>${t}</span><span>10 min</span></li>`).join('')}</ul><p class="module-timing">Después de los vídeos: 20 minutos de práctica guiada o evaluación, incluidos en la hora del módulo.</p><span class="module-resource">Material de apoyo: ${m.resource}</span></div></details>`;
+  }
+
+  function openCourse() {
+    show('DELOITTE EN BEWAY / PROGRAMA DEL CURSO', `
+      <p class="eyebrow">CURSO DE AUDITORÍA FINANCIERA</p><h2>Comprende cómo se revisa<br>la información de una empresa.</h2>
+      <p class="dialog-lead">Una introducción práctica al trabajo de auditoría, desde el conocimiento del negocio hasta la comunicación de conclusiones fundamentadas.</p>
+      <div class="course-modal-intro"><span>8 horas en total</span><span>2 días de 4 horas</span><span>100 % asíncrono</span><span>Nivel inicial</span></div>
+      <div class="time-breakdown"><div><strong>5 h 20 min</strong><span>vídeos grabados</span></div><div><strong>2 h 40 min</strong><span>práctica y evaluación</span></div><div><strong>8 módulos</strong><span>de una hora cada uno</span></div></div>
+      <div class="detail-block"><h3>Un caso que avanza contigo</h3><p>Conecta Retail es una empresa ficticia que vende por internet en España, México y Colombia. Trabajarás con sus cuentas simplificadas, facturas y operaciones para identificar riesgos, seleccionar comprobaciones y reunir evidencias.</p><p>Cada módulo contiene cuatro vídeos de diez minutos y veinte minutos de aplicación. Puedes pausar y retomar el contenido; el itinerario se distribuye en dos días de cuatro horas. Se recomiendan conocimientos básicos de contabilidad.</p></div>
+      <div class="journey-head"><span>DÍA 1 · 4 HORAS EN TOTAL</span><h3>Entender la empresa y planificar la revisión</h3></div>${modules.slice(0, 4).map(moduleHTML).join('')}
+      <div class="journey-head"><span>DÍA 2 · 4 HORAS EN TOTAL</span><h3>Comprobar evidencias y comunicar conclusiones</h3></div>${modules.slice(4).map((m, i) => moduleHTML(m, i + 4)).join('')}
+      <div class="certificate-box"><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span><div><h3>Acreditación de superación propuesta a Deloitte</h3><p>La propuesta contempla que Deloitte valide el programa y participe en las grabaciones y la acreditación. Para superar el curso se plantea completar los ocho módulos, resolver el caso y obtener al menos un 80 % en una evaluación de diez preguntas.</p></div></div>
+      <div class="detail-block"><h3>Qué te llevarías al terminar</h3><p>Un archivo de comprobaciones y una nota de conclusiones que relacione los riesgos identificados, las evidencias obtenidas y las preguntas pendientes. Las actividades y la evaluación están incluidas en las ocho horas.</p><p>El curso introduce conceptos de NIIF/IFRS y NIA y utiliza Excel para practicar. Es una aproximación inicial al trabajo de auditoría. El uso de Omnia se presenta como referencia de Deloitte; no requiere acceso a su plataforma.</p></div>
+      <div class="dialog-actions"><a class="btn primary" href="assets/programa-auditoria-deloitte.txt" download="Programa-Auditoria-Deloitte-BEWAY.txt">Descargar programa <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></span></a></div>
+      <p class="demo-context">Propuesta académica BEWAY para presentar a Deloitte. El programa, las grabaciones, la acreditación y la inscripción están sujetos a su validación.</p>`);
+  }
+
+  function openChallenge() {
+    show('DELOITTE ESPAÑA / CHALLENGE OFICIAL', `
+      <p class="eyebrow">FINANCIAL CHALLENGE · AUDIT & ASSURANCE</p><h2>Resuelve un caso<br>con profesionales de Deloitte.</h2>
+      <p class="dialog-lead">Una iniciativa de Deloitte España en la que los participantes trabajan en equipo sobre casos financieros y ponen en práctica su criterio y capacidad de análisis.</p>
+      <div class="course-modal-intro"><span>España</span><span>Trabajo en equipo</span><span>Casos basados en IFRS</span></div>
+      <div class="challenge-scope"><strong>Participación según convocatoria</strong>La página general se dirige a estudiantes de último o penúltimo curso de titulaciones financieras. Cada edición concreta sus perfiles, lugar y condiciones de participación.</div>
+      <div class="activity-block"><h3>Qué puedes encontrar</h3><ol><li>Un caso financiero para analizar con estudiantes de otras universidades.</li><li>Trabajo en equipo y acompañamiento de profesionales de Audit & Assurance.</li><li>Decisiones justificadas y feedback sobre tu forma de resolver el caso.</li></ol></div>
+      <div class="event-box"><p class="eyebrow">CONVOCATORIA PUBLICADA · MADRID 2026</p><h3>26 de octubre de 2026</h3><p>Edición presencial en las oficinas de Deloitte en Madrid, dirigida a estudiantes de último curso y recién graduados según el anuncio. Deloitte indica que la jornada puede permitir iniciar su proceso de selección. La inscripción y admisión se gestionan en sus canales oficiales.</p></div>
+      <div class="dialog-actions">${external('Ver la iniciativa oficial', officialChallenge, 'btn primary')}${external('Consultar Madrid 2026', challengeTerms)}</div>
+      <p class="section-note">Consulta el calendario y los requisitos antes de solicitar tu participación. BEWAY propone dar visibilidad a la iniciativa; Deloitte organiza el evento y selecciona a los participantes.</p>`);
+  }
+  root.querySelector('#mini-projects-grid').innerHTML = projects.map(p => `<article class="mini-project"><div class="project-symbol" aria-hidden="true">${p.symbol}</div><p class="project-label">${p.label}</p><h3>${p.title}</h3><p>${p.short}</p><div class="project-skills">${p.skills.map(s => `<span>${s}</span>`).join('')}</div><div class="project-facts"><div><strong>${p.duration}</strong><small>orientativos</small></div><div><strong>Inicial</strong><small>dificultad</small></div><div><strong>Individual</strong><small>caso guiado</small></div></div><button data-project="${p.id}">Explorar miniproyecto <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button></article>`).join('');
+
+  function readDraft(id) {
+    try {
+      const data = JSON.parse(localStorage.getItem('beway-deloitte-draft-' + id) || '{}');
+      if (!data || typeof data !== 'object' || Array.isArray(data)) return {};
+      return Object.fromEntries([0, 1, 2].map(i => ['answer' + i, typeof data['answer' + i] === 'string' ? data['answer' + i].slice(0, 5000) : '']));
+    } catch { return {}; }
+  }
+  function openProject(id) {
+    const p = projects.find(p => p.id === id);
+    if (!p) return;
+    const draft = readDraft(id);
+    show('BEWAY / MINIPROYECTO DE PRÁCTICA', `<p class="eyebrow">${p.label}</p><h2>${p.title}</h2><p class="dialog-lead">${p.intro}</p><div class="course-modal-intro"><span>${p.duration} orientativos</span><span>Nivel inicial</span><span>Trabajo individual</span></div><div class="project-case"><h3>El caso</h3><p>${p.caseText}</p><div class="case-data">${p.data.map(([k, v]) => `<div>${k}<strong>${v}</strong></div>`).join('')}</div></div>${p.asset ? `<div class="project-download"><a class="btn outline" href="${p.asset}" download="BEWAY-Deloitte-operaciones.csv">${p.assetLabel} <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></span></a></div>` : ''}<div class="activity-block"><h3>Qué tienes que hacer</h3><ol>${p.steps.map(t => `<li>${t}</li>`).join('')}</ol><h3>Tu entrega</h3><p>${p.deliverable}</p></div><form class="project-form" data-project-form="${p.id}"><h3>Prepara tu borrador</h3>${p.fields.map((label, i) => `<div class="field"><label for="answer-${p.id}-${i}">${i + 1}. ${label}</label><textarea id="answer-${p.id}-${i}" name="answer${i}" rows="4" maxlength="5000" placeholder="Escribe tu respuesta...">${escapeText(draft['answer' + i] || '')}</textarea></div>`).join('')}<div class="dialog-actions"><button type="button" class="btn primary" data-save="${p.id}">Guardar borrador <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span></button><button type="button" class="btn outline" data-export="${p.id}">Descargar trabajo <span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></span></button></div><p class="project-save-status" role="status" aria-live="polite">${Object.values(draft).some(s => s.trim()) ? 'Borrador recuperado de este dispositivo.' : ''}</p><p class="project-storage-note">Tu borrador se guarda en este navegador. Puedes descargarlo para conservar una copia.</p></form>`);
+  }
+  function answers(form) {
+    const fd = new FormData(form);
+    return Object.fromEntries([0, 1, 2].map(i => ['answer' + i, String(fd.get('answer' + i) || '').slice(0, 5000)]));
+  }
+  function saveProject(form, id) {
+    try {
+      localStorage.setItem('beway-deloitte-draft-' + id, JSON.stringify(answers(form)));
+      form.querySelector('.project-save-status').textContent = 'Borrador guardado en este dispositivo.';
+    } catch { form.querySelector('.project-save-status').textContent = 'El navegador no permite guardar el borrador. Descarga tu trabajo para conservarlo.'; }
+  }
+  function exportProject(form, id) {
+    const p = projects.find(p => p.id === id);
+    const data = answers(form);
+    const text = ['BEWAY · PRÁCTICA DE AUDITORÍA', p.title, '', 'Caso ficticio. Borrador de trabajo.', '', ...p.fields.flatMap((label, i) => [(i + 1) + '. ' + label, data['answer' + i] || '(Sin respuesta)', ''])].join('\n');
+    const url = URL.createObjectURL(new Blob([text], {type: 'text/plain;charset=utf-8'}));
+    const link = document.createElement('a');
+    link.href = url; link.download = 'BEWAY-Deloitte-' + id + '.txt'; link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    form.querySelector('.project-save-status').textContent = 'Tu trabajo está preparado para descargar.';
+  }
+
+  root.querySelector('#ambassadors-grid').innerHTML = people.map(p => `<article class="ambassador"><div class="member-photo ${p.slug === 'sebastian-vigueras-araya' ? 'member-photo-sebastian' : ''}"><img src="${p.image}" alt="${escapeText(p.name)}" width="78" height="78" loading="lazy"></div><span class="member-badge">CLH</span><h3>${escapeText(p.name)}</h3><p>${escapeText(p.university)}</p><span class="campus">${escapeText(p.country)} · ${escapeText(p.area)}</span><button class="text-button" data-person="${p.slug}">Conocer perfil <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></article>`).join('');
+  function openPerson(slug) {
+    const p = people.find(p => p.slug === slug);
+    if (!p) return;
+    show('BEWAY / COMUNIDAD CLH', `<div class="member-profile-top"><div class="member-photo ${p.slug === 'sebastian-vigueras-araya' ? 'member-photo-sebastian' : ''}"><img src="${p.image}" alt="${escapeText(p.name)}" width="104" height="104"></div><div><h2>${escapeText(p.name)}</h2><p>${escapeText(p.university)} · ${escapeText(p.country)}</p><span class="member-badge">MIEMBRO DE CLH</span></div></div><div class="chips"><span>${escapeText(p.area)}</span></div><div class="detail-block"><h3>Su papel propuesto en BEWAY</h3><p>Acercar el curso y las actividades al campus, orientar a otros estudiantes y recoger sus preguntas e ideas. La difusión del Financial Challenge respetaría el ámbito y los requisitos de cada convocatoria de Deloitte España.</p></div><div class="dialog-actions">${external('Ver LinkedIn', p.linkedIn, 'btn primary')}${external('Conocer CLH', 'https://clhglobal.org/')}</div><p class="section-note">Perfil público de CLH incluido en la propuesta de embajadores BEWAY.</p>`);
+  }
+
+
+  function openInfo(id) {
+    const info = {
+      auditoria: { title: 'Comprender la empresa antes de comprobar sus cifras', lead: 'La auditoría financiera requiere entender el negocio, evaluar riesgos y reunir evidencias que permitan fundamentar las conclusiones.', text: 'El curso propone seguir ese recorrido con un caso sencillo: conocer la empresa, planificar, seleccionar comprobaciones y documentar los resultados.', links: [['Conocer Deloitte', 'https://www.deloitte.com/es/es.html']] },
+      digital: { title: 'Los datos ayudan a decidir dónde mirar', lead: 'Deloitte integra capacidades de datos e inteligencia artificial en Omnia, su plataforma global de Auditoría y Assurance.', text: 'Nuestra propuesta introduce comprobaciones en Excel y el análisis de anomalías. La tecnología ayuda a revisar información; sus resultados necesitan supervisión y juicio profesional.', links: [['Conocer Omnia', 'https://www.deloitte.com/latam/es/about/press-room/deloitte-lanza-capacidades-de-inteligencia-agentica-conectada.html'], ['Deloitte-SMU Audit Analytics', 'https://www.deloitte.com/southeast-asia/en/careers/explore-your-fit/students/audit-analytics.html']] },
+      carrera: { title: 'Explora tu siguiente paso en auditoría', lead: 'Deloitte publica oportunidades de prácticas y primer empleo y cuenta con referencias de formación en auditoría y análisis de datos.', text: 'Puedes conocer las oportunidades para estudiantes y explorar sus recursos digitales sobre normas internacionales de información financiera.', links: [['Estudiantes y primer empleo', 'https://www.deloitte.com/es/es/careers/explore-your-fit/estudiantes-y-primer-empleo.html'], ['Deloitte IFRS e-learning', 'https://www.deloitte.com/global/en/services/audit-assurance-overview/services/ifrs-elearning.html']] }
+    }[id];
+    if (info) show('DELOITTE / CONOCE LA FIRMA', `<h2>${info.title}</h2><p class="dialog-lead">${info.lead}</p><div class="detail-block"><p>${info.text}</p></div><div class="dialog-actions">${info.links.map(([t, u]) => external(t, u)).join('')}</div>`);
+  }
+
+  function openSources() {
+    show('DELOITTE EN BEWAY / FUENTES Y ALCANCE', `<p class="eyebrow">REFERENCIAS OFICIALES</p><h2>Conoce la base<br>de esta propuesta.</h2><p class="dialog-lead">Ficha de colaboración preparada por BEWAY. El curso, los miniproyectos y la selección de embajadores se presentan como propuestas. Financial Challenge es una iniciativa publicada por Deloitte España.</p><ul class="sources-list">${sources.map(([t, u, note], i) => `<li><span>${String(i + 1).padStart(2, '0')}</span><div><a href="${u}" target="_blank" rel="noopener">${t} <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><small>${note}</small></div></li>`).join('')}</ul><p class="sources-note">Información consultada el 22 de octubre de 2026. Las condiciones y la vigencia del challenge se comprueban en los canales oficiales de Deloitte. Los miniproyectos utilizan datos ficticios. Los perfiles de CLH respaldan la identificación de los miembros; su inclusión no atribuye una relación laboral con Deloitte.</p>`);
+  }
+  root.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    if (button.hasAttribute('data-course')) openCourse();
+    else if (button.hasAttribute('data-challenge')) openChallenge();
+    else if (button.hasAttribute('data-sources')) openSources();
+    else if (button.dataset.info) openInfo(button.dataset.info);
+    else if (button.dataset.project) openProject(button.dataset.project);
+    else if (button.dataset.person) openPerson(button.dataset.person);
+    else if (button.dataset.save) saveProject(button.closest('form'), button.dataset.save);
+    else if (button.dataset.export) exportProject(button.closest('form'), button.dataset.export);
+  });
+  root.addEventListener('submit', event => {
+    const form = event.target.closest('[data-project-form]');
+    if (!form) return;
+    event.preventDefault(); saveProject(form, form.dataset.projectForm);
+  });
+
+  const nav = [...root.querySelectorAll('.section-nav a')];
+  const sections = nav.map(a => root.querySelector(a.getAttribute('href')));
+  let ticking = false;
+  function updateNav() {
+    let index = 0;
+    sections.forEach((section, i) => { if (section.getBoundingClientRect().top <= 180) index = i; });
+    nav.forEach((a, i) => {
+      a.classList.toggle('active', i === index);
+      if (i === index) a.setAttribute('aria-current', 'location');
+      else a.removeAttribute('aria-current');
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(updateNav); } }, {passive: true});
+  updateNav();
+})();
+
+</script></body></html>

@@ -1,0 +1,96 @@
+BEWAY × DELOITTE
+PROPUESTA: CURSO DE AUDITORÍA FINANCIERA
+
+Duración total: 8 horas en dos días de 4 horas.
+Modalidad: 100 % asíncrona, con vídeos grabados y actividades.
+Distribución: 5 h 20 min de vídeo + 2 h 40 min de aplicación y evaluación.
+Cada módulo: 4 vídeos de 10 min + 20 min de aplicación.
+Público: estudiantes y recién graduados de áreas empresariales, contables y financieras.
+Se recomiendan conocimientos básicos de contabilidad.
+
+DÍA 1 · 4 HORAS EN TOTAL
+
+01. El trabajo de un auditor y su criterio profesional · 60 min
+Comprende qué aporta una auditoría financiera y por qué la independencia, la ética y el escepticismo profesional atraviesan todo el encargo.
+- Qué aporta una auditoría y quién utiliza sus resultados (10 min de vídeo)
+- Independencia, ética y escepticismo profesional (10 min de vídeo)
+- Cómo se organiza un equipo de auditoría (10 min de vídeo)
+- Primeras preguntas sobre Conecta Retail (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Glosario y mapa del proceso de auditoría.
+
+02. Leer las cuentas y comprender el negocio · 60 min
+Interpreta un balance y una cuenta de resultados simplificados y relaciona las cifras con las operaciones de la empresa.
+- Conocer el modelo de negocio antes de revisar cifras (10 min de vídeo)
+- Balance, resultados y flujos de efectivo (10 min de vídeo)
+- Ventas, gastos y estimaciones contables (10 min de vídeo)
+- Lectura guiada de las cuentas de Conecta Retail (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Estados financieros simplificados y explicación del caso.
+
+03. Identificar riesgos y definir qué es relevante · 60 min
+Relaciona las señales del negocio con posibles incorrecciones y comprende cómo la materialidad ayuda a planificar el trabajo.
+- Riesgos que pueden afectar a la información financiera (10 min de vídeo)
+- Materialidad: por qué unas diferencias importan más (10 min de vídeo)
+- Afirmaciones de los estados financieros (10 min de vídeo)
+- Mapa de riesgos y prioridades del caso (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Matriz de riesgos y ejemplo de materialidad.
+
+04. Entender y revisar los controles internos · 60 min
+Reconoce controles en ventas, compras y pagos y comprende cómo se estudia su diseño y funcionamiento.
+- El recorrido de una operación y sus autorizaciones (10 min de vídeo)
+- Separación de funciones y trazabilidad (10 min de vídeo)
+- Controles de acceso a los sistemas (10 min de vídeo)
+- Recorrido y prueba comentada de un control (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Matriz de riesgos y controles de Conecta Retail.
+
+DÍA 2 · 4 HORAS EN TOTAL
+
+05. Obtener evidencia y seleccionar las pruebas · 60 min
+Comprende qué hace que una evidencia sea útil y cómo se seleccionan operaciones para comprobar una cuestión.
+- Suficiencia, calidad y procedencia de la evidencia (10 min de vídeo)
+- Documentos, confirmaciones, observación y recuentos (10 min de vídeo)
+- Introducción al muestreo y sus limitaciones (10 min de vídeo)
+- Elegir una prueba para responder a un riesgo (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Comparativa de evidencias y muestra comentada.
+
+06. Revisar ingresos, cuentas por cobrar y existencias · 60 min
+Sigue comprobaciones sencillas sobre ingresos y saldos y aprende a documentar las diferencias y las preguntas pendientes.
+- Ingresos y operaciones próximas al cierre (10 min de vídeo)
+- Cuentas por cobrar y confirmaciones (10 min de vídeo)
+- Existencias, recuentos y posibles deterioros (10 min de vídeo)
+- Papeles de trabajo de las pruebas del caso (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Ejemplos de papeles de trabajo resueltos.
+
+07. Analizar datos con Excel y apoyo tecnológico · 60 min
+Utiliza datos para detectar cuestiones que necesitan revisión y comprende las posibilidades y límites de la automatización y la IA.
+- Integridad de datos y preparación de una tabla (10 min de vídeo)
+- Filtros, tablas dinámicas y conciliaciones en Excel (10 min de vídeo)
+- Duplicados, diferencias y fechas atípicas (10 min de vídeo)
+- Automatización e IA con revisión del profesional (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Hoja de cálculo de operaciones y análisis comentado.
+
+08. Documentar hallazgos y comunicar conclusiones · 60 min
+Distingue hechos, hipótesis y cuestiones pendientes y comprende cómo se reúnen los resultados en el cierre de una auditoría.
+- Redactar una observación con evidencias (10 min de vídeo)
+- Diferencias detectadas y asuntos pendientes (10 min de vídeo)
+- Estructura y lectura introductoria de un informe (10 min de vídeo)
+- Cierre del caso y comunicación al equipo (10 min de vídeo)
+Aplicación o evaluación: 20 min.
+Material: Informe comentado y esquema para presentar conclusiones.
+
+CASO TRANSVERSAL
+Conecta Retail es una empresa ficticia que opera en España, México y Colombia. Se propone trabajar con cuentas simplificadas, facturas, operaciones y evidencias. Entrega final: archivo de comprobaciones y nota de conclusiones.
+
+EVALUACIÓN PROPUESTA
+Completar los módulos, resolver el caso y superar un test de diez preguntas con al menos un 80 % de aciertos. La evaluación está incluida en las ocho horas.
+
+ALCANCE
+Propuesta académica de BEWAY para Deloitte. Contenidos, grabaciones, docentes, acreditación e inscripción sujetos a validación de Deloitte. Formación introductoria. Omnia es una referencia de contexto, sin acceso requerido a la plataforma.
+
+Los miniproyectos de la ficha son opcionales e independientes del curso.
