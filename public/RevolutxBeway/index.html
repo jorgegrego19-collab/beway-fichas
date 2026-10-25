@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d19"><title>Revolut × Beway · Gestión de Banca Digital</title><meta name="description" content="Revolut en Beway: propuesta de curso de Gestión de Banca Digital de 8 horas en 2 días, Campus Challenge, miniproyectos y cinco embajadores de CLH."><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M20.9133%206.9566C20.9133%203.1208%2017.7898%200%2013.9503%200H2.424v3.8605h10.9782c1.7376%200%203.177%201.3651%203.2087%203.043.016.84-.2994%201.633-.8878%202.2324-.5886.5998-1.375.9303-2.2144.9303H9.2322a.2756.2756%200%200%200-.2755.2752v3.431c0%20.0585.018.1142.052.1612L16.2646%2024h5.3114l-7.2727-10.094c3.6625-.1838%206.61-3.2612%206.61-6.9494zM6.8943%205.9229H2.424V24h4.4704z%22%20fill%3D%22%231652f0%22/%3E%3C/svg%3E"><style>
+
+
+#beway-revolut{--red:#164cf0;--ink:#171a25;--muted:#656b77;--line:#e6e8ec;--blue:#1640bf;--page:#fff;--radius:20px}
+#beway-revolut,#beway-revolut *{box-sizing:border-box}
+#beway-revolut{scroll-behavior:smooth;scroll-padding-top:90px}
+#beway-revolut{margin:0;background:var(--page);color:var(--ink);font:16px/1.65 'BEWAY Revolut DM Sans',Arial,sans-serif}
+#beway-revolut button,#beway-revolut a{-webkit-tap-highlight-color:transparent}
+#beway-revolut button,#beway-revolut input{font:inherit}
+#beway-revolut button,#beway-revolut a{touch-action:manipulation}
+#beway-revolut button{cursor:pointer}
+#beway-revolut a{color:inherit;text-decoration:none}
+#beway-revolut button:focus-visible,#beway-revolut a:focus-visible,#beway-revolut summary:focus-visible{outline:3px solid #517cff;outline-offset:5px}
+#beway-revolut h1,#beway-revolut h2,#beway-revolut h3,#beway-revolut p{margin:0}
+#beway-revolut h1,#beway-revolut h2,#beway-revolut h3{font-family:'BEWAY Revolut Manrope',Arial,sans-serif;line-height:1.15}
+#beway-revolut h2{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-1.4px}
+#beway-revolut h3{font-size:22px;letter-spacing:-.5px}
+#beway-revolut .topbar{height:82px;display:flex;align-items:center;gap:56px;max-width:1440px;padding:0 5%;margin:auto}
+#beway-revolut .beway{display:flex;align-items:center;font-family:'BEWAY Revolut Manrope',Arial,sans-serif;font-weight:800;font-size:28px;letter-spacing:-1.5px;line-height:1}
+#beway-revolut .brandmark{background:#164ae8;color:white;font-size:26px;border-radius:8px;width:33px;height:34px;display:grid;place-items:center;margin-right:9px;font-weight:800;font-style:italic}
+#beway-revolut .brandperiod{color:#164ae8}
+#beway-revolut .top-context{display:flex;gap:18px;font-size:14px;color:var(--muted)}
+#beway-revolut .top-context strong{font-weight:550;color:var(--ink)}
+#beway-revolut .slash{color:#b8bcc8}
+#beway-revolut .demo-pill{margin-left:auto;border:1px solid var(--line);border-radius:100px;padding:4px 12px;font-size:12px;color:#6d7480}
+#beway-revolut .hero{position:relative;isolation:isolate;background:#101114;min-height:550px;overflow:hidden;color:white;max-width:1440px;margin:0 auto}
+#beway-revolut .hero-image{position:absolute;right:0;top:0;width:69%;height:100%;object-fit:cover;object-position:center 25%;z-index:-3}
+#beway-revolut .hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#0d0f15 5%,#101115f7 27%,#101115c7 43%,#10111526 77%),linear-gradient(0deg,#101115b8,transparent 45%)}
+#beway-revolut .hero-content{padding:46px 5% 40px;max-width:720px}
+#beway-revolut .wordmark{font-family:Impact,'Arial Narrow',sans-serif;font-size:38px;color:#164cf0;letter-spacing:2px;margin-bottom:30px;line-height:1}
+#beway-revolut .eyebrow{font-size:12px;font-weight:700;letter-spacing:1.8px;margin-bottom:18px;color:#6d7480}
+#beway-revolut .eyebrow.light{color:#b6bac5}
+#beway-revolut .hero h1{font-size:clamp(42px,4.6vw,64px);letter-spacing:-2.6px;line-height:1.07;font-weight:800}
+#beway-revolut .hero-copy{color:#d1d3d9;max-width:405px;margin-top:22px;font-size:17px;line-height:1.6}
+#beway-revolut .hero-actions{display:flex;gap:12px;margin-top:30px}
+#beway-revolut .btn{border:0;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:13px 20px;font-weight:650;font-size:14px;line-height:1.5;transition:background .2s,transform .2s}
+#beway-revolut .btn:hover{transform:translateY(-2px)}
+#beway-revolut .btn.primary{color:white;background:var(--red)}
+#beway-revolut .btn.primary:hover{background:#0839ce}
+#beway-revolut .btn.glass{color:white;background:#ffffff12;border:1px solid #ffffff36}
+#beway-revolut .btn.glass:hover{background:#ffffff24}
+#beway-revolut .btn.white{background:white;color:#171a25}
+#beway-revolut .btn.outline{border:1px solid #d9dbe3;background:white}
+#beway-revolut .hero-meta{display:flex;align-items:center;gap:12px;font-size:12px;color:#bbbfca;margin-top:25px}
+#beway-revolut .hero-meta i{height:3px;width:3px;background:#727883;border-radius:50%}
+#beway-revolut .hero-caption{position:absolute;right:32px;bottom:30px;font-size:10px;letter-spacing:2px;writing-mode:vertical-rl;color:#d3d3d3}
+#beway-revolut .section-nav{height:68px;display:flex;align-items:stretch;justify-content:center;gap:36px;border-bottom:1px solid var(--line);background:#ffffffed;backdrop-filter:blur(16px);position:sticky;top:0;z-index:10;padding:0 24px;overflow:auto}
+#beway-revolut .section-nav a{white-space:nowrap;display:flex;align-items:center;font-size:14px;color:#777c87;border-bottom:3px solid transparent;padding-top:3px}
+#beway-revolut .section-nav a.active{color:#151820;border-color:var(--red);font-weight:700}
+#beway-revolut .section-nav a:hover{color:var(--red)}
+#beway-revolut .section-nav a span{font-size:10px;background:#f0f1f4;color:#6e7480;margin-left:7px;padding:1px 6px;border-radius:4px}
+#beway-revolut .page-content{max-width:1280px;margin:auto;padding:0 44px}
+#beway-revolut .section{padding:68px 0;border-bottom:1px solid var(--line);scroll-margin-top:10px}
+#beway-revolut .about{display:grid;grid-template-columns:1fr 1.25fr;gap:60px}
+#beway-revolut .about-copy p{font-size:17px}
+#beway-revolut .about-copy .muted{font-size:15px;margin-top:14px}
+#beway-revolut .muted{color:var(--muted)}
+#beway-revolut .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:23px}
+#beway-revolut .chips span{font-size:12px;padding:5px 11px;background:#f4f5f7;border-radius:5px;color:#555a6b}
+#beway-revolut .section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}
+#beway-revolut .section-heading>p{font-size:15px;color:var(--muted);line-height:1.6}
+#beway-revolut .challenge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#beway-revolut .challenge-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+#beway-revolut .challenge-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px #151f3d10}
+#beway-revolut .challenge-art{height:185px;position:relative;overflow:hidden;background:#17181d;color:white;padding:22px}
+#beway-revolut .challenge-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:brightness(.7);transition:transform .6s}
+#beway-revolut .challenge-card:hover img{transform:scale(1.04)}
+#beway-revolut .challenge-art:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0a0e19b3,transparent)}
+#beway-revolut .card-num{position:absolute;bottom:10px;right:18px;font:800 72px/1 'BEWAY Revolut Manrope',sans-serif;letter-spacing:-5px;color:#ffffffc7;z-index:1}
+#beway-revolut .art-tag{position:relative;z-index:1;font-size:10px;letter-spacing:1.6px;background:#080b159c;padding:5px 8px;border:1px solid #ffffff30;border-radius:4px}
+#beway-revolut .challenge-info{padding:24px;flex:1;display:flex;flex-direction:column}
+#beway-revolut .challenge-info .eyebrow{color:var(--red);font-size:10px;margin-bottom:12px}
+#beway-revolut .challenge-info h3{font-size:23px;line-height:1.25;min-height:58px}
+#beway-revolut .challenge-info>p:not(.eyebrow){font-size:14px;color:var(--muted);margin:14px 0 24px}
+#beway-revolut .challenge-info button{display:flex;align-items:center;justify-content:space-between;text-align:left;width:100%;margin-top:auto;background:transparent;border:0;border-top:1px solid var(--line);padding:17px 0 0;font-size:14px;font-weight:650}
+#beway-revolut .challenge-info button span{font-size:22px;color:var(--red)}
+#beway-revolut .participation-bar{display:flex;justify-content:space-between;gap:20px;margin-top:23px;font-size:12px;color:#7c818b}
+#beway-revolut .participation-bar b{font-weight:600;color:#4e5363}
+#beway-revolut .bar-dot{margin:0 8px;color:#aaa}
+#beway-revolut .onboarding{display:grid;grid-template-columns:1.08fr 1fr;border:0;background:#111318;color:white;border-radius:20px;margin:68px 0 0;padding:0;overflow:hidden}
+#beway-revolut .onboard-cover{position:relative;min-height:405px;overflow:hidden}
+#beway-revolut .onboard-cover img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:45%;filter:brightness(.68)}
+#beway-revolut .onboard-cover:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#101218b3,transparent 65%);pointer-events:none}
+#beway-revolut .play-circle{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);z-index:2;border-radius:50%;border:1px solid #ffffff80;background:#ffffff26;backdrop-filter:blur(6px);color:white;width:74px;height:74px;font-size:23px;padding-left:7px;transition:background .2s}
+#beway-revolut .play-circle:hover{background:var(--red)}
+#beway-revolut .cover-label{position:absolute;z-index:1;left:24px;bottom:50px;font-size:10px;letter-spacing:1.3px}
+#beway-revolut .duration{position:absolute;z-index:1;left:24px;bottom:24px;font-size:11px;color:#c8cbd2}
+#beway-revolut .onboard-content{padding:38px}
+#beway-revolut .onboard-content h2{font-size:32px}
+#beway-revolut .onboard-content>p:not(.eyebrow):not(.micro){color:#b3b7c2;font-size:15px;margin-top:18px}
+#beway-revolut .onboard-stats{display:flex;justify-content:space-between;gap:12px;margin:25px 0}
+#beway-revolut .onboard-stats strong{display:block;font-size:19px;font-weight:600}
+#beway-revolut .onboard-stats span{font-size:11px;color:#999fab}
+#beway-revolut .micro{font-size:12px;color:#8b919e;line-height:1.6;margin-top:16px}
+#beway-revolut .outline-label{border:1px solid #dddfe6;padding:5px 10px;border-radius:5px;white-space:nowrap;font-size:11px;color:#818793}
+#beway-revolut .opportunities{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+#beway-revolut .opportunity{border:1px solid var(--line);border-radius:12px;padding:24px;background:#fbfbfc}
+#beway-revolut .job-symbol{height:36px;width:36px;background:#eef0f5;display:grid;place-items:center;margin-bottom:22px;border-radius:8px;color:#363e55;font-size:19px}
+#beway-revolut .opportunity h3{font-size:19px;line-height:1.4;min-height:54px}
+#beway-revolut .opportunity .job-type{color:var(--red);font-size:11px;letter-spacing:.6px;margin:13px 0 8px}
+#beway-revolut .opportunity p{font-size:14px;color:var(--muted)}
+#beway-revolut .text-button{border:0;background:none;padding:0;color:inherit;font-weight:600;font-size:14px;text-decoration:underline;text-underline-offset:5px}
+#beway-revolut .opportunity button{margin-top:22px}
+#beway-revolut .section-note{font-size:12px;color:#8a909a;margin-top:20px}
+#beway-revolut .section-note a{color:#384878;text-decoration:underline;text-underline-offset:3px}
+#beway-revolut .ambassador-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+#beway-revolut .ambassador{padding:24px 18px;border-radius:12px;border:1px solid var(--line)}
+#beway-revolut .avatar{height:54px;width:54px;display:grid;place-items:center;border-radius:50%;font:700 18px 'BEWAY Revolut Manrope',sans-serif;letter-spacing:-1px;margin-bottom:20px}
+#beway-revolut .ambassador h3{font-size:16px;margin-bottom:9px}
+#beway-revolut .ambassador p{font-size:12px;color:#818792;min-height:39px}
+#beway-revolut .ambassador .campus{font-size:11px;color:#4e556b;display:block;margin-top:15px}
+#beway-revolut .ambassador button{font-size:12px;margin-top:18px}
+#beway-revolut .shop{display:grid;grid-template-columns:1fr .85fr .9fr;gap:38px;align-items:center;border-bottom:0}
+#beway-revolut .shop h2{font-size:34px}
+#beway-revolut .shop-intro>p:not(.eyebrow){font-size:15px;color:var(--muted);margin:18px 0 20px}
+#beway-revolut .benefit-card{background:#ebf0ff;border:1px solid #dce2f2;border-radius:16px;padding:28px}
+#beway-revolut .benefit-card .outline-label{border-color:#c4cde8;color:#4a60a3;font-size:10px}
+#beway-revolut .discount{font:800 76px/1.15 'BEWAY Revolut Manrope',sans-serif;letter-spacing:-5px;color:#164cf0;margin:16px 0 8px}
+#beway-revolut .discount span{font-size:43px;letter-spacing:-2px}
+#beway-revolut .benefit-card h3{font-size:16px}
+#beway-revolut .benefit-card p{font-size:13px;color:#68718b;margin-top:13px}
+#beway-revolut .locked-benefit{display:block;border-top:1px solid #cdd4ea;margin-top:20px;padding-top:15px;font-size:11px;color:#67749c}
+#beway-revolut .shop-categories .eyebrow{font-size:10px}
+#beway-revolut .shop-categories>a{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px;gap:20px}
+#beway-revolut .shop-categories>a:hover{color:var(--red)}
+#beway-revolut .shop-categories .shop-link{border:0;color:var(--red);font-weight:650;margin-top:10px}
+#beway-revolut footer{border-top:1px solid var(--line);max-width:1440px;margin:auto;display:flex;align-items:center;padding:35px 5%;gap:32px}
+#beway-revolut footer .beway{font-size:22px}
+#beway-revolut footer .brandmark{font-size:20px;width:26px;height:27px}
+#beway-revolut footer p{font-size:13px;color:#6d7480}
+#beway-revolut footer>span{margin-left:auto;color:#90959e;font-size:11px}
+#beway-revolut dialog{border:0;border-radius:20px;width:min(920px,calc(100% - 32px));max-height:90dvh;padding:0;color:var(--ink);box-shadow:0 25px 100px #0005}
+#beway-revolut dialog::backdrop{background:#070a15bb;backdrop-filter:blur(7px)}
+#beway-revolut .dialog-head{display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fffffff5;backdrop-filter:blur(10px);z-index:2;padding:16px 28px;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:1px;color:#767e8b}
+#beway-revolut .icon-button{height:34px;width:34px;border:1px solid var(--line);border-radius:50%;background:white;font-size:15px;color:#52586b}
+#beway-revolut .dialog-inner{padding:35px}
+#beway-revolut .dialog-inner h2{max-width:720px}
+#beway-revolut .dialog-lead{color:var(--muted);margin:18px 0 26px;font-size:17px}
+#beway-revolut .detail-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:30px}
+#beway-revolut .detail-grid h3,#beway-revolut .detail-block h3{font-size:18px;margin:25px 0 12px}
+#beway-revolut .detail-grid p,#beway-revolut .detail-grid li,#beway-revolut .detail-block p,#beway-revolut .detail-block li{font-size:15px;color:#5f6576}
+#beway-revolut .detail-grid ul,#beway-revolut .detail-block ul{padding-left:22px;margin:10px 0}
+#beway-revolut .detail-grid li{margin-bottom:8px}
+#beway-revolut .deliverable{padding:20px;background:#f6f7f9;border-radius:12px}
+#beway-revolut .deliverable h3:first-child{margin-top:0}
+#beway-revolut .deliverable strong{color:#202535}
+#beway-revolut .detail-bottom{margin-top:30px;border-top:1px solid var(--line);padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+#beway-revolut .detail-bottom p{font-size:12px;color:#858c97}
+#beway-revolut .video-wrap{background:#0b0c0e;border-radius:10px;overflow:hidden;aspect-ratio:16/9;margin:24px 0}
+#beway-revolut .video-wrap video{width:100%;height:100%;display:block}
+#beway-revolut .chapter-heading{display:flex;justify-content:space-between;align-items:center;margin-top:28px}
+#beway-revolut .chapter-heading h3{font-size:20px}
+#beway-revolut .chapter-heading span{font-size:12px;color:#8a909a}
+#beway-revolut .chapter-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+#beway-revolut .chapter{display:flex;gap:14px;align-items:start;border:1px solid var(--line);padding:17px;border-radius:10px;background:#fafbfc}
+#beway-revolut .chapter-number{font:700 22px 'BEWAY Revolut Manrope',sans-serif;color:#a9adb9}
+#beway-revolut .chapter h4{font:650 14px/1.4 'BEWAY Revolut Manrope',sans-serif;margin:0 0 7px}
+#beway-revolut .chapter p{font-size:12px;color:#8e949e;margin:0}
+#beway-revolut .lock-label{font-size:10px;color:#9ba0aa;display:block;margin-top:8px}
+#beway-revolut .chapter .lock{margin-left:auto;color:#969ca7}
+#beway-revolut .dialog-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+#beway-revolut .persona-big{width:72px;height:72px;font-size:24px}
+#beway-revolut .benefit-steps{counter-reset:steps;padding:0;list-style:none}
+#beway-revolut .benefit-steps li{display:flex;gap:15px;margin:18px 0;color:#62687b}
+#beway-revolut .benefit-steps li:before{counter-increment:steps;content:counter(steps);border-radius:50%;background:#ebeef5;color:#002aaa;min-width:30px;height:30px;text-align:center;font-weight:700}
+#beway-revolut .status-box{border-left:3px solid #164cf0;background:#f5f8ff;padding:15px 20px;margin-top:22px;font-size:14px;color:#546187}
+body.beway-revolut-modal-open{overflow:hidden}
+@media(min-width:1500px){#beway-revolut .hero{border-radius:16px}
+#beway-revolut .topbar{padding:0 32px}}
+@media(max-width:1050px){#beway-revolut .hero-content{max-width:620px}
+#beway-revolut .hero h1{font-size:51px}
+#beway-revolut .hero-image{width:75%}
+#beway-revolut .section-nav{justify-content:flex-start;gap:28px}
+#beway-revolut .page-content{padding:0 30px}
+#beway-revolut .about{gap:35px}
+#beway-revolut .section-heading>p{max-width:280px}
+#beway-revolut .onboard-content{padding:30px}
+#beway-revolut .onboard-content h2{font-size:28px}
+#beway-revolut .shop{gap:22px;grid-template-columns:1fr 1fr}
+#beway-revolut .shop-categories{grid-column:1/-1;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+#beway-revolut .shop-categories .micro{max-width:300px}
+#beway-revolut .ambassador-grid{gap:9px}
+#beway-revolut .ambassador{padding:20px 12px}
+#beway-revolut .hero-caption{display:none}
+#beway-revolut .participation-bar{flex-direction:column;gap:5px}}
+@media(max-width:700px){#beway-revolut .topbar{height:66px;padding:0 20px;gap:22px}
+#beway-revolut .beway{font-size:24px}
+#beway-revolut .top-context{display:none}
+#beway-revolut .hero{min-height:600px}
+#beway-revolut .hero-image{width:100%;height:60%;object-position:center 22%}
+#beway-revolut .hero-shade{background:linear-gradient(0deg,#101115 25%,#101115e8 45%,#10111530 85%)}
+#beway-revolut .hero-content{padding:28px 24px}
+#beway-revolut .wordmark{font-size:30px;margin-bottom:145px}
+#beway-revolut .hero .eyebrow{font-size:10px;margin-bottom:14px}
+#beway-revolut .hero h1{font-size:43px;letter-spacing:-1.7px}
+#beway-revolut .hero-copy{font-size:15px;max-width:340px;margin-top:15px}
+#beway-revolut .hero-actions{gap:9px;flex-wrap:wrap;margin-top:22px}
+#beway-revolut .btn{font-size:12px;padding:12px 15px;gap:10px}
+#beway-revolut .hero-meta{margin-top:20px;font-size:11px}
+#beway-revolut .section-nav{height:58px;gap:26px;padding:0 22px}
+#beway-revolut .section-nav a{font-size:13px}
+#beway-revolut .page-content{padding:0 22px}
+#beway-revolut .section{padding:44px 0}
+#beway-revolut .about{grid-template-columns:1fr;gap:24px}
+#beway-revolut .about h2 br{display:none}
+#beway-revolut .about-copy p{font-size:16px}
+#beway-revolut .section-heading{display:block;margin-bottom:24px}
+#beway-revolut .section-heading>p{margin-top:15px;max-width:none;font-size:14px}
+#beway-revolut .section-heading>.outline-label{display:inline-block;margin-top:17px}
+#beway-revolut h2{font-size:30px;letter-spacing:-1px}
+#beway-revolut .challenge-grid{grid-template-columns:1fr}
+#beway-revolut .challenge-art{height:205px}
+#beway-revolut .challenge-info h3{min-height:0;font-size:24px}
+#beway-revolut .challenge-info>p:not(.eyebrow){font-size:15px}
+#beway-revolut .challenge-info button{font-size:15px}
+#beway-revolut .participation-bar{font-size:12px;margin-top:20px;line-height:1.7}
+#beway-revolut .onboarding{grid-template-columns:1fr;margin-top:44px;padding:0}
+#beway-revolut .onboard-cover{min-height:270px}
+#beway-revolut .onboard-content{padding:28px}
+#beway-revolut .onboard-content h2{font-size:30px}
+#beway-revolut .onboard-content .btn{font-size:14px}
+#beway-revolut .opportunities{grid-template-columns:1fr}
+#beway-revolut .opportunity h3{min-height:0}
+#beway-revolut .opportunity{padding:24px}
+#beway-revolut .job-symbol{margin-bottom:14px}
+#beway-revolut .ambassador-grid{grid-template-columns:1fr 1fr;gap:12px}
+#beway-revolut .ambassador{padding:20px}
+#beway-revolut .ambassador h3{font-size:16px}
+#beway-revolut .ambassador p{font-size:12px}
+#beway-revolut .shop{grid-template-columns:1fr;gap:28px}
+#beway-revolut .shop-categories{display:block}
+#beway-revolut .shop h2{font-size:32px}
+#beway-revolut .benefit-card{padding:28px}
+#beway-revolut .benefit-card h3{font-size:19px}
+#beway-revolut .locked-benefit{font-size:12px}
+#beway-revolut .shop-categories .micro{max-width:none}
+#beway-revolut footer{display:flex;flex-wrap:wrap;gap:20px;padding:28px 22px}
+#beway-revolut footer p{font-size:12px}
+#beway-revolut footer>span{width:100%;margin:0}
+#beway-revolut dialog{max-height:95dvh;width:calc(100% - 16px);border-radius:14px}
+#beway-revolut .dialog-head{padding:13px 18px;font-size:10px}
+#beway-revolut .dialog-inner{padding:24px 20px}
+#beway-revolut .dialog-inner h2{font-size:29px}
+#beway-revolut .dialog-lead{font-size:15px}
+#beway-revolut .detail-grid{grid-template-columns:1fr;gap:15px}
+#beway-revolut .detail-bottom{align-items:start;flex-direction:column}
+#beway-revolut .chapter-list{grid-template-columns:1fr}
+#beway-revolut .chapter-heading{display:block}
+#beway-revolut .chapter-heading span{display:block;margin-top:8px}
+#beway-revolut .chapter h4{font-size:14px}
+#beway-revolut .chapter p{font-size:12px}
+#beway-revolut .dialog-actions .btn{font-size:14px}}
+@media(prefers-reduced-motion:reduce){#beway-revolut,#beway-revolut *{scroll-behavior:auto!important;transition:none!important}}
+#beway-revolut .chips span{font-size:14px}
+#beway-revolut .challenge-info .eyebrow,#beway-revolut .art-tag{font-size:12px;letter-spacing:1px}
+#beway-revolut .opportunity .job-type{font-size:12px}
+#beway-revolut .ambassador p{font-size:14px}
+#beway-revolut .ambassador .campus,#beway-revolut .ambassador button{font-size:14px}
+#beway-revolut .ambassador p{min-height:48px}
+#beway-revolut .shop-categories .eyebrow{font-size:12px}
+#beway-revolut .chapter h4{font-size:16px}
+#beway-revolut .chapter p{font-size:14px}
+#beway-revolut .lock-label{font-size:12px}
+#beway-revolut .onboard-stats span{font-size:12px}
+#beway-revolut .section-note{font-size:13px}
+#beway-revolut .outline-label{font-size:12px}
+#beway-revolut .topbar .demo-pill{font-size:12px}
+#beway-revolut .hero{background:#0d0e10}
+#beway-revolut .hero-brand{position:absolute;right:4%;top:50%;transform:translateY(-51%) rotate(-7deg);font:900 620px/.9 Impact,'Arial Black',sans-serif;color:#164cf0;letter-spacing:-30px;z-index:-3;text-shadow:35px 15px 0 #07247a}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#101115 15%,#101115e6 39%,#10111530 80%),linear-gradient(0deg,#10111580,transparent 40%)}
+#beway-revolut .challenge-art{background:#12141b;height:190px}
+#beway-revolut .challenge-art:after{display:none}
+#beway-revolut .challenge-type{position:absolute;left:23px;bottom:20px;font:800 29px/1.06 'BEWAY Revolut Manrope',Arial,sans-serif;letter-spacing:-1px;color:#fff}
+#beway-revolut .challenge-card:nth-child(2) .challenge-art{background:#0b3ccf}
+#beway-revolut .challenge-card:nth-child(3) .challenge-art{background:#222737}
+#beway-revolut .card-num{font-size:88px;color:#ffffff20;bottom:12px;right:20px}
+#beway-revolut .art-tag{background:transparent;border:0;padding:0;color:#ffffffa8}
+#beway-revolut .onboard-cover{background:#1a1c23}
+#beway-revolut .onboard-type{position:absolute;inset:35px;display:flex;flex-direction:column;justify-content:center;border-left:3px solid #164cf0;padding-left:26px}
+#beway-revolut .onboard-type>span{font-size:12px;letter-spacing:2px;color:#2256f3}
+#beway-revolut .onboard-type strong{font:800 42px/1.12 'BEWAY Revolut Manrope',Arial,sans-serif;letter-spacing:-1.5px;margin:20px 0 100px;color:white}
+#beway-revolut .onboard-type small{display:none}
+#beway-revolut .onboard-cover:after{display:none}
+#beway-revolut .play-circle{top:auto;bottom:60px;left:62px;transform:none;width:54px;height:54px;font-size:18px;background:#164cf0;border:0}
+#beway-revolut .cover-label{display:none}
+#beway-revolut .duration{left:132px;bottom:75px}
+#beway-revolut .onboard-type strong{margin-bottom:90px}
+@media(max-width:700px){#beway-revolut .hero-brand{font-size:350px;right:-5%;top:120px;transform:rotate(-8deg);letter-spacing:-15px}
+#beway-revolut .hero-shade{background:linear-gradient(0deg,#101115 25%,#101115ed 48%,#10111510 100%)}
+#beway-revolut .onboard-type{inset:25px}
+#beway-revolut .onboard-type strong{font-size:35px;margin-top:14px;margin-bottom:80px}
+#beway-revolut .play-circle{bottom:25px;left:54px;width:46px;height:46px}
+#beway-revolut .duration{left:116px;bottom:36px}
+#beway-revolut .onboard-cover{min-height:290px}}
+#beway-revolut .beway-logo{display:block;width:56px;height:56px;object-fit:contain;margin-right:5px}
+#beway-revolut .brandperiod{color:#0032c7}
+#beway-revolut footer .beway-logo{width:42px;height:42px}
+@media(max-width:700px){#beway-revolut .beway-logo{width:45px;height:45px}}
+#beway-revolut .hero-content{padding-top:56px;padding-bottom:54px}
+#beway-revolut .mh-wordmark{margin-bottom:47px}
+#beway-revolut .hero-actions{margin-top:30px}
+#beway-revolut .hero-copy{max-width:430px}
+#beway-revolut .mini-project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+#beway-revolut .mini-project{padding:25px;border:1px solid var(--line);border-radius:13px;display:flex;flex-direction:column;background:#fbfbfc}
+#beway-revolut .mini-project .project-label{font-size:11px;letter-spacing:1.1px;font-weight:650;color:#7d8593;margin:18px 0 12px}
+#beway-revolut .project-symbol{width:40px;height:40px;display:grid;place-items:center;border-radius:9px;background:#edeff4;color:#596076;font:700 22px 'BEWAY Revolut Manrope',Arial,sans-serif}
+#beway-revolut .mini-project h3{font-size:23px;line-height:1.25;min-height:59px}
+#beway-revolut .mini-project>p:not(.project-label){font-size:14px;line-height:1.75;color:#737c8a;margin:15px 0 20px}
+#beway-revolut .project-skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;margin-bottom:18px}
+#beway-revolut .project-skills span{font-size:10px;line-height:1.4;padding:5px 7px;background:#f0f1f6;border-radius:4px;color:#5b6174}
+#beway-revolut .project-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;gap:9px;margin-bottom:20px}
+#beway-revolut .project-facts strong{font-size:12px;display:block;color:#50576b;font-weight:650}
+#beway-revolut .project-facts small{font-size:10px;color:#969baa;display:block}
+#beway-revolut .mini-project>button{text-align:left;display:flex;justify-content:space-between;gap:10px;border:0;background:none;padding:0;font-weight:650;font-size:13px;color:#202536}
+#beway-revolut .mini-project>button span{font-size:20px;color:var(--red)}
+#beway-revolut .real-ambassadors .ambassador{padding:23px 18px;display:flex;flex-direction:column;align-items:flex-start}
+#beway-revolut .member-photo{width:78px;height:78px;border-radius:50%;object-fit:cover;object-position:50% 25%;display:block;margin-bottom:20px;border:1px solid #e9ebf1}
+#beway-revolut .member-photo{overflow:hidden}
+#beway-revolut .member-photo>img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
+#beway-revolut .member-photo-zoom>img{object-position:50% 50%;transform:scale(3);transform-origin:50% 65%}
+#beway-revolut .real-ambassadors .ambassador h3{font-size:16px;line-height:1.4;min-height:44px;margin-bottom:8px;letter-spacing:-.3px}
+#beway-revolut .real-ambassadors .ambassador p{font-size:13px;min-height:45px;line-height:1.65}
+#beway-revolut .real-ambassadors .ambassador .campus{font-size:11px;color:#5a6175;margin-top:14px;line-height:1.6}
+#beway-revolut .real-ambassadors .ambassador button{font-size:12px;margin-top:18px;line-height:1.6}
+#beway-revolut .member-badge{display:inline-block;padding:3px 8px;background:#edf0fa;color:#394a7c;font-size:10px;border-radius:5px;margin-bottom:18px;letter-spacing:.8px}
+#beway-revolut .member-profile-top{display:flex;gap:22px;align-items:center;margin-bottom:25px}
+#beway-revolut .member-profile-top .member-photo{width:104px;height:104px;margin:0;flex-shrink:0}
+#beway-revolut .member-profile-top h2{font-size:29px}
+#beway-revolut .member-profile-top .member-badge{margin-top:13px;margin-bottom:0}
+#beway-revolut .member-profile-top p{font-size:14px;color:var(--muted);margin-top:12px}
+#beway-revolut .catalogue-card{background:#ebf0ff;border:1px solid #d0d8f2;border-radius:16px;padding:28px;display:flex;flex-direction:column;align-items:flex-start;transition:transform .2s,box-shadow .2s}
+#beway-revolut .catalogue-card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #121f460b}
+#beway-revolut .catalogue-card>img{width:91px;height:91px;object-fit:contain;margin-bottom:25px}
+#beway-revolut .catalogue-card-label{font-size:10px;letter-spacing:1.2px;color:#5d6ea0;margin-bottom:12px}
+#beway-revolut .catalogue-card h3{font-size:22px;line-height:1.3;letter-spacing:-.7px}
+#beway-revolut .catalogue-card-action{display:flex;justify-content:space-between;gap:35px;border-top:1px solid #cdd4e8;padding-top:17px;margin-top:24px;color:#002aa7;font-size:13px;font-weight:650;width:100%}
+#beway-revolut .ecommerce-section{align-items:center}
+#beway-revolut .ecommerce-section .shop-categories>a{font-size:13px}
+#beway-revolut .activity-status{display:inline-flex;align-items:center;gap:7px;color:#626c88;border:1px solid #dfe2ea;border-radius:6px;padding:5px 10px;font-size:11px;margin:18px 0 5px}
+#beway-revolut .challenge-summary{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:24px}
+#beway-revolut .activity-block h3{font-size:18px;margin:25px 0 10px}
+#beway-revolut .activity-block p,#beway-revolut .activity-block li{font-size:14px;line-height:1.8;color:#666d82}
+#beway-revolut .activity-block ul,#beway-revolut .activity-block ol{padding-left:22px}
+#beway-revolut .activity-block li{margin-bottom:9px}
+#beway-revolut .activity-deliverable{background:#f7f8fa;border:1px solid #e8eaf0;border-radius:12px;padding:20px;height:fit-content}
+#beway-revolut .activity-deliverable h3:first-child{margin-top:0}
+#beway-revolut .activity-deliverable h3{font-size:17px;margin-bottom:10px}
+#beway-revolut .activity-deliverable p,#beway-revolut .activity-deliverable li{font-size:13px;line-height:1.8;color:#646b81}
+#beway-revolut .activity-deliverable ul{padding-left:18px;margin-bottom:0}
+#beway-revolut .project-case{background:#f6f7f9;border:1px solid #e7e9ef;padding:23px;border-radius:12px;margin:24px 0}
+#beway-revolut .project-case h3{font-size:18px;margin-bottom:12px}
+#beway-revolut .project-case p,#beway-revolut .project-case li{font-size:14px;color:#676e83;line-height:1.8}
+#beway-revolut .case-data{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+#beway-revolut .case-data div{padding:12px;border:1px solid #e3e5ec;border-radius:7px;background:white;font-size:12px;color:#77818e}
+#beway-revolut .case-data strong{display:block;font:700 18px 'BEWAY Revolut Manrope',Arial,sans-serif;color:#333b52;margin-top:4px}
+#beway-revolut .project-form{margin-top:26px}
+#beway-revolut .project-form label{display:block;font-weight:650;font-size:14px;margin-bottom:10px;color:#343b52}
+#beway-revolut .project-form .field{margin-top:23px}
+#beway-revolut .project-form textarea{font:14px/1.75 'BEWAY Revolut DM Sans',Arial,sans-serif;display:block;width:100%;resize:vertical;border:1px solid #dcdfe8;border-radius:8px;padding:15px 17px;color:#394057;background:#fff;min-height:115px}
+#beway-revolut .project-form textarea:focus{outline:2px solid #758bcf;outline-offset:2px}
+#beway-revolut .project-form .dialog-actions{margin-top:24px}
+#beway-revolut .project-save-status{font-size:12px;color:#595f71;margin-top:15px;min-height:22px}
+#beway-revolut .project-storage-note{font-size:11px;color:#9299a5;margin-top:13px;line-height:1.7}
+#beway-revolut .no-open-convocation{font-size:12px;color:#8d95a0;border-left:2px solid #dcdfea;padding-left:14px;margin-top:25px;line-height:1.8}
+@media(max-width:1050px){#beway-revolut .real-ambassadors .ambassador{padding:20px 13px}
+#beway-revolut .member-photo{width:68px;height:68px}
+#beway-revolut .real-ambassadors .ambassador h3{font-size:14px}
+#beway-revolut .real-ambassadors .ambassador p{font-size:12px}
+#beway-revolut .mini-project{padding:21px}
+#beway-revolut .mini-project h3{font-size:21px}
+#beway-revolut .mini-project>p:not(.project-label){font-size:13px}}
+@media(max-width:700px){#beway-revolut .hero-content{padding-top:28px;padding-bottom:40px}
+#beway-revolut .mh-wordmark{margin-bottom:169px}
+#beway-revolut .hero{min-height:640px}
+#beway-revolut .hero h1{font-size:40px;letter-spacing:-1.8px}
+#beway-revolut .hero-copy{max-width:350px}
+#beway-revolut .hero-actions{margin-top:24px}
+#beway-revolut .mini-project-grid{grid-template-columns:1fr}
+#beway-revolut .mini-project{padding:24px}
+#beway-revolut .mini-project h3{min-height:0;font-size:24px}
+#beway-revolut .mini-project>p:not(.project-label){font-size:14px}
+#beway-revolut .project-skills span{font-size:11px}
+#beway-revolut .project-facts strong{font-size:13px}
+#beway-revolut .project-facts small{font-size:11px}
+#beway-revolut .mini-project>button{font-size:14px}
+#beway-revolut .real-ambassadors .ambassador{padding:20px 15px}
+#beway-revolut .real-ambassadors .ambassador h3{font-size:15px;min-height:44px}
+#beway-revolut .real-ambassadors .ambassador p{font-size:12px;min-height:44px}
+#beway-revolut .real-ambassadors .ambassador button{font-size:12px}
+#beway-revolut .member-photo{width:73px;height:73px}
+#beway-revolut .catalogue-card{padding:27px}
+#beway-revolut .catalogue-card>img{width:96px;height:96px}
+#beway-revolut .catalogue-card h3{font-size:24px}
+#beway-revolut .catalogue-card-action{font-size:14px}
+#beway-revolut .ecommerce-section .shop-categories>a{font-size:14px}
+#beway-revolut .challenge-summary{grid-template-columns:1fr;gap:15px}
+#beway-revolut .member-profile-top{gap:16px;align-items:flex-start}
+#beway-revolut .member-profile-top .member-photo{width:76px;height:76px}
+#beway-revolut .member-profile-top h2{font-size:24px}
+#beway-revolut .member-profile-top p{font-size:12px}
+#beway-revolut .case-data{gap:8px}
+#beway-revolut .case-data div{font-size:11px}
+#beway-revolut .case-data strong{font-size:16px}
+#beway-revolut .project-case{padding:19px}
+#beway-revolut .project-form textarea{font-size:16px;min-height:125px}
+#beway-revolut .project-form .dialog-actions{gap:10px}
+#beway-revolut .project-form .dialog-actions button{font-size:12px}}
+#beway-revolut{--red:#164cf0}
+#beway-revolut .revolut-wordmark{font-family:'BEWAY Revolut Manrope',Arial,sans-serif;font-weight:750;color:#fff;font-size:32px;letter-spacing:-1px;margin-bottom:29px}
+#beway-revolut .hero-brand.revolut-brand{right:7%;top:50%;transform:translateY(-50%);width:370px;height:370px;letter-spacing:0;line-height:1;box-shadow:24px 24px 0 #00279c;text-shadow:none}
+#beway-revolut .revolut-brand img{width:100%;height:100%;display:block;object-fit:contain}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#101115 13%,#101115ed 37%,#10111500 67%)}
+#beway-revolut .hero-content{max-width:730px;position:relative}
+#beway-revolut .hero-copy{max-width:440px}
+#beway-revolut .hero-meta{margin-top:24px}
+#beway-revolut .btn.primary:hover{background:#0839ce}
+#beway-revolut .inline-source{display:inline-block;font-size:13px;font-weight:600;margin-top:24px;border-bottom:1px solid #aeb3c3;padding-bottom:3px}
+#beway-revolut .company-facts{grid-column:1/-1;display:grid;grid-template-columns:.7fr .85fr 1.7fr;border-top:1px solid var(--line);padding-top:25px;gap:32px;margin-top:-16px}
+#beway-revolut .company-facts>div{display:flex;flex-direction:column;justify-content:center;gap:4px}
+#beway-revolut .company-facts strong{font:750 30px/1.3 'BEWAY Revolut Manrope',Arial,sans-serif;letter-spacing:-1px}
+#beway-revolut .company-facts>div:last-child strong{font-size:20px;letter-spacing:-.5px}
+#beway-revolut .company-facts span{font-size:13px;color:var(--muted)}
+#beway-revolut .about-links{grid-column:1/-1;display:flex;gap:30px;margin-top:-28px}
+#beway-revolut .about-links button{font-size:13px;color:#585e71}
+#beway-revolut .course-feature{margin:0}
+#beway-revolut .course-section>.section-heading{margin-bottom:30px}
+#beway-revolut .course-cover{min-height:460px;background:#17191f;display:flex;flex-direction:column;justify-content:space-between}
+#beway-revolut .course-cover .onboard-type{inset:38px;bottom:160px;border-left:3px solid var(--red);justify-content:center}
+#beway-revolut .course-cover .onboard-type>span{color:#b3c6ff;font-size:11px}
+#beway-revolut .course-cover .onboard-type strong{margin:22px 0 0;font-size:48px;letter-spacing:-1.9px}
+#beway-revolut .course-cover-footer{position:absolute;left:66px;right:38px;bottom:43px;display:flex;gap:27px;align-items:center;padding-top:24px;border-top:1px solid #ffffff24}
+#beway-revolut .course-seal{font:750 50px/1 'BEWAY Revolut Manrope',Arial,sans-serif;color:#fff;letter-spacing:-2px}
+#beway-revolut .course-seal>span{display:block;letter-spacing:2px;font:600 10px/1.5 'BEWAY Revolut DM Sans',Arial,sans-serif;margin-top:8px}
+#beway-revolut .course-cover-footer>span:last-child{font-size:10px;letter-spacing:1.6px;line-height:1.9;color:#b6bac4}
+#beway-revolut .course-feature .onboard-content{padding:38px}
+#beway-revolut .course-feature .onboard-content h2{font-size:31px}
+#beway-revolut .certificate-label{display:flex;align-items:center;gap:8px;color:#b3c6ff;font-size:12px;margin-top:20px}
+#beway-revolut .course-feature .onboard-stats{border-top:1px solid #ffffff20;padding-top:21px;margin-top:24px;margin-bottom:26px}
+#beway-revolut .course-feature .onboard-stats strong{font-size:18px}
+#beway-revolut .course-feature .onboard-stats span{font-size:11px}
+#beway-revolut .course-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px}
+#beway-revolut .course-bottom p{font-size:13px;color:#69717d;line-height:1.9}
+#beway-revolut .course-bottom p b{font-weight:600;color:#4d5367}
+#beway-revolut .course-bottom a{font-size:13px;white-space:nowrap}
+#beway-revolut .challenge-type{font-size:28px}
+#beway-revolut .challenge-info h3{min-height:58px}
+#beway-revolut .challenge-info .eyebrow{color:#002aaa}
+#beway-revolut .challenge-card:nth-child(2) .challenge-art{background:#164cf0}
+#beway-revolut .challenge-card:nth-child(3) .challenge-art{background:#242c43}
+#beway-revolut .opportunity h3{min-height:54px}
+#beway-revolut .opportunity .job-type{color:#002aaa;font-size:11px}
+#beway-revolut .opportunity .job-symbol{font-family:'BEWAY Revolut Manrope',Arial,sans-serif;font-weight:700}
+#beway-revolut .opportunity>p:not(.job-type){margin-top:10px}
+#beway-revolut .ambassador-overview{display:grid;grid-template-columns:1.08fr 1fr;gap:70px}
+#beway-revolut .ambassador-overview>div>p{font-size:16px;line-height:1.8}
+#beway-revolut .ambassador-overview .muted{font-size:14px;margin-top:15px}
+#beway-revolut .ambassador-overview .btn{margin-top:24px}
+#beway-revolut .ambassador-overview p.section-note{font-size:12px;line-height:1.7;color:#818793;margin-top:17px}
+#beway-revolut .ambassador-steps>div{display:flex;gap:22px;border-bottom:1px solid var(--line);padding:0 0 24px;margin-bottom:24px}
+#beway-revolut .ambassador-steps>div:last-child{margin-bottom:0;border:0}
+#beway-revolut .ambassador-steps>div>span{font:700 30px/1 'BEWAY Revolut Manrope',Arial,sans-serif;color:#d5d8df;min-width:37px}
+#beway-revolut .ambassador-steps h3{font-size:18px;letter-spacing:-.4px;margin-bottom:9px}
+#beway-revolut .ambassador-steps p{font-size:14px;color:var(--muted);line-height:1.6}
+#beway-revolut .resource-card{background:#ebf0ff;border-color:#d0d8f2}
+#beway-revolut .resource-mark{font:750 72px/1.1 'BEWAY Revolut Manrope',Arial,sans-serif;letter-spacing:-5px;color:#164cf0;margin:22px 0 16px;display:flex;justify-content:space-between;align-items:center}
+#beway-revolut .resource-mark>span{font-size:35px;letter-spacing:0}
+#beway-revolut .resource-card .locked-benefit{font-weight:600;font-size:12px;color:#304eaa}
+#beway-revolut .resources-section .shop-categories>a{font-size:13px}
+#beway-revolut .footer-meta{display:flex;flex-direction:column;align-items:flex-end;gap:8px;margin-left:auto;font-size:11px;color:#868d97}
+#beway-revolut .source-button{background:none;padding:0;border:0;color:#596074;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+#beway-revolut .course-modal-intro{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+#beway-revolut .course-modal-intro span{font-size:12px;background:#f1f2f6;color:#595f71;border-radius:5px;padding:6px 11px}
+#beway-revolut .time-breakdown{display:grid;grid-template-columns:1fr 1fr 1fr;background:#f6f7f9;padding:20px;border-radius:12px;gap:15px;margin:24px 0}
+#beway-revolut .time-breakdown strong{display:block;font:750 21px/1.3 'BEWAY Revolut Manrope',Arial,sans-serif}
+#beway-revolut .time-breakdown span{font-size:12px;color:#6c7483}
+#beway-revolut .journey-head{margin:29px 0 13px;padding-top:10px}
+#beway-revolut .journey-head span{font-size:10px;letter-spacing:1.5px;font-weight:700;color:#2a48a2}
+#beway-revolut .journey-head h3{font-size:21px;margin-top:6px}
+#beway-revolut .module{border:1px solid #e3e5eb;border-radius:10px;margin-bottom:10px;overflow:hidden}
+#beway-revolut .module summary{cursor:pointer;display:flex;gap:16px;align-items:center;list-style:none;padding:18px;background:#fafbfc}
+#beway-revolut .module summary::-webkit-details-marker{display:none}
+#beway-revolut .module-number{font:700 22px/1 'BEWAY Revolut Manrope',Arial,sans-serif;color:#acb0bc}
+#beway-revolut .module-summary-text{flex:1}
+#beway-revolut .module h4{font:700 15px/1.4 'BEWAY Revolut Manrope',Arial,sans-serif;margin:0 0 5px}
+#beway-revolut .module small{font-size:11px;color:#7c8592}
+#beway-revolut .module summary:after{content:'+';color:#9ca1af;font-size:23px;font-weight:400}
+#beway-revolut .module[open] summary:after{content:'−'}
+#beway-revolut .module-content{padding:20px 24px 22px 56px;border-top:1px solid var(--line)}
+#beway-revolut .module-content>p{font-size:14px;color:#5f6679;line-height:1.8}
+#beway-revolut .lesson-list{list-style:none;padding:0;margin:16px 0}
+#beway-revolut .lesson-list li{display:flex;gap:14px;justify-content:space-between;font-size:13px;color:#5e6477;padding:9px 0;border-bottom:1px solid #eff0f3}
+#beway-revolut .lesson-list li span:last-child{font-size:11px;color:#9aa0ac;white-space:nowrap}
+#beway-revolut .module-resource{display:block;font-size:12px;color:#787e92;margin-top:16px}
+#beway-revolut .certificate-box{display:grid;grid-template-columns:38px 1fr;gap:16px;border:1px solid #dee2ef;border-radius:12px;padding:22px;background:#f6f8fc;margin-top:28px}
+#beway-revolut .certificate-box>span{width:34px;height:34px;display:grid;place-items:center;background:#e5eaf8;border-radius:50%;color:#1d44b8;font-size:18px}
+#beway-revolut .certificate-box h3{font-size:16px;margin-bottom:8px}
+#beway-revolut .certificate-box p{font-size:13px;color:#686f83}
+#beway-revolut .product-detail-links{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
+#beway-revolut .product-detail-links>a{font-size:13px}
+#beway-revolut .info-panel{border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:18px}
+#beway-revolut .info-panel h3{font-size:18px;margin-bottom:10px}
+#beway-revolut .info-panel p{font-size:14px;color:#666d82}
+#beway-revolut .info-panel time{display:block;font-size:11px;letter-spacing:.5px;color:#8b939f;margin-bottom:10px}
+#beway-revolut .official-links{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+#beway-revolut .official-links>a{border:1px solid var(--line);padding:18px;border-radius:9px;font-size:14px;display:flex;gap:16px;justify-content:space-between}
+#beway-revolut .official-links>a span{color:#173cad}
+#beway-revolut .sources-list{list-style:none;padding:0;margin:20px 0}
+#beway-revolut .sources-list li{display:flex;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);align-items:start}
+#beway-revolut .sources-list li>span{font:650 15px 'BEWAY Revolut Manrope',Arial,sans-serif;color:#a8acb9}
+#beway-revolut .sources-list a{font-weight:600;font-size:14px;display:block;line-height:1.5}
+#beway-revolut .sources-list small{font-size:11px;color:#838b98}
+#beway-revolut .sources-note{font-size:12px;color:#89909c;margin-top:22px}
+#beway-revolut .demo-context{border-left:2px solid #d8dbe6;padding-left:14px;font-size:12px;color:#7d8395;margin:24px 0 0}
+@media(max-width:1100px){#beway-revolut .hero-brand.revolut-brand{right:5%;width:330px;height:330px}
+#beway-revolut .hero h1{font-size:51px}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#101115 15%,#101115ed 38%,#10111522 82%)}
+#beway-revolut .hero-copy{max-width:390px}
+#beway-revolut .hero-content{max-width:650px}
+#beway-revolut .course-feature .onboard-content{padding:30px}
+#beway-revolut .course-feature .onboard-content h2{font-size:29px}
+#beway-revolut .course-cover .onboard-type strong{font-size:43px}
+#beway-revolut .ambassador-overview{gap:42px}}
+@media(max-width:700px){#beway-revolut .hero{min-height:670px}
+#beway-revolut .hero-brand.revolut-brand{right:25px;top:27px;width:185px;height:185px;transform:none;box-shadow:13px 13px 0 #00279c}
+#beway-revolut .hero-shade{background:linear-gradient(0deg,#101115 42%,#101115c9 61%,#10111510 100%)}
+#beway-revolut .revolut-wordmark{font-size:25px;margin-bottom:152px;max-width:100px;line-height:1.12}
+#beway-revolut .hero-content{padding:28px 24px 34px}
+#beway-revolut .hero h1{font-size:43px}
+#beway-revolut .hero-copy{font-size:15px;max-width:355px}
+#beway-revolut .hero-actions{margin-top:23px}
+#beway-revolut .hero-meta{margin-top:23px}
+#beway-revolut .company-facts{gap:20px;grid-template-columns:1fr 1fr;padding-top:24px;margin-top:4px}
+#beway-revolut .company-facts>div:last-child{grid-column:1/-1}
+#beway-revolut .company-facts>div:last-child strong{font-size:18px}
+#beway-revolut .company-facts strong{font-size:29px}
+#beway-revolut .company-facts span{font-size:12px}
+#beway-revolut .about-links{gap:18px;flex-wrap:wrap;margin-top:0}
+#beway-revolut .about-links button{font-size:12px}
+#beway-revolut .inline-source{margin-top:18px}
+#beway-revolut .course-feature{margin-top:0}
+#beway-revolut .course-cover{min-height:330px}
+#beway-revolut .course-cover .onboard-type{inset:29px 28px 140px}
+#beway-revolut .course-cover .onboard-type strong{font-size:40px;margin-top:15px}
+#beway-revolut .course-cover .onboard-type>span{font-size:10px}
+#beway-revolut .course-cover-footer{left:57px;right:28px;bottom:30px;padding-top:18px;gap:25px}
+#beway-revolut .course-seal{font-size:44px}
+#beway-revolut .course-cover-footer>span:last-child{font-size:9px;letter-spacing:1.1px}
+#beway-revolut .course-feature .onboard-content{padding:28px}
+#beway-revolut .course-feature .onboard-content h2{font-size:30px}
+#beway-revolut .course-feature .onboard-stats{gap:10px;flex-wrap:wrap}
+#beway-revolut .course-feature .onboard-stats strong{font-size:16px}
+#beway-revolut .certificate-label{font-size:11px}
+#beway-revolut .course-bottom{align-items:flex-start;flex-direction:column;gap:15px;padding-top:20px}
+#beway-revolut .course-bottom p{font-size:12px}
+#beway-revolut .challenge-info h3{min-height:0}
+#beway-revolut .opportunity h3{min-height:0}
+#beway-revolut .ambassador-overview{grid-template-columns:1fr;gap:35px}
+#beway-revolut .ambassador-overview>div>p{font-size:15px}
+#beway-revolut .ambassador-overview .muted{font-size:14px}
+#beway-revolut .ambassador-steps>div{padding-bottom:20px;margin-bottom:20px;gap:16px}
+#beway-revolut .ambassador-steps h3{font-size:18px}
+#beway-revolut .resources-section .shop-categories>a{font-size:14px}
+#beway-revolut .footer-meta{align-items:flex-start;width:100%;margin:0;gap:10px}
+#beway-revolut .time-breakdown{gap:10px;padding:17px 12px}
+#beway-revolut .time-breakdown strong{font-size:18px}
+#beway-revolut .time-breakdown span{font-size:10px}
+#beway-revolut .module summary{padding:16px 14px;gap:12px}
+#beway-revolut .module h4{font-size:14px}
+#beway-revolut .module-number{font-size:20px}
+#beway-revolut .module-content{padding:18px}
+#beway-revolut .lesson-list li{font-size:12px;gap:10px}
+#beway-revolut .certificate-box{padding:18px;gap:12px;grid-template-columns:30px 1fr}
+#beway-revolut .official-links{grid-template-columns:1fr}
+#beway-revolut .course-modal-intro span{font-size:11px}
+#beway-revolut .sources-list a{font-size:13px}}
+#beway-revolut .hero-brand.revolut-brand{width:390px;height:290px;background:#f3f4f7;box-shadow:20px 20px 0 #164cf0;display:grid;place-items:center;right:6%;border-radius:2px}
+#beway-revolut .revolut-brand-inner{width:100%;padding:38px;display:flex;flex-direction:column;align-items:center;gap:22px}
+#beway-revolut .revolut-brand-inner img{display:block;position:static;width:100%;height:auto;max-height:160px;object-fit:contain}
+#beway-revolut .revolut-brand-inner>span{font:600 8px/1.5 'BEWAY Revolut DM Sans',Arial,sans-serif;letter-spacing:1px;color:#69717d;white-space:nowrap}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#101115 12%,#101115ed 38%,#10111500 72%)}
+#beway-revolut .revolut-wordmark{font-size:33px}
+#beway-revolut .course-cover .onboard-type>span{color:#b3c6ff}
+#beway-revolut .certificate-label{color:#b3c6ff}
+#beway-revolut .challenge-card:nth-child(2) .challenge-art{background:#164cf0}
+#beway-revolut .challenge-card:nth-child(3) .challenge-art{background:#262d42}
+#beway-revolut .revolut-catalogue>img{width:150px;height:auto;aspect-ratio:98/45;object-fit:contain;margin:12px 0 30px}
+#beway-revolut .module-timing{margin-top:14px;font-size:11px;color:#787e92}
+#beway-revolut .project-download{margin:20px 0}
+#beway-revolut .project-download .btn{font-size:13px}
+#beway-revolut .project-form textarea:focus-visible{outline:3px solid #517cff;outline-offset:3px}
+@media(max-width:1100px){#beway-revolut .hero-brand.revolut-brand{width:330px;height:250px;right:4%}
+#beway-revolut .revolut-brand-inner{padding:30px}
+#beway-revolut .revolut-brand-inner>span{font-size:7px}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#101115 12%,#101115ec 37%,#10111500 83%)}}
+@media(min-width:701px) and (max-width:1050px){#beway-revolut .ecommerce-section .shop-categories{display:flex;flex-wrap:wrap;gap:10px 25px}
+#beway-revolut .ecommerce-section .shop-categories>.eyebrow,#beway-revolut .ecommerce-section .shop-categories>.micro{width:100%}
+#beway-revolut .ecommerce-section .shop-categories>a{flex:1 1 25%;min-width:160px}}
+@media(max-width:700px){#beway-revolut .hero{min-height:650px}
+#beway-revolut .hero-brand.revolut-brand{width:220px;height:165px;right:24px;top:27px;transform:none;box-shadow:10px 10px 0 #164cf0}
+#beway-revolut .revolut-brand-inner{padding:20px;gap:15px}
+#beway-revolut .revolut-brand-inner>span{font-size:4.4px;letter-spacing:.7px}
+#beway-revolut .revolut-wordmark{margin-bottom:150px;font-size:26px}
+#beway-revolut .hero h1{font-size:clamp(32px,8vw,40px)}
+#beway-revolut .hero-shade{background:linear-gradient(0deg,#101115 40%,#101115c9 61%,#10111500 100%)}
+#beway-revolut .revolut-catalogue>img{width:150px;height:auto}
+#beway-revolut .course-cover .onboard-type strong{font-size:38px}
+#beway-revolut .project-download .btn{width:100%;font-size:12px;gap:12px}
+#beway-revolut .ecommerce-section .shop-categories{display:block}
+#beway-revolut .hero-actions{flex-wrap:wrap}
+#beway-revolut .hero-actions .btn{gap:14px}
+#beway-revolut .top-context{gap:10px}
+#beway-revolut .time-breakdown strong{font-size:17px}}
+@media(prefers-reduced-motion:reduce){#beway-revolut{scroll-behavior:auto}
+#beway-revolut,#beway-revolut *,#beway-revolut *:before,#beway-revolut *:after{transition:none!important;animation:none!important}}
+html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0}#beway-revolut{--red:#164cf0;--ink:#1a1a1a;--muted:#6b6b6b;--line:#e1e2e7}
+#beway-revolut .skip-link{position:absolute;left:20px;top:-80px;background:#fff;border:2px solid #164cf0;padding:10px 18px;z-index:99}#beway-revolut .skip-link:focus{top:10px}
+#beway-revolut .hero{background:#151515;min-height:580px}#beway-revolut .hero h1{font-size:clamp(42px,4.4vw,62px);letter-spacing:-2.6px;max-width:660px}
+#beway-revolut .hero-content{padding-top:43px;padding-bottom:40px;max-width:790px}#beway-revolut .revolut-wordmark{font-family:Georgia,serif;font-weight:700;font-size:36px;letter-spacing:-2px;margin-bottom:29px;color:#fff}
+#beway-revolut .hero-brand.revolut-brand{width:360px;height:280px;right:7%;background:#fff;box-shadow:20px 20px 0 #164cf0;border-radius:0;z-index:-1}
+#beway-revolut .revolut-brand-inner{padding:42px 38px 29px;gap:24px}#beway-revolut .revolut-brand-inner img{width:246px;max-height:155px;height:155px}#beway-revolut .revolut-brand-inner>span{font-size:7px;letter-spacing:.7px;color:#545454}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#151515 12%,#151515ed 39%,#15151500 71%)}
+#beway-revolut .hero-meta{flex-wrap:wrap;gap:10px;color:#b6b6b6;font-size:11px}
+#beway-revolut .btn.primary{color:#161616;background:#164cf0}#beway-revolut .btn.primary:hover{background:#496cd4}#beway-revolut .btn:focus-visible{outline-color:#2451da}
+#beway-revolut .company-facts{grid-template-columns:.75fr 1.05fr 1.25fr}#beway-revolut .company-facts strong{font-size:28px}#beway-revolut .company-facts>div:last-child strong{font-size:26px}
+#beway-revolut .about-links button{color:#555}#beway-revolut .section-nav a:hover{color:#152a6b}#beway-revolut .eyebrow{color:#73706d}
+#beway-revolut .course-cover{background:#22201e;min-height:468px}#beway-revolut .onboarding{background:#171717}#beway-revolut .course-cover .onboard-type{bottom:160px;border-left-color:#164cf0}
+#beway-revolut .course-cover .onboard-type strong{font-size:43px;letter-spacing:-1.8px}#beway-revolut .course-cover .onboard-type>span{color:#b3c6ff}#beway-revolut .certificate-label{color:#b3c6ff;font-size:12px}
+#beway-revolut .course-seal>span{font-size:9px;letter-spacing:1.4px}#beway-revolut .course-feature .onboard-content h2{font-size:36px;letter-spacing:-1.2px}#beway-revolut .onboard-content>.eyebrow{color:#bbb3ac;font-size:10px;letter-spacing:1.4px}
+#beway-revolut .onboard-content>p:not(.eyebrow):not(.micro){color:#c3beb9}#beway-revolut .course-feature .onboard-content{padding:40px}#beway-revolut .course-feature .onboard-stats span{color:#aaa5a0}#beway-revolut .micro{color:#77736e}
+#beway-revolut .onboard-content .micro{color:#aaa5a0}#beway-revolut .course-bottom p{color:#6b6763}#beway-revolut .course-bottom b{color:#44413d}
+#beway-revolut .official-challenge{display:grid;grid-template-columns:1fr 1.13fr;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+#beway-revolut .official-challenge-art{background:#164cf0;color:#171717;min-height:430px;padding:34px 36px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+#beway-revolut .challenge-origin{font-size:9px;letter-spacing:1.3px;font-weight:700;border-bottom:1px solid #1a1a1a30;padding-bottom:18px}
+#beway-revolut .official-challenge-art h3{font-size:48px;font-weight:800;line-height:1.06;letter-spacing:-2px;margin:27px 0 29px}
+#beway-revolut .video-counter{display:flex;align-items:center;gap:15px;margin-top:auto}#beway-revolut .record-dot{height:11px;width:11px;border-radius:50%;background:#1a1a1a}
+#beway-revolut .video-counter strong{font:800 74px/1 'BEWAY Revolut Manrope',sans-serif;letter-spacing:-4px}#beway-revolut .video-counter>span:last-child{font-size:13px;line-height:1.5}
+#beway-revolut .challenge-lang{font-size:9px;letter-spacing:1.2px;font-weight:650;margin-top:24px}
+#beway-revolut .official-challenge-copy{padding:38px;background:#f7f8fa;display:flex;flex-direction:column;justify-content:center}#beway-revolut .official-challenge-copy .eyebrow{font-size:10px;color:#1746d4}
+#beway-revolut .official-challenge-copy h3{font-size:29px;line-height:1.22;letter-spacing:-.9px;max-width:420px}#beway-revolut .official-challenge-copy>p:not(.eyebrow){font-size:15px;color:#6b625b;margin-top:18px}
+#beway-revolut .challenge-rounds{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-top:1px solid #d4d8e4;padding-top:20px;margin-top:27px}#beway-revolut .challenge-rounds span{font:750 23px/1.2 'BEWAY Revolut Manrope',sans-serif;color:#1746d4}#beway-revolut .challenge-rounds p{font-size:11px;line-height:1.5;margin-top:9px;color:#5d554e}
+#beway-revolut .official-challenge-copy .dialog-actions{align-items:center;gap:18px;margin-top:26px}#beway-revolut .official-challenge-copy .text-button{font-size:12px}
+#beway-revolut .challenge-eligibility{display:flex;gap:27px;align-items:flex-start;padding:20px 0 0}#beway-revolut .eligibility-label{font-size:9px;letter-spacing:1px;font-weight:700;min-width:157px;color:#746b64;padding-top:3px}#beway-revolut .challenge-eligibility p{font-size:12px;color:#746b64;line-height:1.75}#beway-revolut .challenge-eligibility a{color:#1746d4;text-decoration:underline;text-underline-offset:3px}
+#beway-revolut .project-symbol{background:#f3f6ff;color:#1746d4}#beway-revolut .mini-project{background:#f8f9fb}#beway-revolut .project-skills span{background:#e8eaf1;color:#4b5060}#beway-revolut .member-badge{background:#f3f6ff;color:#1746d4}
+#beway-revolut .revolut-catalogue{background:#f3f6ff;border-color:#d7e1ff}#beway-revolut .revolut-catalogue>img{width:130px;height:90px;aspect-ratio:auto;margin:5px 0 22px}#beway-revolut .catalogue-card-label{color:#1746d4}#beway-revolut .catalogue-card-action{border-color:#d7e1ff;color:#1746d4}
+#beway-revolut .ecommerce-section .shop-categories>a:hover{color:#1746d4}#beway-revolut .section-note{color:#817a73}#beway-revolut .source-button{color:#69625b}
+#beway-revolut .project-form textarea:focus-visible{outline-color:#152a6b}#beway-revolut .module-content{padding-bottom:25px}#beway-revolut .module summary{background:#f8f9fb}#beway-revolut .journey-head span{color:#152a6b}#beway-revolut .certificate-box{background:#eaedf7;border-color:#d7e1ff}#beway-revolut .certificate-box>span{background:#164cf0;color:#171717}#beway-revolut .sources-list a{color:#152a6b}
+#beway-revolut .prize-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}#beway-revolut .prize-grid div{padding:17px;border:1px solid #d6dbea;background:#eaedf7;border-radius:9px}#beway-revolut .prize-grid strong{display:block;font-size:15px}#beway-revolut .prize-grid span{display:block;font-size:12px;color:#606676;margin-top:5px}
+#beway-revolut .challenge-scope{background:#edeff6;padding:19px;border-radius:9px;margin:20px 0;font-size:13px;color:#525766}#beway-revolut .challenge-scope strong{display:block;color:#1e2027;margin-bottom:5px}
+@media(min-width:1500px){#beway-revolut .hero{max-width:1440px;border-radius:16px}}
+@media(max-width:1100px) and (min-width:701px){#beway-revolut .hero-brand.revolut-brand{right:4%;width:300px;height:245px}#beway-revolut .revolut-brand-inner{padding:30px}#beway-revolut .revolut-brand-inner img{width:210px;height:140px}#beway-revolut .revolut-brand-inner>span{font-size:6px}#beway-revolut .hero h1{font-size:52px}#beway-revolut .hero-content{max-width:660px}#beway-revolut .hero-shade{background:linear-gradient(90deg,#151515 12%,#151515ee 38%,#15151500 85%)}#beway-revolut .official-challenge-copy{padding:29px}#beway-revolut .official-challenge-art{padding:30px}#beway-revolut .official-challenge-art h3{font-size:43px}#beway-revolut .official-challenge-copy h3{font-size:25px}#beway-revolut .course-cover .onboard-type strong{font-size:37px}#beway-revolut .course-feature .onboard-content{padding:30px}}
+@media(max-width:700px){html{scroll-padding-top:73px}#beway-revolut .demo-pill{font-size:9px;padding:5px 9px}#beway-revolut .hero{min-height:710px}#beway-revolut .hero-brand.revolut-brand{width:190px;height:160px;right:27px;top:27px;transform:none;box-shadow:10px 10px 0 #164cf0}#beway-revolut .revolut-brand-inner{padding:20px;gap:13px}#beway-revolut .revolut-brand-inner img{width:130px;height:92px}#beway-revolut .revolut-brand-inner>span{font-size:3.8px;letter-spacing:.3px}#beway-revolut .revolut-wordmark{font-size:28px;margin-bottom:161px}#beway-revolut .hero-content{padding:28px 24px 35px}#beway-revolut .hero h1{font-size:clamp(33px,8.6vw,44px);letter-spacing:-1.7px}#beway-revolut .hero-shade{background:linear-gradient(0deg,#151515 40%,#151515c9 62%,#15151500 100%)}#beway-revolut .hero-copy{font-size:15px;max-width:350px}#beway-revolut .hero-meta{font-size:10px;gap:8px}#beway-revolut .company-facts{grid-template-columns:1fr;gap:17px}#beway-revolut .company-facts strong,#beway-revolut .company-facts>div:last-child strong{font-size:25px}#beway-revolut .course-cover{min-height:350px}#beway-revolut .course-cover .onboard-type strong{font-size:38px}#beway-revolut .course-feature .onboard-content{padding:28px}#beway-revolut .course-feature .onboard-content h2{font-size:31px}#beway-revolut .certificate-label{font-size:11px}#beway-revolut .course-seal>span{font-size:8px}#beway-revolut .course-cover-footer>span:last-child{font-size:8px}#beway-revolut .official-challenge{grid-template-columns:1fr}#beway-revolut .official-challenge-art{min-height:365px;padding:28px}#beway-revolut .official-challenge-art h3{font-size:44px;margin:24px 0}#beway-revolut .official-challenge-copy{padding:28px}#beway-revolut .official-challenge-copy h3{font-size:27px}#beway-revolut .challenge-rounds{gap:12px}#beway-revolut .challenge-rounds p{font-size:11px}#beway-revolut .challenge-eligibility{display:block}#beway-revolut .eligibility-label{display:block;margin-bottom:8px}#beway-revolut .challenge-eligibility p{font-size:11px}#beway-revolut .prize-grid{grid-template-columns:1fr}#beway-revolut .official-challenge-copy .dialog-actions{gap:20px}#beway-revolut .shop h2{font-size:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  
+/* Revolut identity and full-width BEWAY presentation. */
+#beway-revolut{--red:#164cf0;--ink:#171b18;--muted:#666d64;--line:#dee0e8}
+#beway-revolut .hero{max-width:none;border-radius:0;background:#080c19}
+#beway-revolut .topbar{max-width:none;padding-inline:5.5%}
+#beway-revolut .page-content{max-width:1560px;padding-inline:5.5%}
+#beway-revolut .hero-content{padding:54px 5.5% 48px;max-width:740px}
+#beway-revolut .hero h1{font-size:clamp(42px,4.35vw,66px);letter-spacing:-2.5px;max-width:660px}
+#beway-revolut .hero-copy{max-width:430px}
+#beway-revolut .hero-brand.revolut-brand{width:360px;height:280px;right:8%;background:#101627;border:1px solid #164cf040;box-shadow:18px 18px 0 #164cf0;border-radius:2px;transform:translateY(-50%);text-shadow:none;letter-spacing:normal}
+#beway-revolut .revolut-brand-inner{padding:40px 34px;width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:25px}
+#beway-revolut .revolut-brand-inner img{display:block;width:100%;height:52px;max-height:52px;object-fit:contain;object-position:left center}
+#beway-revolut .revolut-brand-inner>span{font:650 10px/1.4 'BEWAY Revolut DM Sans',Arial,sans-serif;letter-spacing:2px;color:#b3c6ff}
+#beway-revolut .revolut-brand-inner>p{font:550 20px/1.35 'BEWAY Revolut Manrope',Arial,sans-serif;color:#ebeef5}
+#beway-revolut .revolut-wordmark{margin-bottom:35px;line-height:1}
+#beway-revolut .revolut-wordmark img{display:block;width:146px;height:28px;object-fit:contain;object-position:left center}
+#beway-revolut .hero-shade{background:linear-gradient(90deg,#080c19 10%,#080c19dd 40%,#080c1900 72%)}
+#beway-revolut .course-cover{background:#101a37}
+#beway-revolut .onboarding{background:#111627}
+#beway-revolut .onboard-content>.eyebrow{color:#b7c4ed}
+#beway-revolut .onboard-content>p:not(.eyebrow):not(.micro){color:#d0d7ed}
+#beway-revolut .course-cover .onboard-type strong{font-size:43px}
+#beway-revolut .course-feature .onboard-content h2{font-size:34px}
+#beway-revolut .course-feature .onboard-stats span,#beway-revolut .onboard-content .micro{color:#adbae0}
+#beway-revolut .official-challenge-art{background:#164cf0;color:#ffffff}
+#beway-revolut .official-challenge-copy{background:#f3f6ff}
+#beway-revolut .official-challenge-copy>p:not(.eyebrow),#beway-revolut .challenge-rounds p{color:#565e76}
+#beway-revolut .challenge-subtitle{font:650 18px/1.5 'BEWAY Revolut DM Sans',Arial,sans-serif}
+#beway-revolut .challenge-visual{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto;padding:30px 0 8px;font:700 9px/1.3 'BEWAY Revolut DM Sans',Arial,sans-serif;letter-spacing:1px}
+#beway-revolut .challenge-visual i{width:14px;height:1px;background:currentColor}
+#beway-revolut .challenge-scope{background:#eef2ff;color:#4e5a7f}
+#beway-revolut .event-box{padding:24px;border:1px solid #d7e1ff;border-left:4px solid #164cf0;border-radius:8px;margin-block:24px;background:#fafbff}
+#beway-revolut .event-box .eyebrow{font-size:10px}
+#beway-revolut .event-box h3{font-size:24px;margin:8px 0 12px}
+#beway-revolut .event-box p:last-child{font-size:14px;color:#565e76}
+#beway-revolut .revolut-catalogue{background:#101627;border:1px solid #253154;color:#fff}
+#beway-revolut .revolut-catalogue>img{display:block;width:182px;height:34px;object-fit:contain;object-position:left center;margin:10px 0 38px}
+#beway-revolut .revolut-catalogue .catalogue-card-label{color:#b3c6ff}
+#beway-revolut .revolut-catalogue .catalogue-card-action{color:#c7d5ff;border-color:#ffffff30}
+#beway-revolut .ui-icon{display:inline-block;width:16px;height:16px;flex:0 0 16px;vertical-align:-3px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#beway-revolut .btn .ui-icon{margin-left:6px}
+#beway-revolut .text-button .ui-icon,#beway-revolut .inline-source .ui-icon,#beway-revolut .source-button .ui-icon{margin-left:5px}
+#beway-revolut .certificate-box>span .ui-icon{width:20px;height:20px}
+#beway-revolut .member-photo img[src$='stephany-cajamarca.svg']{object-fit:contain}
+#beway-revolut .member-photo-sebastian img{transform:scale(2.65);transform-origin:47% 50%}
+#beway-revolut .beway-logo{object-fit:contain!important;object-position:center!important;border-radius:0!important;transform:none!important}
+#beway-revolut .project-symbol{font-size:18px}
+@media(min-width:1700px){#beway-revolut .hero-content{max-width:850px;padding-left:max(5.5%,calc((100vw - 1400px)/2))}#beway-revolut .hero-brand.revolut-brand{right:max(8%,calc((100vw - 1350px)/2));width:390px;height:300px}}
+@media(min-width:701px) and (max-width:1100px){#beway-revolut .hero-brand.revolut-brand{width:295px;height:245px;right:4%}#beway-revolut .hero h1{font-size:48px;max-width:500px}#beway-revolut .hero-content{max-width:660px}#beway-revolut .revolut-brand-inner{padding:30px;gap:20px}#beway-revolut .revolut-brand-inner>p{font-size:18px}}
+@media(max-width:700px){#beway-revolut .hero{min-height:680px}#beway-revolut .hero-content{padding:28px 24px 35px}#beway-revolut .hero-brand.revolut-brand{width:190px;height:160px;right:26px;top:27px;transform:none;box-shadow:9px 9px 0 #164cf0}#beway-revolut .revolut-brand-inner{padding:20px;gap:12px}#beway-revolut .revolut-brand-inner img{height:27px;max-height:27px;width:148px}#beway-revolut .revolut-brand-inner>span{font-size:7px;letter-spacing:1px}#beway-revolut .revolut-brand-inner>p{font-size:12px;line-height:1.4}#beway-revolut .revolut-wordmark{margin-bottom:160px}#beway-revolut .revolut-wordmark img{width:108px;height:21px}#beway-revolut .hero h1{font-size:clamp(33px,8.4vw,44px);letter-spacing:-1.6px}#beway-revolut .hero-shade{background:linear-gradient(0deg,#080c19 43%,#080c19b0 65%,#080c1900 100%)}#beway-revolut .page-content{padding-inline:24px}#beway-revolut .topbar{padding-inline:20px}#beway-revolut .course-cover .onboard-type strong{font-size:37px}#beway-revolut .course-feature .onboard-content h2{font-size:30px}#beway-revolut .challenge-visual{gap:10px}#beway-revolut .event-box{padding:19px}}
+@media(max-width:390px){#beway-revolut .demo-pill{max-width:118px;line-height:1.4;white-space:normal;text-align:center}#beway-revolut .hero-brand.revolut-brand{width:170px;right:24px}#beway-revolut .revolut-brand-inner{padding:17px}#beway-revolut .revolut-brand-inner img{width:132px}}
+
+
+html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:#fff}body,button,input,textarea{font-family:Arial,Helvetica,sans-serif}
+#beway-revolut{--red:#1652f0;--ink:#14151a;--muted:#616775;--line:#e5e8ef}
+#beway-revolut .topbar,#beway-revolut .hero,#beway-revolut footer{max-width:none;border-radius:0}
+#beway-revolut .topbar{padding-inline:5.5%;height:84px}
+#beway-revolut .beway{font-family:Arial,sans-serif;letter-spacing:-1.8px;font-weight:800;font-size:30px}
+#beway-revolut .beway-dot{color:#1652f0}
+#beway-revolut .demo-pill{color:#555c6b;font-size:11px;letter-spacing:.2px;padding:6px 13px}
+#beway-revolut .hero{min-height:605px;background:#070b15;isolation:isolate;position:relative}
+#beway-revolut .hero:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 82% 60%,#153daf55,transparent 49%);z-index:-1}
+#beway-revolut .hero-content{padding:48px 5.5% 47px;max-width:810px;position:relative;z-index:2}
+#beway-revolut .revolut-wordmark{font:700 32px/1.1 Arial,sans-serif;letter-spacing:-1.6px;color:#fff;margin-bottom:33px;display:inline-block}
+#beway-revolut .hero h1{font-size:clamp(45px,4.7vw,69px);line-height:1.06;letter-spacing:-3.1px;max-width:650px}
+#beway-revolut .hero h1 em{font-style:normal;color:#a5bfff}
+#beway-revolut .hero-copy{color:#c4ccdc;max-width:455px;font-size:16px;line-height:1.65;margin-top:24px}
+#beway-revolut .hero-meta{color:#aab5ca;font-size:12px;flex-wrap:wrap}
+#beway-revolut .hero-actions{margin-top:28px}
+#beway-revolut .btn{border-radius:999px;padding:13px 22px;min-height:46px}
+#beway-revolut .btn.primary{color:white;background:#1652f0}
+#beway-revolut .btn.primary:hover{background:#0842d2}
+#beway-revolut .btn.glass{background:#ffffff0b}
+#beway-revolut .rev-scene{position:absolute;right:7%;top:45px;width:410px;height:505px;z-index:1}
+#beway-revolut .rev-orbit{position:absolute;width:410px;height:410px;top:48px;border:1px solid #ffffff13;border-radius:50%;box-shadow:0 0 0 45px #ffffff03,0 0 0 100px #ffffff02}
+#beway-revolut .rev-card{position:absolute;top:115px;left:5px;width:340px;height:214px;border-radius:18px;padding:27px 29px;background:linear-gradient(128deg,#fcfcff 0%,#8e9ab0 30%,#f2f3f6 48%,#b3bdce 66%,#f1f1f7 100%);box-shadow:0 24px 80px #0008,inset 0 0 0 1px #fff8;transform:rotate(-13deg);color:#111827}
+#beway-revolut .rev-card .card-brand{font:bold 29px/1 Arial,sans-serif;letter-spacing:-1.4px}
+#beway-revolut .rev-card .card-r{width:67px;height:67px;position:absolute;right:23px;bottom:21px;opacity:.8}
+#beway-revolut .rev-card .card-chip{width:31px;height:25px;margin-top:32px;display:block;border:1px solid #5b647a88;border-radius:5px;background:linear-gradient(120deg,#cbd4df,#e6e7ea);position:relative}
+#beway-revolut .rev-card .card-chip:before{content:'';position:absolute;inset:6px -1px;border-block:1px solid #6e799377}
+#beway-revolut .rev-card .card-name{display:block;margin-top:16px;letter-spacing:1.8px;font-size:9px}
+#beway-revolut .rev-note{position:absolute;right:-12px;bottom:57px;width:220px;border:1px solid #fff3;background:#141f39f2;border-radius:15px;padding:18px 20px;color:white;box-shadow:0 10px 40px #0005}
+#beway-revolut .rev-note>span{font-size:9px;letter-spacing:1.4px;color:#9db9ff;display:block;margin-bottom:9px}
+#beway-revolut .rev-note strong{font-size:19px;line-height:1.25;letter-spacing:-.6px;display:block}
+#beway-revolut .rev-note small{display:block;margin-top:10px;color:#b5c0d8;font-size:10px}
+#beway-revolut .scene-caption{position:absolute;bottom:13px;right:0;font-size:9px;letter-spacing:1.1px;color:#8997b4}
+#beway-revolut .page-content{max-width:1440px;padding-inline:5.5%}
+#beway-revolut .section{padding-block:76px}
+#beway-revolut .about{gap:45px}
+#beway-revolut .company-facts{padding-block:25px}
+#beway-revolut .about-links{padding-top:0}
+#beway-revolut .about-links .text-button{font-size:13px;text-decoration:none}
+#beway-revolut .chips span{border-radius:100px;font-size:12px}
+#beway-revolut .course-feature{margin-top:0;background:#101520}
+#beway-revolut .course-cover{background:#143ddb;min-height:495px}
+#beway-revolut .course-cover:after{background:radial-gradient(ellipse at 100% 100%,#0007,transparent 75%)}
+#beway-revolut .course-cover .onboard-type{border-left-color:#b9cbff;z-index:1}
+#beway-revolut .course-cover .onboard-type>span{color:#d3deff}
+#beway-revolut .course-cover .onboard-type strong{font-size:44px;letter-spacing:-1.8px}
+#beway-revolut .course-seal,#beway-revolut .course-seal>span{color:white}
+#beway-revolut .course-feature .onboard-content{padding:39px}
+#beway-revolut .course-feature .onboard-content h2{font-size:32px;letter-spacing:-1px}
+#beway-revolut .onboard-content>.eyebrow{color:#a9bfff;letter-spacing:1.2px}
+#beway-revolut .certificate-label{color:#b5caff;font-size:12px}
+#beway-revolut .course-cover-footer{z-index:1}
+#beway-revolut .onboard-stats{margin-block:25px;gap:15px}
+#beway-revolut .onboard-stats strong{font-size:18px}
+#beway-revolut .onboard-stats span{font-size:11px}
+#beway-revolut .official-challenge{border-radius:20px}
+#beway-revolut .official-challenge-art{background:#0b1020;color:#fff;min-height:450px;padding:35px 36px}
+#beway-revolut .official-challenge-art:after{content:'';position:absolute;width:210px;height:210px;right:-70px;bottom:-80px;border:35px solid #2357ff33;border-radius:50%;pointer-events:none}
+#beway-revolut .official-challenge-art h3{font-size:55px;letter-spacing:-2.4px;margin-top:35px;margin-bottom:18px}
+#beway-revolut .challenge-origin{font-size:9px;color:#a7bdff;letter-spacing:1.2px;border:1px solid #718cc344;padding:7px 10px;border-radius:100px;align-self:flex-start}
+#beway-revolut .challenge-subtitle{font-size:22px;max-width:300px;line-height:1.3;font-weight:550;color:#f5f7ff}
+#beway-revolut .challenge-visual{color:#b2c6ff;position:relative;z-index:1;font-size:9px;gap:15px;padding-top:32px}
+#beway-revolut .challenge-lang{color:#a2acc1;font-size:9px;letter-spacing:1.2px}
+#beway-revolut .official-challenge-copy{background:#f3f6ff;padding:38px}
+#beway-revolut .official-challenge-copy .eyebrow{color:#1749d4}
+#beway-revolut .official-challenge-copy h3{font-size:27px}
+#beway-revolut .challenge-rounds{margin-top:22px}
+#beway-revolut .challenge-rounds p{color:#566176}
+#beway-revolut .challenge-eligibility{align-items:flex-start}
+#beway-revolut .challenge-eligibility p{font-size:12px;color:#667082}
+#beway-revolut .revolut-catalogue{background:#101727;border:1px solid #253554;color:white;min-height:350px}
+#beway-revolut .revolut-catalogue .catalogue-card-label{color:#b3c8ff}
+#beway-revolut .revolut-catalogue .catalogue-card-action{color:#c7d5ff;border-color:#ffffff30}
+#beway-revolut .catalogue-logo{font-weight:700;font-size:29px;letter-spacing:-1.5px;display:block;margin-bottom:40px}
+#beway-revolut .shop-categories>a{gap:14px}
+#beway-revolut .shop-categories .micro{font-size:11px}
+#beway-revolut .member-photo{position:relative;isolation:isolate;background:#edf2ff;display:grid;place-items:center;color:#2c51ae;font-size:23px;font-weight:700;border:1px solid #dce5ff}
+#beway-revolut .member-photo>span{position:absolute;inset:0;display:grid;place-items:center;z-index:-1}
+#beway-revolut .member-photo>img{position:relative;z-index:1}
+#beway-revolut .member-photo>img.failed{display:none}
+#beway-revolut .real-ambassadors .ambassador{min-width:0}
+#beway-revolut .real-ambassadors .ambassador h3{min-height:44px;font-size:15px}
+#beway-revolut .real-ambassadors .ambassador p{font-size:12px;min-height:42px}
+#beway-revolut .real-ambassadors .ambassador .campus{font-size:11px}
+#beway-revolut .source-button{font-size:12px}
+#beway-revolut .footer-meta{margin-left:auto}
+#beway-revolut .time-breakdown{grid-template-columns:repeat(3,minmax(0,1fr))}
+#beway-revolut .module-summary-text small{line-height:1.5}
+#beway-revolut .module-content .module-task{border-left:3px solid #1652f0;padding:13px 16px;background:#f3f6ff;margin-block:16px;color:#4f5f7d}
+#beway-revolut .score-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-block:20px}
+#beway-revolut .score-grid>div{background:#f2f5fc;border:1px solid #e2e7f3;border-radius:10px;padding:15px 12px;font-size:11px;line-height:1.5}
+#beway-revolut .score-grid strong{display:block;font-size:25px;color:#1652f0;margin-bottom:7px}
+#beway-revolut .project-form .field{margin-block:20px}
+#beway-revolut .project-form label{display:block;font-weight:600;font-size:14px;line-height:1.6;margin-bottom:9px}
+#beway-revolut .project-form textarea{box-sizing:border-box;width:100%;min-height:100px;border:1px solid #d8deea;border-radius:9px;padding:13px;font:14px/1.6 Arial,sans-serif;resize:vertical;color:#1b2540}
+#beway-revolut .project-form textarea:focus{outline:2px solid #1652f0;outline-offset:2px}
+#beway-revolut .project-form textarea::placeholder{color:#8b93a3}
+#beway-revolut .project-storage-note{font-size:12px;color:#7d8798}
+#beway-revolut .challenge-brief-download{margin-top:14px}
+@media(min-width:1700px){#beway-revolut .rev-scene{right:16%}#beway-revolut .hero-content{padding-left:max(5.5%,calc((100vw - 1400px)/2));max-width:1100px}}
+@media(min-width:701px) and (max-width:1100px){#beway-revolut .hero-content{max-width:640px}#beway-revolut .hero h1{font-size:48px;max-width:470px}#beway-revolut .hero-copy{max-width:380px}#beway-revolut .rev-scene{right:1%;transform:scale(.78);transform-origin:right center;top:48px}#beway-revolut .course-feature .onboard-content{padding:29px}#beway-revolut .course-feature .onboard-content h2{font-size:28px}#beway-revolut .course-cover .onboard-type strong{font-size:36px}#beway-revolut .official-challenge-art h3{font-size:45px}}
+@media(max-width:700px){html{scroll-padding-top:70px}#beway-revolut .topbar{height:70px;padding-inline:23px}#beway-revolut .beway{font-size:26px}#beway-revolut .demo-pill{font-size:9px;max-width:150px;padding:5px 9px}#beway-revolut .hero{min-height:810px}#beway-revolut .hero-content{padding:27px 24px 35px;max-width:none}#beway-revolut .revolut-wordmark{font-size:27px;margin-bottom:254px}#beway-revolut .hero h1{font-size:clamp(35px,8.6vw,48px);letter-spacing:-1.8px;max-width:500px}#beway-revolut .hero-copy{font-size:15px;max-width:480px;margin-top:20px}#beway-revolut .hero-actions{gap:9px;margin-top:23px}#beway-revolut .hero-actions .btn{font-size:12px;padding:12px 15px;gap:4px}#beway-revolut .hero-meta{font-size:10px;gap:8px}#beway-revolut .rev-scene{width:320px;height:255px;right:calc(50% - 160px);top:58px;transform:none}#beway-revolut .rev-orbit{width:230px;height:230px;top:0;left:45px}#beway-revolut .rev-card{width:225px;height:142px;left:31px;top:47px;padding:19px 20px;border-radius:12px}#beway-revolut .rev-card .card-brand{font-size:22px}#beway-revolut .rev-card .card-chip{width:23px;height:17px;margin-top:17px}#beway-revolut .rev-card .card-name{font-size:7px;margin-top:12px}#beway-revolut .rev-card .card-r{width:43px;height:43px;right:18px;bottom:18px}#beway-revolut .rev-note{width:140px;padding:11px 14px;right:10px;bottom:4px;border-radius:11px}#beway-revolut .rev-note>span{font-size:7px;margin-bottom:5px}#beway-revolut .rev-note strong{font-size:14px;letter-spacing:-.3px}#beway-revolut .rev-note small{font-size:8px;margin-top:6px}#beway-revolut .scene-caption{display:none}#beway-revolut .page-content{padding-inline:24px}#beway-revolut .section{padding-block:46px}#beway-revolut .about{gap:26px}#beway-revolut .course-feature .onboard-content{padding:29px 25px}#beway-revolut .course-feature .onboard-content h2{font-size:29px}#beway-revolut .course-cover{min-height:355px}#beway-revolut .course-cover .onboard-type strong{font-size:38px}#beway-revolut .onboard-stats{gap:12px}#beway-revolut .onboard-stats strong{font-size:17px}#beway-revolut .onboard-stats span{font-size:10px}#beway-revolut .official-challenge-art{min-height:390px;padding:29px}#beway-revolut .official-challenge-art h3{font-size:49px}#beway-revolut .official-challenge-copy{padding:29px}#beway-revolut .official-challenge-copy h3{font-size:25px}#beway-revolut .score-grid{grid-template-columns:repeat(2,1fr)}#beway-revolut .score-grid>div:last-child{grid-column:1/-1}#beway-revolut .footer-meta{margin-left:0;width:100%}#beway-revolut .time-breakdown{grid-template-columns:1fr}#beway-revolut .real-ambassadors .ambassador h3{font-size:14px}#beway-revolut .course-bottom .text-button{font-size:12px}}
+@media(max-width:365px){#beway-revolut .hero-actions{flex-direction:column;align-items:flex-start}#beway-revolut .hero{min-height:875px}#beway-revolut .hero h1{font-size:34px}#beway-revolut .ambassador-grid{grid-template-columns:1fr}}
+</style></head><body>
+<div id="beway-revolut">
+<a class="skip-link" href="#contenido">Ir al contenido</a>
+<header class="topbar"><a class="beway" href="#inicio" aria-label="BEWAY, inicio">beway<span class="beway-dot">.</span></a><div class="top-context"><a href="https://jorgegrego19-collab.github.io/beway-fichas/" target="_blank" rel="noopener">Explora empresas</a><span class="slash">/</span><strong>Revolut</strong></div><span class="demo-pill">Propuesta BEWAY × Revolut</span></header>
+<main id="inicio">
+<section class="hero" aria-labelledby="hero-title"><div class="rev-scene" aria-hidden="true"><div class="rev-orbit"></div><div class="rev-card"><span class="card-brand">Revolut</span><i class="card-chip"></i><span class="card-name">BANKING &amp; BEYOND</span><svg class="card-r" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.9133 6.9566C20.9133 3.1208 17.7898 0 13.9503 0H2.424v3.8605h10.9782c1.7376 0 3.177 1.3651 3.2087 3.043.016.84-.2994 1.633-.8878 2.2324-.5886.5998-1.375.9303-2.2144.9303H9.2322a.2756.2756 0 0 0-.2755.2752v3.431c0 .0585.018.1142.052.1612L16.2646 24h5.3114l-7.2727-10.094c3.6625-.1838 6.61-3.2612 6.61-6.9494zM6.8943 5.9229H2.424V24h4.4704z"/></svg></div><div class="rev-note"><span>BEWAY × REVOLUT</span><strong>Tu siguiente paso<br>en banca digital.</strong><small>Aprende. Diseña. Decide.</small></div><span class="scene-caption">COMPOSICIÓN VISUAL CONCEPTUAL</span></div><div class="hero-content"><span class="revolut-wordmark">Revolut</span><h1>La banca del futuro<br>se gestiona <em>hoy.</em></h1><p class="hero-copy">Descubre cómo funciona un banco digital, aprende a tomar decisiones de negocio y diseña la banca de tu generación.</p><div class="hero-actions"><a class="btn primary" href="#curso">Descubre el curso <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a class="btn glass" href="#challenges">Explora el challenge <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></a></div><p class="hero-meta">Gestión de banca digital <i></i> 8 horas · 2 días <i></i> España y Latinoamérica</p></div></section>
+<nav class="section-nav" aria-label="Secciones de Revolut"><a href="#sobre" class="active" aria-current="location">Sobre Revolut</a><a href="#curso">El curso <span>08 h</span></a><a href="#challenges">Campus Challenge</a><a href="#miniproyectos">Miniproyectos</a><a href="#embajadores">Embajadores</a><a href="#servicios">Explora Revolut</a></nav>
+<div class="page-content" id="contenido">
+<section id="sobre" class="section about"><div><p class="eyebrow">01 / CONOCE REVOLUT</p><h2>Una app por fuera.<br>Un negocio global<br>por dentro.</h2><a class="inline-source" href="https://www.revolut.com/es-ES/" target="_blank" rel="noopener">Conoce Revolut <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div><div class="about-copy"><p>Revolut reúne servicios para pagar, organizar el dinero y operar entre países y divisas desde una experiencia digital. Su negocio conecta tecnología, productos financieros y decisiones que afectan al día a día de sus clientes.</p><p class="muted">Con Beway, la propuesta es comprender qué hay detrás de esa experiencia: cómo se diseña un producto, cómo funciona una operación, de dónde proceden los ingresos y cómo se crece manteniendo la confianza del cliente.</p><div class="chips"><span>Producto digital</span><span>Pagos y operaciones</span><span>Crecimiento</span><span>Datos e IA</span></div></div><div class="company-facts"><div><strong>8 horas</strong><span>de aprendizaje aplicado a banca digital</span></div><div><strong>2 días</strong><span>de formación asíncrona con vídeos</span></div><div><strong>Un reto</strong><span>para diseñar la banca de tu generación</span></div></div><div class="about-links"><button class="text-button" data-info="modelo">Cómo funciona el negocio <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button class="text-button" data-info="digital">Producto, datos y confianza <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button class="text-button" data-info="carrera">Carreras en banca digital <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div></section>
+<section id="curso" class="section course-section"><div class="section-heading"><div><p class="eyebrow">02 / APRENDE CON REVOLUT</p><h2>Aprende a gestionar<br>la banca desde dentro.</h2></div><p>Ocho módulos y un caso práctico<br>que avanza contigo hasta el lanzamiento.</p></div><div class="onboarding course-feature"><div class="onboard-cover course-cover"><div class="onboard-type"><span>GESTIÓN DE BANCA DIGITAL</span><strong>Del producto<br>a la decisión.<br>De la idea<br>al negocio.</strong></div><div class="course-cover-footer"><span class="course-seal" aria-hidden="true">8<span>HORAS EN TOTAL</span></span><span>VÍDEOS BREVES<br>Y APLICACIÓN PRÁCTICA</span></div></div><div class="onboard-content"><p class="eyebrow">PROPUESTA ACADÉMICA BEWAY × REVOLUT</p><h2>Gestión de Banca Digital: Producto, Operaciones y Crecimiento</h2><p>Aprende a analizar un banco digital y a defender una propuesta útil para el cliente, viable económicamente y coherente en sus riesgos.</p><div class="certificate-label"><span aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Acreditación de superación propuesta a Revolut</div><div class="onboard-stats"><div><strong>8 horas</strong><span>vídeos y actividades</span></div><div><strong>2 días</strong><span>4 horas por jornada</span></div><div><strong>A tu ritmo</strong><span>100 % asíncrono</span></div></div><button class="btn white" data-course>Ver programa completo <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><p class="micro">Nivel inicial · Distintas carreras · Caso guiado de principio a fin</p></div></div><div class="course-bottom"><p><b>Día 1:</b> negocio, producto, operaciones y rentabilidad.<br><b>Día 2:</b> riesgo, IA, crecimiento y comité de lanzamiento.</p><button class="text-button" data-download="course">Descargar programa <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></button></div></section>
+<section id="challenges" class="section"><div class="section-heading"><div><p class="eyebrow">03 / REVOLUT CAMPUS CHALLENGE</p><h2>Diseña la banca<br>de tu generación.</h2></div><p>Una necesidad real de la vida universitaria.<br>Una solución que puedas defender.</p></div><article class="official-challenge"><div class="official-challenge-art"><span class="challenge-origin">PROPUESTA BEWAY × REVOLUT</span><h3>Revolut<br>Campus<br>Challenge</h3><div class="challenge-subtitle">diseña la banca<br>de tu generación</div><div class="challenge-visual" aria-hidden="true"><span>PRODUCTO</span><i></i><span>NEGOCIO</span><i></i><span>CONFIANZA</span></div><span class="challenge-lang">INDIVIDUAL · ONLINE · EN ESPAÑOL</span></div><div class="official-challenge-copy"><p class="eyebrow">TU VIDA UNIVERSITARIA, TU PUNTO DE PARTIDA</p><h3>Convierte una necesidad de los estudiantes en una experiencia de banca digital.</h3><p>Elige un problema real, diseña una solución y explica cómo conseguirías que los universitarios la incorporasen a su día a día. Puedes presentar un prototipo sin programación.</p><div class="challenge-rounds"><div><span>01</span><p>Comprende al estudiante</p></div><div><span>02</span><p>Diseña y justifica tu solución</p></div><div><span>03</span><p>Defiende su adopción en campus</p></div></div><div class="dialog-actions"><button class="btn primary" data-challenge>Explorar el reto <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><button class="text-button" data-download="brief">Descargar brief <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></button></div></div></article><div class="challenge-eligibility"><span class="eligibility-label">FORMATO PROPUESTO</span><p>Universitarios mayores de 18 años de España y Latinoamérica · 7 días para resolver el caso · 5 diapositivas, recorrido visual y vídeo de 90 segundos. Actividad independiente de las ocho horas del curso.</p></div></section>
+<section id="miniproyectos" class="section"><div class="section-heading"><div><p class="eyebrow">04 / MINIPROYECTOS BEWAY</p><h2>Practica con decisiones<br>que hacen avanzar un banco.</h2></div><p>Producto, rentabilidad y confianza<br>en tres casos breves de práctica.</p></div><div class="mini-project-grid" id="mini-projects-grid"></div><p class="section-note">Casos ficticios opcionales e independientes de las ocho horas del curso.</p></section>
+<section id="embajadores" class="section ambassadors-section"><div class="section-heading"><div><p class="eyebrow">05 / EMBAJADORES BEWAY</p><h2>Conecta con miembros<br>de tu comunidad.</h2></div><p>Cinco perfiles de CLH para acercar<br>las experiencias a sus campus.</p></div><div class="ambassador-grid real-ambassadors" id="ambassadors-grid"></div><p class="section-note">Selección propuesta de miembros de CLH para el programa de embajadores Beway.</p></section>
+<section id="servicios" class="section shop ecommerce-section"><div class="shop-intro"><p class="eyebrow">06 / SIGUE EXPLORANDO</p><h2>De aprender el negocio<br>a conocer sus posibilidades.</h2><p>Explora la app, descubre los servicios de Revolut y conoce sus oportunidades para estudiantes y recién graduados.</p><a class="text-button" href="https://www.revolut.com/es-ES/" target="_blank" rel="noopener">Conoce Revolut <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div><a class="catalogue-card revolut-catalogue" href="https://www.revolut.com/es-ES/bank-account/" target="_blank" rel="noopener"><span class="catalogue-logo">Revolut</span><span class="catalogue-card-label">DESCUBRE LA EXPERIENCIA</span><h3>Una nueva forma<br>de relacionarte<br>con tu dinero.</h3><span class="catalogue-card-action">Explorar la cuenta <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><div class="shop-categories"><p class="eyebrow">ELIGE TU SIGUIENTE PASO</p><a href="https://www.revolut.com/es-ES/our-pricing-plans/" target="_blank" rel="noopener"><span>Conoce y compara los planes</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="https://www.revolut.com/es-ES/internship-programme/" target="_blank" rel="noopener"><span>Programa de prácticas</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="https://www.revolut.com/es-ES/graduate-programme/" target="_blank" rel="noopener"><span>Programa para graduados</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><a href="https://www.revolut.com/es-ES/business/" target="_blank" rel="noopener"><span>Revolut Business</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a><p class="micro">Disponibilidad, requisitos y condiciones según país, servicio y convocatoria. Consulta los canales oficiales.</p></div></section>
+</div></main><footer><a class="beway" href="#inicio">beway<span class="beway-dot">.</span></a><p>Tu próximo paso empieza con curiosidad.</p><div class="footer-meta"><button class="source-button" data-sources>Fuentes y alcance de la propuesta <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></button><span>Revolut en Beway · Propuesta de colaboración</span></div></footer><dialog id="detail-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><span id="dialog-kicker"></span><button class="icon-button" data-close aria-label="Cerrar ventana de detalle"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div id="dialog-body"></div></dialog><noscript><p style="padding:24px">Activa JavaScript para consultar los módulos, el brief del challenge y los perfiles de embajadores.</p></noscript></div>
+<script>
+(() => {
+ 'use strict';
+ const root=document.querySelector('#beway-revolut');
+ const DATA={"modules":[{"title":"El negocio de un banco digital","description":"Comprende la propuesta de valor, las fuentes de ingresos y los costes que sostienen el negocio. Distingue un banco de una fintech y de una entidad de pagos.","lessons":["Banco, neobanco, fintech y entidad de pagos","Propuesta de valor y cadena del negocio","Pagos, suscripciones, divisas e intereses","Costes, escala y rentabilidad por cliente"],"task":"Construye el mapa del negocio para una experiencia universitaria: cliente, valor, ingresos y costes.","resource":"Mapa del negocio y glosario de banca digital."},{"title":"Producto y experiencia del cliente","description":"Convierte una necesidad universitaria en una experiencia de producto y diseña el recorrido desde el registro hasta el primer uso útil.","lessons":["Investigar necesidades y fricciones reales","Del problema a una propuesta de producto","Registro, incorporación y primer uso","Priorizar funcionalidades y validar la experiencia"],"task":"Diseña el recorrido de una estudiante que empieza a vivir fuera de casa e identifica dónde pierde confianza o abandona.","resource":"Plantilla de recorrido del cliente y priorización."},{"title":"Cómo funcionan las operaciones","description":"Sigue el recorrido de un pago y aprende a conectar tarjetas, transferencias, divisas, conciliaciones, proveedores y atención al cliente.","lessons":["De la autorización a la liquidación de un pago","Tarjetas, transferencias y cambio de divisas","Devoluciones, conciliación y atención al cliente","Proveedores, continuidad y gestión de incidencias"],"task":"Resuelve un pago duplicado: qué comprobar, qué comunicar y cómo coordinar la devolución.","resource":"Mapa de un pago y ficha de gestión de incidencias."},{"title":"Rentabilidad y métricas de gestión","description":"Relaciona captación, ingresos, coste de servicio y retención para decidir si una iniciativa puede resultar sostenible.","lessons":["Captación, activación y retención","Coste de adquisición y coste de servicio","Ingresos por cliente y margen de contribución","Escenarios y decisión de inversión"],"task":"Calcula el margen de un piloto con datos ficticios y elige los indicadores que permitirían ampliarlo.","resource":"Plantilla de economía por cliente y escenarios."},{"title":"Riesgo, seguridad y confianza","description":"Integra identificación del cliente, prevención del fraude y blanqueo, privacidad y reclamaciones en la experiencia de producto.","lessons":["Identificación del cliente y prevención del blanqueo","Fraude, ciberseguridad y alertas","Privacidad, transparencia y reclamaciones","Equilibrar seguridad y facilidad de uso"],"task":"Diseña una respuesta ante una transferencia sospechosa: controles, intervención humana y comunicación al cliente.","resource":"Matriz de riesgos, controles y experiencia del cliente."},{"title":"Datos, IA y banca abierta","description":"Selecciona usos de datos e IA que aporten valor y comprende cómo la conexión entre servicios financieros puede mejorar una experiencia.","lessons":["De los datos a una decisión de negocio","Personalización y automatización responsable","IA para apoyo, clasificación y detección de anomalías","Banca abierta, permisos y medición del resultado"],"task":"Propón un uso de IA para gestionar ingresos irregulares y define su utilidad, sus límites y tres métricas.","resource":"Ficha de caso de uso de IA y mapa de permisos."},{"title":"Crecimiento y expansión","description":"Diseña un plan de adopción universitaria que conecte difusión, primer uso y retención, adaptándolo al mercado elegido.","lessons":["Canales universitarios y alianzas de campus","Activación y hábitos durante los primeros treinta días","Recomendación, retención y crecimiento sostenible","Adaptación por mercado y plan de noventa días"],"task":"Elabora un plan de noventa días para un campus: audiencia, canales, presupuesto y resultados que medirías.","resource":"Plan de adopción y cuadro de indicadores."},{"title":"Comité de lanzamiento","description":"Integra el trabajo de los siete módulos anteriores y defiende una propuesta de producto coherente en experiencia, operaciones, rentabilidad y riesgo.","lessons":["Sintetizar el problema y la solución","Comprobar operaciones, números y riesgos","Definir el piloto y los criterios de éxito","Presentar una decisión ante un comité"],"task":"Entrega una página ejecutiva: necesidad, solución, economía, riesgos y decisión de lanzamiento.","resource":"Plantilla de decisión y rúbrica de evaluación final."}],"projects":[{"id":"primer-uso","symbol":"01","label":"PRODUCTO · EXPERIENCIA","title":"Convierte el registro en un primer uso útil","short":"Diseña los primeros pasos de una experiencia de banca digital para una persona que acaba de empezar la universidad.","duration":"45–60 min","level":"Inicial","skills":["Producto","Experiencia de usuario","Activación"],"intro":"Transforma una necesidad concreta en un recorrido sencillo, con una acción útil que marque el inicio de una relación con el cliente.","caseText":"Caso ficticio: una estudiante se muda por primera vez. Recibe dinero de su familia, comparte gastos de piso y necesita reservar parte de sus ingresos para el alquiler. El piloto registra 1.000 altas, pero solo 400 personas completan un primer uso útil en siete días. Debes identificar una fricción y diseñar una mejora comprobable.","data":[["Altas del piloto","1.000"],["Primer uso en siete días","400"],["Activación inicial","40 %"],["Entrega","Tres pantallas o un recorrido"]],"steps":["Define la necesidad y un primer uso que aporte valor al estudiante.","Diseña el recorrido en tres pantallas y explica qué fricción reduces.","Elige un indicador, una hipótesis y una forma de comprobarla."],"fields":["Necesidad del estudiante y primer uso útil","Recorrido propuesto y fricción que reduce","Hipótesis y métrica para evaluar el piloto"],"deliverable":"Un recorrido de tres pantallas y una explicación de una página."},{"id":"economia-campus","symbol":"02","label":"FINANZAS · CRECIMIENTO","title":"Decide si ampliarías un piloto universitario","short":"Analiza el coste de captación y el margen de una iniciativa para estudiantes antes de invertir más.","duration":"45–60 min","level":"Inicial","skills":["Economía por cliente","Escenarios","Decisión"],"intro":"Relaciona los números de captación con la actividad real de los clientes y formula una recomendación.","caseText":"Datos ficticios mensuales, expresados en euros solo para facilitar el ejercicio: el piloto cuesta 6.000 € y consigue 1.000 altas. El 40 % permanece activo. Cada cliente activo genera 5 € de ingresos al mes y cuesta 2 € en servicio y operación. Se mantienen constantes esos valores durante seis meses, sin nuevas altas. Compara el coste inicial con el margen acumulado y explica cómo cambiaría tu decisión si solo permaneciera activo el 25 %.","data":[["Captación inicial","6.000 €"],["Altas","1.000"],["Activos en escenario base","40 %"],["Margen por activo y mes","3 €"]],"steps":["Calcula el coste por alta y por cliente activo.","Calcula el margen mensual y el margen de seis meses en ambos escenarios.","Decide si ampliarías el piloto y qué datos pedirías antes."],"fields":["Cálculos del escenario base y sus supuestos","Escenario de menor actividad y comparación","Recomendación, condiciones y datos pendientes"],"deliverable":"Una hoja de cálculos y una recomendación breve. Los datos no representan resultados de Revolut."},{"id":"confianza-ia","symbol":"03","label":"IA · CONFIANZA","title":"Diseña una alerta que ayude a decidir","short":"Propón una ayuda inteligente para detectar una operación sospechosa sin bloquear innecesariamente al cliente.","duration":"45–60 min","level":"Inicial","skills":["Riesgo","IA aplicada","Comunicación"],"intro":"Conecta una señal de riesgo con una intervención comprensible y una experiencia que conserve la confianza del estudiante.","caseText":"Caso ficticio: una estudiante recibe un mensaje urgente solicitando un pago para reservar alojamiento. El beneficiario es nuevo, el importe supera sus pagos habituales y la solicitud llega desde fuera de la app. Diseña una intervención que explique el riesgo y facilite una decisión informada, con revisión humana cuando proceda.","data":[["Señal principal","Beneficiario nuevo"],["Contexto","Pago urgente"],["Diseño","Una alerta y dos recorridos"],["Entrega","Prototipo y métricas"]],"steps":["Define las señales y los límites de la automatización.","Redacta una alerta clara y diseña qué ocurre si se confirma o se detiene el pago.","Explica cómo medirías detección, falsas alertas y comprensión del mensaje."],"fields":["Señales de riesgo y uso concreto de IA","Mensaje de la alerta y recorridos propuestos","Supervisión, límites y métricas"],"deliverable":"Una pantalla de alerta, dos recorridos y una explicación de las métricas."}],"people":[{"id":"ambassador-1","name":"Cristóbal Vargas Marchant","country":"Chile","university":"Universidad de Chile","area":"Economía","image":"https://clhglobal.org/images/members/cristobal-vargas-marchant.webp","linkedIn":"https://www.linkedin.com/in/crist%C3%B3bal-vargas-marchant-4289151b5/","slug":"cristobal-vargas-marchant","initials":"CV"},{"id":"ambassador-2","name":"Santiago Nariño Rivera","country":"Colombia","university":"Universidad del Rosario","area":"Negocios Internacionales y Finanzas","image":"https://clhglobal.org/images/members/santiago-narino-rivera.jpeg","linkedIn":"https://www.linkedin.com/in/santiago-nari%C3%B1o-rivera-10351429b/","slug":"santiago-narino-rivera","initials":"SN"},{"id":"ambassador-4","name":"Sophia de Leone","country":"Argentina","university":"Universidad de San Andrés","area":"Negocios Digitales","image":"https://clhglobal.org/images/members/sophia-de-leone.webp","linkedIn":"https://www.linkedin.com/in/sophia-de-leone/","slug":"sophia-de-leone","initials":"Sd"},{"id":"CLH-026","name":"Kevin Luna Palacios","country":"El Salvador","university":"ESEN","area":"Software y ciberseguridad","slug":"kevin-elias-luna-palacios","image":"https://clhglobal.org/images/members/kevin-elias-luna-palacios.webp","linkedIn":"https://www.linkedin.com/in/kevin-luna-a0b024325/?locale=es","initials":"KL"},{"id":"ambassador-3","name":"Claudio Federico Buffardi Witzke","country":"México","university":"Universidad Anáhuac México Norte","area":"Ingeniería Industrial","image":"https://clhglobal.org/images/members/claudio-federico-buffardi-witzke.webp","linkedIn":"https://www.linkedin.com/in/claudio-buffardi/","slug":"claudio-federico-buffardi-witzke","initials":"CF"}],"sources":[["Revolut España","https://www.revolut.com/es-ES/","Identidad de la empresa y presentación de sus servicios."],["Resultados e informe anual 2025","https://www.revolut.com/news/revolut_reports_record_profit_of_2_3bn_for_2025_as_revenue_surges_to_6bn/","Modelo de negocio y prioridades de crecimiento."],["Cuenta Revolut","https://www.revolut.com/es-ES/bank-account/","Funciones y servicios disponibles; condiciones en la web oficial."],["Prácticas y programa para graduados","https://www.revolut.com/es-ES/internship-programme/","Oportunidades para estudiantes, según puesto y ubicación."],["HackUPC 2025 — Revolut","https://hackupc-2025.devpost.com/","Antecedente histórico: reto de IA aplicada a servicios financieros. El Campus Challenge de esta ficha es una propuesta distinta de BEWAY."],["Comillas — Pagos y Banca Digital","https://www.comillas.edu/en/postgraduate/master-en-tecnologias-financieras-pagos-y-banca-digital/","Referencia académica de pagos, modelos de negocio, datos y regulación."],["UADE — Finanzas Digitales","https://www.uade.edu.ar/facultad-de-ciencias-economicas/licenciatura-en-finanzas-digitales/plan-de-estudios/","Referencia de gestión de producto, finanzas digitales y ciberseguridad."],["Copenhagen Business School","https://www.coursera.org/specializations/digital-transformation-financial-services/","Referencia de estrategia, innovación y transformación de servicios financieros."],["Corporate Finance Institute","https://corporatefinanceinstitute.com/course/digital-banking-course/","Referencia profesional de fundamentos de banca digital."],["CFTE — Fintech Foundation","https://courses.cfte.education/fintech-foundation-specialisation/","Referencia de formación fintech breve de ocho horas."],["Comunidad de Líderes Hispanoamericanos","https://clhglobal.org/","Perfiles y fotografías públicas de miembros; selección propuesta para BEWAY."],["Símbolo de Revolut — Simple Icons","https://github.com/simple-icons/simple-icons/blob/develop/icons/revolut.svg","Símbolo vectorial de la marca utilizado como referencia visual."]],"scores":[["Necesidad del estudiante",25],["Calidad de la solución",25],["Viabilidad económica",20],["Adopción en campus",15],["Seguridad y confianza",15]]};
+ const {modules,projects,people,sources,scores}=DATA;
+ const arrow='<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>', down='<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg>', check='<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>';
+ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const external=(label,url,cls='btn outline')=>`<a class="${cls}" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ${arrow}</a>`;
+ const dialog=root.querySelector('#detail-dialog'),body=root.querySelector('#dialog-body');let previousFocus;
+ function show(kicker,content){if(!dialog.open)previousFocus=document.activeElement;root.querySelector('#dialog-kicker').textContent=kicker;body.innerHTML=`<div class="dialog-inner">${content}</div>`;const h=body.querySelector('h2');if(h)h.id='dialog-title';if(!dialog.open)dialog.showModal();document.body.classList.add('beway-revolut-modal-open');dialog.scrollTop=0;root.querySelector('[data-close]').focus();hydrateImages(body);}
+ function close(){dialog.close();document.body.classList.remove('beway-revolut-modal-open');if(previousFocus?.isConnected)previousFocus.focus();}
+ root.querySelector('[data-close]').addEventListener('click',close);dialog.addEventListener('cancel',e=>{e.preventDefault();close();});dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close();});
+ function moduleHTML(m,i){return `<details class="module"><summary><span class="module-number">${String(i+1).padStart(2,'0')}</span><div class="module-summary-text"><h4>${esc(m.title)}</h4><small>60 min · 30 de vídeo + 20 de práctica + 10 de evaluación</small></div></summary><div class="module-content"><p>${esc(m.description)}</p><ul class="lesson-list">${m.lessons.map(l=>`<li><span>${esc(l)}</span><span>7–8 min</span></li>`).join('')}</ul><p class="module-task"><b>Tu aplicación:</b> ${esc(m.task)}</p><p class="module-timing">Cuatro vídeos de 7,5 minutos de media, veinte minutos de práctica y diez minutos de evaluación. Todo incluido en los sesenta minutos.</p><span class="module-resource">Material de apoyo: ${esc(m.resource)}</span></div></details>`;}
+ function openCourse(){show('REVOLUT EN BEWAY / PROGRAMA DEL CURSO',`<p class="eyebrow">GESTIÓN DE BANCA DIGITAL</p><h2>Producto, Operaciones<br>y Crecimiento.</h2><p class="dialog-lead">Aprende a analizar un banco digital y a defender una propuesta útil para el cliente, viable económicamente y coherente en sus riesgos.</p><div class="course-modal-intro"><span>8 horas en total</span><span>2 jornadas de 4 horas</span><span>100 % asíncrono</span><span>Nivel inicial</span></div><div class="time-breakdown"><div><strong>4 h</strong><span>32 vídeos breves</span></div><div><strong>2 h 40 min</strong><span>aplicación al caso</span></div><div><strong>1 h 20 min</strong><span>evaluaciones</span></div></div><div class="detail-block"><h3>Un caso que avanza contigo</h3><p><b>Lanza una experiencia de banca digital para estudiantes que comienzan su vida independiente.</b> Trabajarás sobre una necesidad concreta, diseñarás su recorrido, identificarás las operaciones necesarias, revisarás su economía y propondrás un piloto.</p><p>Cada módulo incorpora cuatro vídeos, una aplicación guiada y una evaluación. Puedes pausar y retomar el contenido a tu ritmo. No se requiere programación.</p></div><div class="journey-head"><span>DÍA 1 · 4 HORAS</span><h3>Entender el banco y su economía</h3></div>${modules.slice(0,4).map(moduleHTML).join('')}<div class="journey-head"><span>DÍA 2 · 4 HORAS</span><h3>Gestionar, crecer y decidir el lanzamiento</h3></div>${modules.slice(4).map((m,i)=>moduleHTML(m,i+4)).join('')}<div class="certificate-box"><span aria-hidden="true">${check}</span><div><h3>Acreditación de superación propuesta a Revolut</h3><p>La propuesta contempla la validación del programa, la participación de profesionales en los vídeos y la acreditación por Revolut. Se plantea completar los ocho módulos, superar las evaluaciones con al menos un 80 % y entregar la decisión final del caso.</p></div></div><div class="detail-block"><h3>Qué te llevas al terminar</h3><p>Una página ejecutiva que conecta necesidad, solución, operaciones, economía, riesgos y plan de adopción. Las actividades y evaluaciones forman parte de las ocho horas; el Campus Challenge y los miniproyectos son experiencias independientes.</p></div><div class="dialog-actions"><button class="btn primary" data-download="course">Descargar programa ${down}</button></div><p class="demo-context">Propuesta académica para desarrollar con Revolut. Programa, grabaciones, acreditación e inscripción pendientes de validación.</p>`);}
+ function briefText(){return ['BEWAY × REVOLUT','REVOLUT CAMPUS CHALLENGE: DISEÑA LA BANCA DE TU GENERACIÓN','','Propuesta de colaboración. La convocatoria, el calendario, el jurado y los premios se acordarán con Revolut.','','EL RETO','Diseña una experiencia de banca digital que resuelva un problema real de la vida universitaria y explica cómo conseguirías que los estudiantes la incorporasen a su día a día.','','FORMATO PROPUESTO','Participación individual, online y en español.','Universitarios mayores de 18 años de España y Latinoamérica.','Siete días para resolver el caso.','No se requiere programación ni disponer de una cuenta bancaria de Revolut.','','ELIGE UNA NECESIDAD','Por ejemplo: ingresos irregulares, gastos de piso, estancia internacional o primer sueldo.','Revisa las funciones existentes y explica qué mejora introduce tu propuesta.','Elige un país de aplicación y justifica su viabilidad en ese mercado.','La IA puede formar parte de la solución cuando aporte una mejora concreta.','','ENTREGA','Cinco diapositivas: problema, solución, funcionamiento, economía y riesgos, adopción en campus.','Un recorrido visual o prototipo de tres pantallas, como anexo.','Un vídeo de presentación de 90 segundos.','','EVALUACIÓN',...scores.map(([n,v])=>`${n}: ${v} %`),'','DIFUSIÓN','Propuesta de activación mediante asociaciones y embajadores universitarios, selección de proyectos y final con profesionales. Participación de Revolut y reconocimientos sujetos al acuerdo.','','Los datos de apoyo que utilices deben identificar sus fuentes. Separa datos, hipótesis y resultados esperados.','La entrega del challenge es independiente de las ocho horas del curso.'].join('\n');}
+ function courseText(){return ['BEWAY × REVOLUT','GESTIÓN DE BANCA DIGITAL: PRODUCTO, OPERACIONES Y CRECIMIENTO','','Propuesta académica para desarrollar y acreditar con Revolut.','8 horas totales | 2 jornadas de 4 horas | 100 % asíncrono','4 h de vídeo + 2 h 40 min de práctica + 1 h 20 min de evaluación.','','OBJETIVO','Analizar un banco digital y defender una propuesta útil, viable económicamente y coherente en sus riesgos.','','CASO ACUMULATIVO','Lanza una experiencia de banca digital para estudiantes que comienzan su vida independiente.','',...modules.flatMap((m,i)=>[(i===0?'DÍA 1 — 4 HORAS':i===4?'DÍA 2 — 4 HORAS':''),`${String(i+1).padStart(2,'0')}. ${m.title.toUpperCase()} — 60 min`,m.description,...m.lessons.map((l,j)=>`  Vídeo ${j+1}: ${l}`),`Aplicación: ${m.task}`,`Material: ${m.resource}`,'']),'SUPERACIÓN PROPUESTA','Completar los ocho módulos, aprobar las evaluaciones con al menos un 80 % y entregar la decisión final del caso.','Programa, vídeos, acreditación e inscripción sujetos a validación de Revolut.'].join('\n');}
+ function download(text,name){const u=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1500);}
+ const challengeFields=['Necesidad universitaria, evidencia y país de aplicación','Solución y diferencia respecto a las funciones existentes','Recorrido, operaciones necesarias y uso de IA si procede','Modelo económico, costes, riesgos y controles','Plan de adopción en campus, presupuesto e indicadores'];
+ function formHTML(id,fields){const draft=readDraft(id,fields.length);return `<form class="project-form" data-project-form="${id}"><h3>Prepara tu propuesta</h3>${fields.map((label,i)=>`<div class="field"><label for="${id}-${i}">${i+1}. ${esc(label)}</label><textarea id="${id}-${i}" name="answer${i}" rows="4" maxlength="5000" placeholder="Escribe tu respuesta...">${esc(draft['answer'+i]||'')}</textarea></div>`).join('')}<div class="dialog-actions"><button type="button" class="btn primary" data-save="${id}">Guardar borrador ${check}</button><button type="button" class="btn outline" data-export="${id}">Descargar trabajo ${down}</button></div><p class="project-save-status" role="status" aria-live="polite">${Object.values(draft).some(v=>v.trim())?'Borrador recuperado de este dispositivo.':''}</p><p class="project-storage-note">Tu borrador se guarda solo en este navegador. Descárgalo para conservar una copia. Esta ficha no envía candidaturas.</p></form>`;}
+ function openChallenge(){show('BEWAY × REVOLUT / CAMPUS CHALLENGE',`<p class="eyebrow">REVOLUT CAMPUS CHALLENGE</p><h2>diseña la banca<br>de tu generación</h2><p class="dialog-lead">Diseña una experiencia de banca digital que resuelva un problema real de la vida universitaria y explica cómo conseguirías que los estudiantes la incorporasen a su día a día.</p><div class="course-modal-intro"><span>Individual</span><span>Online · En español</span><span>7 días</span><span>España y Latinoamérica</span></div><div class="challenge-scope"><strong>Una necesidad real como punto de partida</strong>Elige ingresos irregulares, gastos de piso, una estancia internacional, el primer sueldo u otro problema que puedas explicar con evidencia.</div><div class="activity-block"><h3>Tu propuesta debe responder a cinco preguntas</h3><ol>${challengeFields.map(l=>`<li>${esc(l)}</li>`).join('')}</ol><p>Revisa las funcionalidades existentes de Revolut antes de diseñar la mejora. Elige un país de aplicación y explica qué necesitarías comprobar para operar en él. No se requiere programación; la IA es opcional y debe aportar utilidad concreta.</p><h3>La entrega</h3><p>Cinco diapositivas, un recorrido visual o prototipo de tres pantallas como anexo y un vídeo de presentación de 90 segundos.</p></div><h3 style="font-size:20px;margin-top:28px">Cómo se evaluaría</h3><div class="score-grid">${scores.map(([l,n])=>`<div><strong>${n} %</strong>${esc(l)}</div>`).join('')}</div><div class="event-box"><p class="eyebrow">UNA ACTIVACIÓN UNIVERSITARIA</p><h3>De tu campus a una comunidad internacional.</h3><p>Beway propone difundir el reto con asociaciones y embajadores, dar visibilidad a una selección de proyectos y organizar una final. La participación de profesionales de Revolut, el jurado y los reconocimientos se definirán con la empresa.</p></div><div class="dialog-actions"><button class="btn outline" data-download="brief">Descargar brief ${down}</button></div><p class="section-note">Propuesta abierta a universitarios mayores de 18 años. No exige tener una cuenta Revolut. Calendario, bases y premios pendientes de acuerdo; el reto es independiente de las ocho horas del curso.</p>${formHTML('campus-challenge',challengeFields)}`);}
+ function readDraft(id,n){try{const d=JSON.parse(localStorage.getItem('beway-revolut-'+id)||'{}');if(!d||typeof d!=='object'||Array.isArray(d))return {};return Object.fromEntries(Array.from({length:n},(_,i)=>['answer'+i,typeof d['answer'+i]==='string'?d['answer'+i].slice(0,5000):'']));}catch{return {};}}
+ function fieldsFor(id){return id==='campus-challenge'?challengeFields:projects.find(p=>p.id===id)?.fields||[];}
+ function answers(form,id){const f=new FormData(form);return Object.fromEntries(fieldsFor(id).map((_,i)=>['answer'+i,String(f.get('answer'+i)||'').slice(0,5000)]));}
+ function saveProject(form,id){try{localStorage.setItem('beway-revolut-'+id,JSON.stringify(answers(form,id)));form.querySelector('[role="status"]').textContent='Borrador guardado en este dispositivo.';}catch{form.querySelector('[role="status"]').textContent='No se puede guardar aquí. Descarga tu trabajo para conservarlo.';}}
+ function exportProject(form,id){const a=answers(form,id),fields=fieldsFor(id);const title=id==='campus-challenge'?'Revolut Campus Challenge: diseña la banca de tu generación':projects.find(p=>p.id===id).title;download(['BEWAY × REVOLUT',title,'','Borrador de trabajo. No es una candidatura enviada.','',...fields.flatMap((f,i)=>[`${i+1}. ${f}`,a['answer'+i]||'(Sin respuesta)',''])].join('\n'),'BEWAY-Revolut-'+id+'.txt');form.querySelector('[role="status"]').textContent='Trabajo preparado para descargar.';}
+ root.querySelector('#mini-projects-grid').innerHTML=projects.map(p=>`<article class="mini-project"><div class="project-symbol" aria-hidden="true">${p.symbol}</div><p class="project-label">${esc(p.label)}</p><h3>${esc(p.title)}</h3><p>${esc(p.short)}</p><div class="project-skills">${p.skills.map(s=>`<span>${esc(s)}</span>`).join('')}</div><div class="project-facts"><div><strong>${p.duration}</strong><small>orientativos</small></div><div><strong>Inicial</strong><small>dificultad</small></div><div><strong>Individual</strong><small>caso guiado</small></div></div><button data-project="${p.id}">Explorar miniproyecto ${arrow}</button></article>`).join('');
+ function openProject(id){const p=projects.find(p=>p.id===id);if(!p)return;show('BEWAY / PRÁCTICA DE BANCA DIGITAL',`<p class="eyebrow">${esc(p.label)}</p><h2>${esc(p.title)}</h2><p class="dialog-lead">${esc(p.intro)}</p><div class="course-modal-intro"><span>${esc(p.duration)}</span><span>Nivel inicial</span><span>Individual</span></div><div class="project-case"><h3>El caso</h3><p>${esc(p.caseText)}</p><div class="case-data">${p.data.map(([k,v])=>`<div>${esc(k)}<strong>${esc(v)}</strong></div>`).join('')}</div></div><div class="activity-block"><h3>Qué tienes que hacer</h3><ol>${p.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol><h3>Tu entrega</h3><p>${esc(p.deliverable)}</p></div>${formHTML(p.id,p.fields)}`);}
+ function photo(p,size){return `<div class="member-photo" style="${size?'width:'+size+'px;height:'+size+'px;':''}"><span aria-hidden="true">${esc(p.initials)}</span><img src="${esc(p.image)}" alt="${esc(p.name)}" width="${size||78}" height="${size||78}" loading="lazy" referrerpolicy="no-referrer"></div>`;}
+ function hydrateImages(scope){scope.querySelectorAll('.member-photo img').forEach(img=>{img.addEventListener('error',()=>{img.classList.add('failed');img.parentElement.querySelector('span').removeAttribute('aria-hidden');});if(img.complete&&img.naturalWidth===0)img.classList.add('failed');});}
+ root.querySelector('#ambassadors-grid').innerHTML=people.map(p=>`<article class="ambassador">${photo(p)}<span class="member-badge">MIEMBRO CLH</span><h3>${esc(p.name)}</h3><p>${esc(p.university)}</p><span class="campus">${esc(p.country)} · ${esc(p.area)}</span><button class="text-button" data-person="${esc(p.slug)}">Conocer perfil ${arrow}</button></article>`).join('');hydrateImages(root);
+ function openPerson(slug){const p=people.find(p=>p.slug===slug);if(!p)return;show('BEWAY / COMUNIDAD CLH',`<div class="member-profile-top">${photo(p,104)}<div><h2>${esc(p.name)}</h2><p>${esc(p.university)} · ${esc(p.country)}</p><span class="member-badge">MIEMBRO DE CLH</span></div></div><div class="chips"><span>${esc(p.area)}</span></div><div class="detail-block"><h3>Su papel propuesto en Beway</h3><p>Acercar el curso y el Campus Challenge a estudiantes de su entorno, compartir las actividades y recoger preguntas e ideas del campus.</p></div><div class="dialog-actions">${external('Ver LinkedIn',p.linkedIn,'btn primary')}${external('Conocer CLH','https://clhglobal.org/')}</div><p class="section-note">Perfil incluido como propuesta para el programa de embajadores de Beway.</p>`);}
+ const info={modelo:{title:'Un banco digital se gestiona con decisiones conectadas',lead:'La experiencia del cliente depende de que producto, operaciones, tecnología, economía y riesgo avancen juntos.',text:'El curso propone analizar cómo se crea valor, cómo se presta el servicio y qué ingresos y costes lo sostienen. El caso aplica ese enfoque a una necesidad universitaria.',links:[['Conocer Revolut','https://www.revolut.com/es-ES/'],['Informe y resultados','https://www.revolut.com/reports-and-results/']]},digital:{title:'Diseñar servicios que sean útiles y generen confianza',lead:'Los datos pueden ayudar a personalizar una experiencia, detectar señales y mejorar una decisión.',text:'La propuesta conecta cada uso de datos o IA con una necesidad, un resultado medible y sus controles. Se trabajan privacidad, explicaciones comprensibles y revisión humana cuando corresponda.',links:[['Explorar la experiencia Revolut','https://www.revolut.com/es-ES/bank-account/']]},carrera:{title:'Distintas carreras, un mismo negocio digital',lead:'La banca digital reúne perfiles de producto, ingeniería, operaciones, análisis, finanzas, marketing y riesgo.',text:'Revolut publica programas de prácticas y para graduados. Los puestos, requisitos, ubicaciones y procesos se consultan en sus convocatorias oficiales.',links:[['Programa de prácticas','https://www.revolut.com/es-ES/internship-programme/'],['Programa para graduados','https://www.revolut.com/es-ES/graduate-programme/']]}};
+ function openInfo(id){const p=info[id];if(p)show('REVOLUT / CONOCE EL NEGOCIO',`<h2>${esc(p.title)}</h2><p class="dialog-lead">${esc(p.lead)}</p><div class="detail-block"><p>${esc(p.text)}</p></div><div class="dialog-actions">${p.links.map(([n,u])=>external(n,u)).join('')}</div>`);}
+ function openSources(){show('REVOLUT EN BEWAY / FUENTES Y ALCANCE',`<p class="eyebrow">REFERENCIAS Y PROPUESTA</p><h2>Conoce la base<br>de esta ficha.</h2><p class="dialog-lead">Propuesta de colaboración preparada por Beway. El curso, el Campus Challenge, los miniproyectos y la selección de embajadores se plantean para desarrollar con Revolut.</p><ul class="sources-list">${sources.map(([t,u,n],i)=>`<li><span>${String(i+1).padStart(2,'0')}</span><div><a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ${arrow}</a><small>${esc(n)}</small></div></li>`).join('')}</ul><p class="sources-note">Referencias contrastadas en octubre de 2026. El Campus Challenge no se presenta como una convocatoria oficial vigente. La aprobación del programa, las grabaciones, la acreditación, las bases, el jurado y los premios se acordarán con Revolut. Los miniproyectos contienen datos ficticios. La selección de miembros no atribuye una relación laboral con Revolut. Los perfiles se han recuperado de las fichas públicas anteriores de Beway basadas en CLH.</p>`);}
+ root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-course'))openCourse();else if(b.hasAttribute('data-challenge'))openChallenge();else if(b.hasAttribute('data-sources'))openSources();else if(b.dataset.download)download(b.dataset.download==='course'?courseText():briefText(),b.dataset.download==='course'?'Programa-Gestion-Banca-Digital-Revolut-Beway.txt':'Brief-Revolut-Campus-Challenge-Beway.txt');else if(b.dataset.info)openInfo(b.dataset.info);else if(b.dataset.project)openProject(b.dataset.project);else if(b.dataset.person)openPerson(b.dataset.person);else if(b.dataset.save)saveProject(b.closest('form'),b.dataset.save);else if(b.dataset.export)exportProject(b.closest('form'),b.dataset.export);});
+ root.addEventListener('submit',e=>{const f=e.target.closest('[data-project-form]');if(f){e.preventDefault();saveProject(f,f.dataset.projectForm);}});
+ const nav=[...root.querySelectorAll('.section-nav a')],sections=nav.map(a=>root.querySelector(a.getAttribute('href')));let ticking=false;
+ function updateNav(){let index=0;sections.forEach((s,i)=>{if(s.getBoundingClientRect().top<=180)index=i;});nav.forEach((a,i)=>{a.classList.toggle('active',i===index);if(i===index)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});ticking=false;}
+ window.addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(updateNav);}},{passive:true});updateNav();
+})();
+</script></body></html>
