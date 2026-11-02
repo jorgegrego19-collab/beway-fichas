@@ -1,0 +1,250 @@
+{
+  "id": "amazon",
+  "name": "Amazon",
+  "sector": "E-commerce y operaciones logísticas",
+  "category": "Retail",
+  "description": "Comprende el negocio del e-commerce y las operaciones que hacen posible cada entrega.",
+  "color": "#FF6200",
+  "cover_color": "#232F3E",
+  "cover_style": "brand",
+  "duration": "8 h",
+  "course": "Curso de Gestión del E-commerce y Operaciones Logísticas",
+  "topics": [
+    "Modelo de negocio y ecosistema digital",
+    "Catálogo y experiencia de compra",
+    "Costes y rentabilidad del pedido",
+    "Demanda e inventario",
+    "Cumplimiento de pedidos y almacén",
+    "Distribución y logística inversa",
+    "Indicadores y mejora de procesos",
+    "Análisis y presentación de propuestas operativas"
+  ],
+  "curriculum": [
+    {
+      "title": "Modelo de negocio y ecosistema digital",
+      "videos": [
+        "Cómo se organiza un e-commerce.",
+        "Actores y flujos de un marketplace.",
+        "Del pedido a la entrega."
+      ],
+      "exercise": "Representa el flujo de una venta e identifica quién es responsable de cada paso."
+    },
+    {
+      "title": "Catálogo y experiencia de compra",
+      "videos": [
+        "Producto y categoría.",
+        "Ficha de producto y recorrido de compra.",
+        "Conversión y promesa de servicio."
+      ],
+      "exercise": "Prioriza tres mejoras de una ficha y explica cómo comprobarías su efecto."
+    },
+    {
+      "title": "Costes y rentabilidad del pedido",
+      "videos": [
+        "Ingresos y costes variables.",
+        "Margen de contribución por pedido.",
+        "Decisiones de precio y captación."
+      ],
+      "exercise": "Calcula el margen de un pedido simulado y compara una promoción con el escenario inicial."
+    },
+    {
+      "title": "Demanda e inventario",
+      "videos": [
+        "Previsión sencilla de demanda.",
+        "Inventario y riesgo de falta de producto.",
+        "Reposición y campaña comercial."
+      ],
+      "exercise": "Estima la reposición y justifica el inventario necesario para una campaña."
+    },
+    {
+      "title": "Cumplimiento de pedidos y almacén",
+      "videos": [
+        "Modelos de cumplimiento de pedidos.",
+        "Recorrido de un pedido en el almacén.",
+        "Capacidad y cuellos de botella."
+      ],
+      "exercise": "Identifica la etapa que limita el proceso y compara dos mejoras con los recursos disponibles."
+    },
+    {
+      "title": "Distribución y logística inversa",
+      "videos": [
+        "Alternativas de última milla.",
+        "Promesa y seguimiento de entrega.",
+        "Devoluciones y recuperación de valor."
+      ],
+      "exercise": "Elige una combinación de entrega y diseña un flujo sencillo de devolución."
+    },
+    {
+      "title": "Indicadores y mejora de procesos",
+      "videos": [
+        "Cuadro de indicadores operativos.",
+        "Datos y sistemas de gestión.",
+        "Mejora continua y tecnología."
+      ],
+      "exercise": "Interpreta los indicadores del caso y prioriza un problema con una hipótesis comprobable."
+    },
+    {
+      "title": "Análisis y presentación de propuestas operativas",
+      "videos": [
+        "Del diagnóstico a las alternativas.",
+        "Impacto y viabilidad de la propuesta.",
+        "Presentación y plan de implantación."
+      ],
+      "exercise": "Redacta una recomendación ejecutiva apoyada en los cálculos realizados."
+    }
+  ],
+  "learningDescription": "Aprende a conectar decisiones comerciales, rentabilidad, inventario y entrega. Sigue un caso práctico desde la venta hasta una propuesta de mejora operativa.",
+  "learningOutcomes": [
+    "Entender un negocio de e-commerce y calcular el margen de un pedido.",
+    "Planificar inventario y comparar alternativas de cumplimiento y distribución.",
+    "Interpretar indicadores y defender una propuesta de mejora con datos."
+  ],
+  "challenge": "AmazonNextGenLeaders",
+  "challengeDetails": {
+    "description": "Reto universitario de Amazon para resolver problemas operativos y logísticos con apoyo de profesionales.",
+    "steps": [
+      "Presentación del caso en la universidad y organización de equipos.",
+      "Visita al centro logístico de Sevilla para conocer la operación.",
+      "Apoyo y resolución de dudas con profesionales de Amazon.",
+      "Presentación final de las soluciones ante un panel de evaluación."
+    ],
+    "rubric": [
+      "Innovación y creatividad · 30 %",
+      "Viabilidad técnica · 25 %",
+      "Impacto operacional · 25 %",
+      "Calidad de presentación · 20 %"
+    ],
+    "officialUrl": "https://www.upo.es/facultad-ciencias-empresariales/es/de-interes/noticias-de-la-facultad/AmazonNextGenLeaders/",
+    "finalUrl": "https://www.upo.es/facultad-ciencias-empresariales/es/de-interes/noticias-de-la-facultad/Fase-final-AmazonNextGenLeaders/",
+    "status": "La edición documentada se desarrolló entre noviembre de 2025 y marzo de 2026. Próxima convocatoria, universidades y países elegibles, plazas y condiciones de acceso por confirmar con la organización. El curso no garantiza una plaza en el concurso."
+  },
+  "projects": [
+    "¿Cuánto deja cada pedido?",
+    "Prepara el inventario",
+    "Un pedido, menos esperas"
+  ],
+  "projectDetails": [
+    {
+      "title": "¿Cuánto deja cada pedido?",
+      "duration": "45–60 min",
+      "tag": "RENTABILIDAD",
+      "description": "Pon números a una venta y decide si una promoción compensa.",
+      "brief": "Una tienda ficticia ingresa 35 € netos por pedido. Sus costes variables son: producto 15 €, canal 5 €, preparación y envío 4 €, devoluciones esperadas 1 € y captación 6 €. Compara la situación inicial con un descuento del 10 %, manteniendo esos costes para simplificar el ejercicio.",
+      "steps": [
+        "Calcula el margen de contribución inicial y el margen con descuento.",
+        "Explica qué coste o supuesto revisarías antes de lanzar la promoción.",
+        "Recomienda una decisión y justifica qué indicador seguirías."
+      ],
+      "deliverable": "Una tabla comparativa y una recomendación de una página."
+    },
+    {
+      "title": "Prepara el inventario",
+      "duration": "45–60 min",
+      "tag": "DEMANDA E INVENTARIO",
+      "description": "Planifica la reposición y explica cómo evitarías una rotura de stock.",
+      "brief": "La demanda diaria de un producto ficticio ha sido de 10, 12, 11, 13, 14, 15 y 16 unidades. El proveedor tarda cuatro días en reponer y proponemos una reserva de 12 unidades. Utiliza la media de esos siete días como previsión inicial y señala los límites de esa elección.",
+      "steps": [
+        "Calcula la demanda media y el consumo esperado durante el plazo de reposición.",
+        "Calcula un punto de reposición sencillo incorporando la reserva propuesta.",
+        "Explica cómo cambiarías el plan ante una campaña o un retraso del proveedor."
+      ],
+      "deliverable": "Un cálculo de reposición con sus supuestos y un plan breve de seguimiento."
+    },
+    {
+      "title": "Un pedido, menos esperas",
+      "duration": "60 min",
+      "tag": "MEJORA DE OPERACIONES",
+      "description": "Encuentra el cuello de botella y compara dos soluciones.",
+      "brief": "En un mismo turno, una operación ficticia puede recibir 1.200 pedidos, preparar 800, embalar 1.000 y expedir 1.100. Representa las etapas como un proceso consecutivo. Propón dos mejoras para aumentar el flujo, respetando la calidad y la seguridad.",
+      "steps": [
+        "Identifica la capacidad total y la etapa que limita el proceso.",
+        "Compara dos alternativas con recursos e hipótesis explícitos.",
+        "Recomienda una opción y explica qué ocurriría con las demás etapas."
+      ],
+      "deliverable": "Un mapa de proceso y una propuesta de mejora en dos diapositivas."
+    }
+  ],
+  "people": [
+    {
+      "id": "CLH-034",
+      "name": "Santiago Nariño Rivera",
+      "country": "Colombia",
+      "university": "Universidad del Rosario",
+      "area": "Negocios Internacionales y Finanzas",
+      "role": "Líder Operaciones y Eficiencia",
+      "slug": "santiago-narino-rivera",
+      "linkedIn": "https://www.linkedin.com/in/santiago-nari%C3%B1o-rivera-10351429b/",
+      "photo": "https://clhglobal.org/images/members/santiago-narino-rivera.jpeg"
+    },
+    {
+      "id": "CLH-007",
+      "name": "Larissa Arias Alamilla",
+      "country": "México",
+      "university": "Anahuac Mayab",
+      "area": "Operaciones y eficiencia / Eventos y experiencias",
+      "role": "Operaciones y Eficiencia | Eventos y Experiencias",
+      "slug": "larissa-arias-alamilla",
+      "linkedIn": "https://www.linkedin.com/in/larissa-arias-alamilla-7a3931374/",
+      "photo": "https://clhglobal.org/images/members/larissa-arias-alamilla.webp"
+    },
+    {
+      "id": "CLH-011",
+      "name": "Renata Ana Emilia Berho",
+      "country": "Argentina",
+      "university": "Universidad Nacional de la Plata",
+      "area": "Ingeniería Aeroespacial",
+      "role": "Líder Tecnología",
+      "slug": "renata-berho",
+      "linkedIn": "https://www.linkedin.com/in/renata-berho-02264230a/",
+      "photo": "https://clhglobal.org/images/members/renata-berho.webp"
+    },
+    {
+      "id": "CLH-092",
+      "name": "Montse Coronado",
+      "country": "España",
+      "university": "ESIC Business & Marketing School",
+      "area": "Marketing digital",
+      "role": "Líder de Marketing",
+      "slug": "montse-coronado",
+      "linkedIn": "https://www.linkedin.com/in/montse-coronado-0b9b56203",
+      "photo": "https://clhglobal.org/images/members/montse-coronado.jpg"
+    },
+    {
+      "id": "CLH-066",
+      "name": "Martina Leicht",
+      "country": "Uruguay",
+      "university": "Universidad de Montevideo",
+      "area": "Comunicación estratégica/Marketing",
+      "role": "Líder de Comunidad y Talento",
+      "slug": "martina-leich",
+      "linkedIn": "https://www.linkedin.com/in/martina-leicht-05b44b340/",
+      "photo": "https://clhglobal.org/images/members/martina-leich.webp"
+    }
+  ],
+  "sources": [
+    [
+      "Amazon · Entregas y logística",
+      "https://www.aboutamazon.es/que-hacemos/entregas-y-logistica"
+    ],
+    [
+      "Amazon · Visita nuestros centros logísticos",
+      "https://www.aboutamazon.es/trabajar-en-amazon/visita-nuestros-centros-logisticos"
+    ],
+    [
+      "AmazonNextGenLeaders · Presentación y estructura",
+      "https://www.upo.es/facultad-ciencias-empresariales/es/de-interes/noticias-de-la-facultad/AmazonNextGenLeaders/"
+    ],
+    [
+      "AmazonNextGenLeaders · Final de marzo de 2026",
+      "https://www.upo.es/facultad-ciencias-empresariales/es/de-interes/noticias-de-la-facultad/Fase-final-AmazonNextGenLeaders/"
+    ],
+    [
+      "Amazon · University Operations",
+      "https://www.amazon.jobs/content/en/career-programs/university-ops"
+    ],
+    [
+      "CLH · Comunidad de Líderes Hispanoamericanos",
+      "https://clhglobal.org/"
+    ]
+  ]
+}

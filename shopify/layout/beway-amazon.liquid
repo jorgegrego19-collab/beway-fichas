@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code | default: 'es' }}">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#232f3e">
+<title>{{ page_title | escape }} · Beway</title><meta name="description" content="{{ 'bw_amazon.meta.description' | t | escape }}">
+<link rel="canonical" href="{{ canonical_url | escape }}"><link rel="icon" href="{{ 'beway-amazon-logo.svg' | asset_url }}" type="image/svg+xml">
+{{ 'beway-amazon.css' | asset_url | stylesheet_tag }}
+{{ content_for_header }}
+<script src="{{ 'beway-amazon.js' | asset_url }}" defer></script>
+</head><body>{{ content_for_layout }}</body></html>
