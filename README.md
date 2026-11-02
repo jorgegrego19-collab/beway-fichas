@@ -39,3 +39,11 @@ La ficha de Deloitte incluye el Curso de Auditoría Financiera (ocho horas en do
 - Challenge El fichaje fuera del campo, tres miniproyectos y presentación del programa de embajadores.
 - Docentes, precio, emisión del certificado y convocatoria se concretan con Gersh.
 
+
+## P&G en Beway
+
+- [Ficha reducida para Shopify](https://jorgegrego19-collab.github.io/beway-fichas/PGxBeway/).
+- Curso propuesto de Gestión de Marcas de Gran Consumo: 8 horas totales, dos jornadas orientativas, ocho módulos y 32 vídeos planificados.
+- Challenge Tu primera cesta con brief descargable, tres miniproyectos y presentación del programa de embajadores.
+- Docentes, precio, emisión del certificado y convocatoria se concretan con P&G.
+- Logotipo y fotografía: recursos corporativos de P&G Newsroom.
