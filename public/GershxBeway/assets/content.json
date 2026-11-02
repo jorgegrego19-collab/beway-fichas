@@ -391,5 +391,57 @@
       "Carreras en Gersh",
       "https://gersh.com/careers/"
     ]
+  ],
+  "people": [
+    {
+      "id": "CLH-092",
+      "name": "Montse Coronado",
+      "country": "España",
+      "university": "ESIC Business & Marketing School",
+      "area": "Marketing digital",
+      "slug": "montse-coronado",
+      "linkedIn": "https://www.linkedin.com/in/montse-coronado-0b9b56203",
+      "photo": "https://clhglobal.org/images/members/montse-coronado.jpg"
+    },
+    {
+      "id": "CLH-005",
+      "name": "Camila Calvo",
+      "country": "Panamá",
+      "university": "ADEN",
+      "area": "Marketing",
+      "slug": "camila-calvo",
+      "linkedIn": "https://www.linkedin.com/in/camila-calvo-de-la-guardia/",
+      "photo": "https://clhglobal.org/images/members/camila-calvo.png"
+    },
+    {
+      "id": "CLH-066",
+      "name": "Martina Leicht",
+      "country": "Uruguay",
+      "university": "Universidad de Montevideo",
+      "area": "Comunicación estratégica/Marketing",
+      "slug": "martina-leich",
+      "linkedIn": "https://www.linkedin.com/in/martina-leicht-05b44b340/",
+      "photo": "https://clhglobal.org/images/members/martina-leich.webp"
+    },
+    {
+      "id": "CLH-052",
+      "name": "Simón Ospina Lizcano",
+      "country": "Colombia",
+      "university": "Universidad del Rosario",
+      "area": "Derecho",
+      "slug": "simon-ospina-lizcano",
+      "linkedIn": "https://www.linkedin.com/in/sim%C3%B3n-ospina-lizcano-200910233/",
+      "photo": "https://clhglobal.org/images/members/simon-ospina-lizcano.webp"
+    },
+    {
+      "id": "CLH-025",
+      "name": "Michelle Rogel",
+      "country": "México",
+      "university": "Anahuac Mayab",
+      "area": "Ingeniería Mecatrónica",
+      "slug": "michelle-rogel",
+      "linkedIn": "https://www.linkedin.com/in/michelle-rogel-garc%C3%ADa-a37820219/",
+      "photo": "https://clhglobal.org/images/members/michelle-rogel.webp"
+    }
   ]
 }
