@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161e20">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Ficha de Seegman en Beway para revisión. Conoce el despacho, su proceso de selección y la formación jurídica del Centro de Estudios Garrigues.">
+  <title>Seegman · Beway</title>
+  <link rel="icon" href="https://seegman.com/wp-content/uploads/2020/05/icon.png">
+  <style>
+@font-face {
+  font-family: "DM Sans";
+  src: url("../NetflixxBeway/assets/beway-netflix-dm-sans.woff2") format("woff2");
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("../NetflixxBeway/assets/beway-netflix-manrope.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+:root {
+  --orange: #f58721;
+  --orange-light: #ffbc7d;
+  --rust: #9b4610;
+  --pale: #c6d7da;
+  --teal: #315b61;
+  --night: #161e20;
+  --ink: #182427;
+  --muted: #4e6065;
+  --line: #dbe4e5;
+  --surface: #f4f7f7;
+  --round: 18px;
+  --gutter: clamp(20px, 5vw, 76px);
+  --nav-height: 63px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: calc(var(--nav-height) + 12px); }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font: 400 16px/1.58 "DM Sans", system-ui, sans-serif;
+}
+
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: Manrope, system-ui, sans-serif; line-height: 1.12; }
+h1, h2 { font-weight: 800; letter-spacing: -.048em; }
+h2 { font-size: clamp(31px, 3.3vw, 45px); }
+h3 { font-weight: 800; letter-spacing: -.027em; }
+a { color: inherit; text-decoration: none; }
+.icon-arrow { flex: 0 0 auto; display: inline-block; width: 1em; height: 1em; vertical-align: -.12em; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+button { font: inherit; cursor: pointer; }
+img { display: block; max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 3px solid #267b88; outline-offset: 4px; }
+.hero a:focus-visible, .careers-feature a:focus-visible { outline-color: var(--orange-light); }
+[hidden] { display: none !important; }
+
+.skip-link {
+  position: fixed;
+  z-index: 20;
+  top: 10px;
+  left: 12px;
+  transform: translateY(-160%);
+  padding: 10px 16px;
+  border-radius: 7px;
+  background: #fff;
+}
+.skip-link:focus { transform: translateY(0); }
+
+.topbar, .footer {
+  max-width: 1440px;
+  margin: auto;
+  padding-inline: var(--gutter);
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 4vw, 52px);
+}
+.topbar { min-height: 75px; }
+.beway {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 800 29px/1 Manrope, system-ui, sans-serif;
+  letter-spacing: -.07em;
+}
+.brand-period { color: #007b94; }
+.top-context { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); }
+.top-context strong { color: var(--ink); font-weight: 700; }
+.top-context a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.review-pill {
+  margin-left: auto;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 554px;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #fff;
+  background: var(--night);
+}
+.hero-picture {
+  position: absolute;
+  z-index: -2;
+  inset: 0 0 0 30%;
+  background: #332822 url("https://seegman.com/wp-content/uploads/slider/cache/d164ca9872ad069c9ce0cbebb4c02242/portada_new2.jpg") center 45% / cover no-repeat;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(90deg, #161e20 17%, #161e20 30%, #161e20ed 42%, #161e20a0 56%, #161e2012 79%), linear-gradient(0deg, #161e205c, transparent 37%);
+}
+.hero-content { padding: 55px var(--gutter) 49px; }
+.hero-logo { width: 201px; height: auto; margin-bottom: 33px; }
+.eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 13px;
+}
+.hero-kicker { color: var(--orange-light); margin-bottom: 14px; }
+.hero-kicker span { margin-inline: 4px; }
+.hero h1 { font-size: clamp(41px, 5.05vw, 71px); line-height: 1.045; }
+.hero-copy { color: #e3ebeb; max-width: 435px; margin-top: 20px; font-size: 17px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 46px;
+  padding: 11px 17px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 800;
+  transition: background-color .18s, border-color .18s;
+}
+.btn.primary { background: var(--orange); color: #1c1814; }
+.btn.primary:hover { background: var(--orange-light); }
+.btn.glass { color: #fff; background: #ffffff12; border-color: #ffffff55; }
+.btn.glass:hover { background: #ffffff26; }
+.btn.outline { color: var(--ink); background: #fff; border-color: #aebfc2; }
+.btn.outline:hover { background: var(--surface); border-color: var(--teal); }
+.hero-source {
+  display: inline-block;
+  margin-top: 19px;
+  color: #e3ebeb;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: #a9b2b2;
+  text-underline-offset: 4px;
+}
+
+.section-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  min-height: var(--nav-height);
+  display: flex;
+  justify-content: safe center;
+  align-items: stretch;
+  gap: clamp(17px, 3.1vw, 42px);
+  overflow: auto;
+  padding-inline: var(--gutter);
+  border-bottom: 1px solid var(--line);
+  background: #fffffffa;
+  scrollbar-width: thin;
+}
+.section-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding-top: 3px;
+  border-bottom: 3px solid transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.section-nav a:focus-visible { outline-offset: -4px; }
+.section-nav a[aria-current] { color: var(--ink); border-bottom-color: var(--orange); }
+.section-nav a:hover { color: var(--rust); }
+.section-nav a span { background: var(--surface); border-radius: 5px; padding: 1px 6px; font-size: 10px; }
+
+.page-content { max-width: 1280px; padding-inline: clamp(20px, 4vw, 44px); margin: auto; }
+.section { padding-block: clamp(39px, 5.4vw, 69px); border-bottom: 1px solid var(--line); }
+.about { display: grid; grid-template-columns: .98fr 1fr; gap: clamp(25px, 6vw, 82px); }
+.about-copy > p { color: var(--muted); font-size: 17px; }
+.text-link { display: inline-block; margin-top: 17px; color: var(--teal); font-size: 14px; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.text-link:hover { color: var(--rust); }
+.chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 16px 0 0; padding: 0; list-style: none; }
+.chips li { padding: 4px 10px; color: #355257; background: #edf3f4; font-size: 12px; font-weight: 650; border-radius: 5px; }
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 32px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.facts > div { padding: 17px 23px; }
+.facts > div + div { border-left: 1px solid var(--line); }
+.facts strong { display: block; color: var(--teal); font: 800 clamp(21px, 2.25vw, 31px)/1.16 Manrope, sans-serif; letter-spacing: -.04em; }
+.facts span { color: var(--muted); font-size: 12px; }
+.section-heading {
+  display: grid;
+  grid-template-columns: 1fr minmax(235px, 315px);
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+.section-heading > p { color: var(--muted); font-size: 15px; max-width: 37ch; }
+
+.careers-feature, .challenge-feature {
+  display: grid;
+  grid-template-columns: 1.03fr .97fr;
+  border-radius: var(--round);
+  overflow: hidden;
+}
+.careers-feature { color: #fff; background: var(--night); }
+.careers-copy { padding: clamp(24px, 4vw, 44px); }
+.on-dark { color: var(--orange-light); }
+.careers-copy h3, .challenge-copy h3 { font-size: clamp(25px, 3vw, 35px); }
+.careers-copy > p:not(.eyebrow) { margin-top: 12px; max-width: 51ch; color: #e0ebec; }
+.on-dark-chips li { background: #ffffff14; border: 1px solid #ffffff29; color: #ecf3f4; }
+.careers-copy .btn { margin-top: 23px; }
+.careers-picture {
+  min-height: 100%;
+  background: linear-gradient(90deg, #161e2070, transparent 40%), url("https://seegman.com/wp-content/uploads/2020/08/img_principal_careers.jpg") 58% center / cover no-repeat;
+}
+
+.courses-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.course-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border-radius: 13px;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: #fff;
+}
+.course-art {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 119px;
+  padding: 14px 16px;
+  overflow: hidden;
+  background: var(--art-bg);
+  color: var(--art-ink);
+}
+.course-art::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  inset: 0;
+  background: repeating-linear-gradient(var(--art-angle), transparent 0 8px, currentColor 8px 9px, transparent 9px 15px);
+  opacity: .14;
+  mask-image: linear-gradient(90deg, transparent 17%, black);
+}
+.course-art small { font-size: 9px; font-weight: 800; letter-spacing: .12em; }
+.course-art span { font: 800 clamp(22px, 2.35vw, 33px)/1 Manrope, sans-serif; letter-spacing: -.065em; }
+.art-legal { --art-bg: #17282b; --art-ink: #c6d7da; --art-angle: 45deg; }
+.art-ai { --art-bg: #315b61; --art-ink: #fff; --art-angle: 115deg; }
+.art-trade { --art-bg: #ffbc7d; --art-ink: #321c0d; --art-angle: 70deg; }
+.art-people { --art-bg: #c6d7da; --art-ink: #1a3e43; --art-angle: 135deg; }
+.course-info { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 17px; }
+.status-label { font-size: 10px; font-weight: 800; letter-spacing: .035em; padding: 3px 7px; border-radius: 5px; margin-bottom: 10px; }
+.status-label.proposed { color: #7d3b16; background: #fcf0e6; }
+.status-label.published { color: #2b5258; background: #eaf2f3; }
+.course-info h3 { font-size: clamp(17px, 1.6vw, 21px); }
+.course-info > p:not(.status-label) { margin: 9px 0 16px; color: var(--muted); font-size: 13px; }
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  width: 100%;
+  min-height: 37px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: 800;
+}
+.card-link .icon-arrow { color: var(--rust); font-size: 16px; }
+.card-link:hover { color: var(--rust); }
+.catalogue-link { margin-top: 19px; }
+
+.challenge-feature { border: 1px solid var(--line); grid-template-columns: .94fr 1.06fr; }
+.challenge-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 26px;
+  min-height: 350px;
+  padding: clamp(24px, 4vw, 43px);
+  color: #fff;
+  background: linear-gradient(0deg, #21170ded, #21170d12 68%), url("https://seegman.com/wp-content/uploads/slider/cache/7eaf47f4ed5ff081a60a8d3afdb83642/imagen-barco-conocenos.jpg") 57% center / cover no-repeat;
+}
+.coming-soon { background: var(--orange-light); color: #321c0d; padding: 5px 11px; border-radius: 999px; font-size: 11px; font-weight: 800; }
+.challenge-cover .eyebrow { margin-bottom: 8px; color: #fff1e5; }
+.challenge-cover h3 { font-size: clamp(44px, 5.1vw, 70px); line-height: .98; letter-spacing: -.065em; }
+.challenge-copy { padding: clamp(24px, 3.5vw, 40px); }
+.sponsor { display: flex; align-items: center; gap: 10px 12px; flex-wrap: wrap; margin-bottom: 17px; color: var(--teal); font-size: 11px; font-weight: 800; }
+.sponsor img { width: 116px; height: auto; padding: 8px 10px; background: var(--night); border-radius: 6px; }
+.challenge-copy > p:not(.small-note) { margin-top: 12px; color: var(--muted); font-size: 15px; }
+.challenge-copy .btn { margin-top: 18px; }
+.small-note { color: var(--muted); font-size: 12px; margin-top: 12px; }
+
+.ambassadors { border-bottom: 0; }
+.ambassador-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 13px; }
+.ambassador {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-width: 0;
+}
+.ambassador img { object-fit: cover; width: 58px; height: 58px; border-radius: 50%; background: var(--surface); }
+.ambassador .person-tag { margin-top: 11px; color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .08em; }
+.ambassador h3 { margin: 4px 0; font-size: 16px; }
+.ambassador p { color: var(--muted); font-size: 12px; margin-bottom: 7px; }
+.ambassador a { color: var(--teal); min-height: 37px; display: inline-flex; align-items: center; margin-top: auto; font-size: 12px; font-weight: 800; }
+.ambassador a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.footer { border-top: 1px solid var(--line); padding-block: 25px; justify-content: space-between; }
+.footer .beway { font-size: 23px; }
+.footer-meta { display: flex; flex-wrap: wrap; gap: 7px 18px; font-size: 12px; color: var(--muted); }
+.footer-meta a { color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
+
+dialog {
+  width: min(730px, calc(100% - 24px));
+  max-height: 88vh;
+  max-height: 88dvh;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--round);
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 18px 90px #0005;
+}
+dialog::backdrop { background: #0b1b20bc; backdrop-filter: blur(4px); }
+body:has(dialog[open]) { overflow: hidden; }
+.dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  padding: 12px 22px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.dialog-head .eyebrow { margin: 0; }
+.icon-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1;
+}
+.icon-button:hover { background: #e3eeee; }
+.dialog-content { padding: clamp(20px, 4vw, 35px); }
+.dialog-content > p:not(.eyebrow) { margin-top: 13px; color: var(--muted); }
+.dialog-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 18px; margin-top: 21px; color: var(--muted); font-size: 14px; }
+.dialog-grid h3 { color: var(--ink); font-size: 17px; margin-bottom: 8px; }
+.dialog-grid ol { padding-left: 19px; margin: 0; }
+.dialog-grid li + li { margin-top: 6px; }
+.dialog-grid aside { align-self: start; padding: 14px; border-radius: 10px; background: var(--surface); }
+
+@media (max-width: 900px) {
+  .hero-picture { left: 34%; }
+  .hero::before { background: linear-gradient(90deg, #161e20 27%, #161e20ed 49%, #161e2066 85%); }
+  .section-nav { padding-inline: 20px; }
+  .courses-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ambassador-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 650px) {
+  :root { --nav-height: 54px; }
+  .topbar { min-height: 62px; gap: 12px; }
+  .top-context { display: none; }
+  .beway { font-size: 25px; }
+  .beway img { width: 33px; height: 33px; }
+  .review-pill { font-size: 11px; }
+  .hero { min-height: 478px; align-items: end; }
+  .hero-picture { inset: 0 0 20%; background-position: center 32%; }
+  .hero::before { background: linear-gradient(0deg, #161e20 20%, #161e20f2 44%, #161e2080 78%, #161e2038 100%); }
+  .hero-content { padding-block: 38px 31px; }
+  .hero-logo { width: 157px; margin-bottom: 25px; }
+  .hero h1 { font-size: clamp(35px, 9.5vw, 54px); }
+  .hero h1 br { display: none; }
+  .hero-copy { font-size: 15px; margin-top: 13px; }
+  .actions { margin-top: 19px; }
+  .actions .btn { padding-inline: 10px; gap: 6px; font-size: 13px; }
+  .section-nav { gap: 19px; }
+  .section-nav a { font-size: 13px; }
+  .about, .section-heading { grid-template-columns: 1fr; gap: 13px; }
+  .about-copy > p { font-size: 15px; }
+  .facts { margin-top: 20px; }
+  .facts > div { padding: 12px 8px; }
+  .facts span { font-size: 11px; line-height: 1.28; display: block; margin-top: 3px; }
+  .section-heading { margin-bottom: 18px; }
+  .section-heading > p { max-width: 55ch; }
+  .careers-feature, .challenge-feature { grid-template-columns: 1fr; }
+  .careers-picture { min-height: 130px; background-position: center; }
+  .challenge-cover { min-height: 238px; }
+  .ambassador-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer { align-items: flex-start; gap: 14px; flex-direction: column; }
+  .dialog-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 410px) {
+  .courses-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+}
+
+@media print {
+  body { font-size: 12px; }
+  .hero, .careers-feature, .challenge-cover, .course-art, .sponsor img {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .topbar, .footer { padding-inline: 0; min-height: 42px; }
+  .hero { min-height: auto; }
+  .hero-content { padding: 25px; }
+  .hero-logo { margin-bottom: 15px; }
+  .hero h1 { font-size: 34px; }
+  .section-nav, .js-only { display: none; }
+  .page-content { padding-inline: 0; }
+  .section { padding-block: 21px; }
+  .section-heading { margin-bottom: 13px; }
+  .careers-feature, .course-card, .challenge-feature, .ambassador, .facts { break-inside: avoid; }
+}
+</style>
+  <noscript><style>.js-only { display: none; }</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#sobre">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="beway" href="#inicio" aria-label="Beway, inicio de la ficha">
+      <img src="../NetflixxBeway/assets/beway-netflix-logo.png" alt="" width="38" height="38">
+      <span>beway<span class="brand-period">.</span></span>
+    </a>
+    <div class="top-context">
+      <a href="https://jorgegrego19-collab.github.io/beway-fichas/" target="_blank" rel="noopener noreferrer">Explora empresas</a>
+      <span aria-hidden="true">/</span>
+      <strong>Seegman</strong>
+    </div>
+    <span class="review-pill">Vista para revisión</span>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-picture" aria-hidden="true"></div>
+      <div class="hero-content">
+        <img class="hero-logo" src="https://seegman.com/wp-content/uploads/2025/01/logo_seegman_white.png" alt="Seegman" width="600" height="112">
+        <p class="eyebrow hero-kicker">Talento jurídico <span aria-hidden="true">/</span> España y Portugal</p>
+        <h1 id="hero-title">Tu carrera jurídica,<br> con mirada internacional.</h1>
+        <p class="hero-copy">Conoce Seegman y descubre cómo empezar tu carrera en un despacho que asesora a empresas e inversores internacionales.</p>
+        <div class="actions">
+          <a class="btn primary" href="#oportunidades">Ver oportunidades <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          <a class="btn glass" href="#cursos">Explorar la formación <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 2.5v11m-4-4 4 4 4-4"/></svg></a>
+        </div>
+        <a class="hero-source" href="https://seegman.com/" target="_blank" rel="noopener noreferrer">Visitar la web de Seegman <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+      </div>
+    </section>
+
+    <nav class="section-nav" aria-label="Secciones de Seegman">
+      <a href="#sobre" aria-current="location">Sobre Seegman</a>
+      <a href="#oportunidades">Oportunidades</a>
+      <a href="#cursos">Formación <span>04</span></a>
+      <a href="#challenge">Challenge <span>01</span></a>
+      <a href="#embajadores">Embajadores</a>
+    </nav>
+
+    <div class="page-content">
+      <section class="section" id="sobre" aria-labelledby="sobre-title">
+        <div class="about">
+          <div>
+            <p class="eyebrow">01 / Conoce Seegman</p>
+            <h2 id="sobre-title">Derecho de los negocios<br>entre España y Portugal.</h2>
+            <a class="text-link" href="https://seegman.com/nosotros/" target="_blank" rel="noopener noreferrer">Conoce el despacho <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </div>
+          <div class="about-copy">
+            <p>Seegman asesora a inversores internacionales que quieren establecerse o crecer en la Península Ibérica. Su trabajo abarca desde crear una estructura empresarial hasta acompañar una adquisición y la actividad posterior de la compañía.</p>
+            <ul class="chips" aria-label="Áreas de práctica">
+              <li>Gobierno corporativo</li>
+              <li>Fiscal</li>
+              <li>Small market M&amp;A</li>
+              <li>Derecho de los Negocios</li>
+              <li>Laboral</li>
+              <li>Movilidad internacional</li>
+            </ul>
+          </div>
+        </div>
+        <div class="facts" aria-label="El despacho en cifras">
+          <div><strong>Madrid</strong><span>Oficina en España</span></div>
+          <div><strong>Lisboa</strong><span>Oficina en Portugal</span></div>
+          <div><strong>6 áreas</strong><span>De práctica jurídica y fiscal</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="oportunidades" aria-labelledby="empleo-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / Oportunidades profesionales</p>
+            <h2 id="empleo-title">Tu primer paso en el despacho.</h2>
+          </div>
+          <p>Para estudiantes de Derecho que buscan prácticas y jóvenes profesionales de la abogacía.</p>
+        </div>
+        <article class="careers-feature">
+          <div class="careers-copy">
+            <p class="eyebrow on-dark">Proceso de selección permanente</p>
+            <h3>Trabaja en Seegman.</h3>
+            <p>El despacho recibe candidaturas para prácticas y perfiles júnior. Consulta los requisitos y presenta tu candidatura en su portal de empleo.</p>
+            <ul class="chips on-dark-chips" aria-label="Perfiles">
+              <li>Prácticas</li>
+              <li>Abogacía júnior</li>
+            </ul>
+            <a class="btn primary" href="https://seegman.com/careers/" target="_blank" rel="noopener noreferrer">Ir al proceso de selección <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </div>
+          <div class="careers-picture" aria-hidden="true"></div>
+        </article>
+      </section>
+
+      <section class="section" id="cursos" aria-labelledby="cursos-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / Formación jurídica</p>
+            <h2 id="cursos-title">Prepárate con el Centro<br>de Estudios Garrigues.</h2>
+          </div>
+          <p>Programas y propuestas de la ficha de Garrigues en Beway. La formación es opcional para quien quiera reforzar su perfil.</p>
+        </div>
+        <div class="courses-grid">
+          <article class="course-card">
+            <div class="course-art art-legal" aria-hidden="true"><small>EMPRESA</small><span>LEX</span></div>
+            <div class="course-info">
+              <p class="status-label proposed">Propuesta Beway</p>
+              <h3>Asesoría Jurídica de Empresas</h3>
+              <p>Aprende a identificar riesgos y a preparar recomendaciones para una decisión de negocio.</p>
+              <a class="card-link" href="https://www.centrogarrigues.com/masters-executive/asesoria-juridica-empresas/" target="_blank" rel="noopener noreferrer">Ver máster de referencia <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-art art-ai" aria-hidden="true"><small>TECNOLOGÍA JURÍDICA</small><span>IA / LEX</span></div>
+            <div class="course-info">
+              <p class="status-label published">Programa publicado</p>
+              <h3>Inteligencia Artificial y Derecho</h3>
+              <p>Explora el uso de la IA en equipos jurídicos, su marco regulatorio y la gestión de riesgos.</p>
+              <a class="card-link" href="https://www.centrogarrigues.com/cursos-universitarios/curso-ia-derecho/" target="_blank" rel="noopener noreferrer">Ver programa oficial <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-art art-trade" aria-hidden="true"><small>INTERNACIONALIZACIÓN</small><span>GLOBAL</span></div>
+            <div class="course-info">
+              <p class="status-label proposed">Propuesta Beway</p>
+              <h3>Comercio Internacional</h3>
+              <p>Explora cómo evaluar un mercado y qué decisiones acompañan la expansión de una empresa.</p>
+              <a class="card-link" href="https://www.centrogarrigues.com/masters-executive/comercio-internacional/" target="_blank" rel="noopener noreferrer">Ver máster de referencia <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+            </div>
+          </article>
+          <article class="course-card">
+            <div class="course-art art-people" aria-hidden="true"><small>GESTIÓN DE PERSONAS</small><span>IA / RR. HH.</span></div>
+            <div class="course-info">
+              <p class="status-label published">Programa publicado</p>
+              <h3>Inteligencia Artificial aplicada a Recursos Humanos</h3>
+              <p>Conoce aplicaciones de IA en selección y gestión de personas, y las decisiones que plantean.</p>
+              <a class="card-link" href="https://www.centrogarrigues.com/cursos-universitarios/curso-ia-rrhh/" target="_blank" rel="noopener noreferrer">Ver programa oficial <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <a class="btn outline catalogue-link" href="https://jorgegrego19-collab.github.io/beway-fichas/CentroGarriguesxBeway/#cursos" target="_blank" rel="noopener noreferrer">Explorar los cursos de Garrigues en Beway <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+      </section>
+
+      <section class="section" id="challenge" aria-labelledby="challenge-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / Challenge Beway</p>
+            <h2 id="challenge-title">Una operación.<br>Tu criterio jurídico.</h2>
+          </div>
+          <p>Una propuesta de reto para estudiantes y jóvenes profesionales del Derecho.</p>
+        </div>
+        <article class="challenge-feature">
+          <div class="challenge-cover">
+            <span class="coming-soon">Próximamente</span>
+            <div>
+              <p class="eyebrow">Caso simulado / M&amp;A</p>
+              <h3>Proyecto<br>Atlántico.</h3>
+            </div>
+          </div>
+          <div class="challenge-copy">
+            <div class="sponsor">
+              <span>Patrocinio propuesto</span>
+              <img src="https://seegman.com/wp-content/uploads/2025/01/logo_seegman_white.png" alt="Seegman" width="600" height="112">
+            </div>
+            <h3>¿Recomendarías la adquisición?</h3>
+            <p>Una empresa latinoamericana de software valora adquirir una compañía española como parte de su expansión en España y Portugal. Identifica qué revisarías antes de la compra y presenta tu recomendación al cliente.</p>
+            <ul class="chips" aria-label="Formato propuesto">
+              <li>Nota de 2 páginas</li>
+              <li>Individual</li>
+              <li>Derecho mercantil</li>
+            </ul>
+            <button class="btn outline js-only" type="button" id="open-challenge">Ver propuesta de reto <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></button>
+            <p class="small-note">Formato y calendario por definir con Seegman.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section ambassadors" id="embajadores" aria-labelledby="embajadores-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">05 / Embajadores Beway</p>
+            <h2 id="embajadores-title">Conoce a la comunidad.</h2>
+          </div>
+          <p>Perfiles de CLH que ilustran el programa de embajadores de Beway.</p>
+        </div>
+        <div class="ambassador-grid">
+
+          <article class="ambassador">
+            <img src="../NetflixxBeway/assets/beway-netflix-emily-torres-pineda.webp" alt="" width="58" height="58" loading="lazy">
+            <span class="person-tag">CLH · Colombia</span>
+            <h3>Emily Torres Pineda</h3>
+            <p>Universidad del Rosario</p>
+            <a href="https://www.linkedin.com/in/emily-torres-pineda/" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Emily Torres Pineda">Ver perfil&nbsp;<svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </article>
+
+          <article class="ambassador">
+            <img src="../NetflixxBeway/assets/beway-netflix-andrea-venegas.jpg" alt="" width="58" height="58" loading="lazy">
+            <span class="person-tag">CLH · España</span>
+            <h3>Andrea Venegas</h3>
+            <p>Universidad de Granada</p>
+            <a href="https://www.linkedin.com/in/andrea-venegas-de-la-rosa-a34162365" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Andrea Venegas">Ver perfil&nbsp;<svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </article>
+
+          <article class="ambassador">
+            <img src="../NetflixxBeway/assets/beway-netflix-martina-leich.webp" alt="" width="58" height="58" loading="lazy">
+            <span class="person-tag">CLH · Uruguay</span>
+            <h3>Martina Leicht</h3>
+            <p>Universidad de Montevideo</p>
+            <a href="https://www.linkedin.com/in/martina-leicht-05b44b340/" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Martina Leicht">Ver perfil&nbsp;<svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </article>
+
+          <article class="ambassador">
+            <img src="../NetflixxBeway/assets/beway-netflix-michelle-rogel.webp" alt="" width="58" height="58" loading="lazy">
+            <span class="person-tag">CLH · México</span>
+            <h3>Michelle Rogel</h3>
+            <p>Universidad Anáhuac Mayab</p>
+            <a href="https://www.linkedin.com/in/michelle-rogel-garc%C3%ADa-a37820219/" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Michelle Rogel">Ver perfil&nbsp;<svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </article>
+
+          <article class="ambassador">
+            <img src="../NetflixxBeway/assets/beway-netflix-camila-calvo.png" alt="" width="58" height="58" loading="lazy">
+            <span class="person-tag">CLH · Panamá</span>
+            <h3>Camila Calvo</h3>
+            <p>ADEN</p>
+            <a href="https://www.linkedin.com/in/camila-calvo-de-la-guardia/" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de Camila Calvo">Ver perfil&nbsp;<svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a class="beway" href="#inicio" aria-label="Beway, volver al inicio">
+      <img src="../NetflixxBeway/assets/beway-netflix-logo.png" alt="" width="32" height="32">
+      <span>beway<span class="brand-period">.</span></span>
+    </a>
+    <div class="footer-meta">
+      <span>Seegman en Beway · Propuesta para revisión</span>
+      <a href="https://seegman.com/" target="_blank" rel="noopener noreferrer">Seegman <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+      <a href="https://www.centrogarrigues.com/" target="_blank" rel="noopener noreferrer">Centro de Estudios Garrigues <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3.5 12.5l9-9m-7 0h7v7"/></svg></a>
+    </div>
+  </footer>
+
+  <dialog id="challenge-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head">
+      <span class="eyebrow">Challenge Beway / Próximamente</span>
+      <form method="dialog"><button class="icon-button" aria-label="Cerrar propuesta de reto" autofocus>×</button></form>
+    </div>
+    <div class="dialog-content">
+      <p class="eyebrow">Proyecto Atlántico · Caso simulado</p>
+      <h2 id="dialog-title">¿Recomendarías la adquisición?</h2>
+      <p>Una empresa latinoamericana de software quiere crecer en España y Portugal. Está estudiando la compra de una compañía española con contratos en ambos mercados. El cliente necesita saber qué debería revisar antes de decidir.</p>
+      <div class="dialog-grid">
+        <div>
+          <h3>Tu nota al cliente</h3>
+          <ol>
+            <li>Ordena tres riesgos jurídicos por su impacto en la operación.</li>
+            <li>Explica qué documentación o información pedirías para contrastarlos.</li>
+            <li>Recomienda avanzar, avanzar con condiciones o aplazar la decisión. Justifica tu respuesta.</li>
+          </ol>
+        </div>
+        <aside>
+          <h3>Formato propuesto</h3>
+          <p>Una nota individual de hasta dos páginas. Se valoraría la priorización de riesgos, el razonamiento y la claridad de la recomendación.</p>
+        </aside>
+      </div>
+      <p class="small-note">Patrocinio, bases y fecha de lanzamiento por acordar con Seegman.</p>
+    </div>
+  </dialog>
+
+  <script>
+    const challengeDialog = document.querySelector('#challenge-dialog');
+    const challengeButton = document.querySelector('#open-challenge');
+    if (typeof challengeDialog.showModal === 'function') {
+      challengeButton.addEventListener('click', () => challengeDialog.showModal());
+    } else {
+      challengeButton.hidden = true;
+    }
+
+    const sectionNav = document.querySelector('.section-nav');
+    const navigation = [...sectionNav.querySelectorAll('a')];
+    const sections = navigation.map(link => document.querySelector(link.hash));
+    let activeIndex = 0;
+    function updateNavigation() {
+      const line = sectionNav.getBoundingClientRect().height + 32;
+      const visibleIndex = sections.findLastIndex(section => section.getBoundingClientRect().top <= line);
+      const atEnd = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+      const nextIndex = atEnd ? sections.length - 1 : Math.max(0, visibleIndex);
+      if (nextIndex === activeIndex) return;
+      navigation[activeIndex].removeAttribute('aria-current');
+      navigation[nextIndex].setAttribute('aria-current', 'location');
+      activeIndex = nextIndex;
+    }
+    window.addEventListener('scroll', updateNavigation, { passive: true });
+    window.addEventListener('resize', updateNavigation);
+    updateNavigation();
+  </script>
+</body>
+</html>
