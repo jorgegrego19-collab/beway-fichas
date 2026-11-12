@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "directory": {
@@ -403,27 +394,28 @@
             "m5": ""
           }
         },
-        "empresa_gersh": {
+        "empresa_ibs": {
           "type": "empresa",
-          "name": "Gersh",
+          "name": "IBS",
           "settings": {
-            "name": "Gersh",
-            "sector": "Fútbol, talento y marketing deportivo",
-            "category": "Entretenimiento",
-            "description": "Descubre cómo conectar futbolistas, marcas y aficionados. Aprende marketing aplicado al fútbol y pon tu idea en juego.",
-            "cover_asset": "beway-gersh-cover.jpg",
-            "cover_url": "",
-            "cover_style": "photo",
-            "cover_color": "#034491",
-            "logo_asset": "beway-gersh-logo.svg",
+            "name": "IBS · International Business School",
+            "sector": "Escuela de negocios, marketing y fútbol",
+            "category": "Consultoría",
+            "description": "Marketing aplicado al fútbol con Hugo Pazos de Provens y certificación IBS. Challenge de contenido con un máster gratuito como premio.",
+            "cover_asset": "",
+            "cover_url": "https://in-bs.com/wp-content/uploads/2025/02/ibs-weblogo.png",
+            "cover_style": "brand_inverse",
+            "cover_color": "#1c4b42",
+            "logo_asset": "beway-ibs-logo.png",
             "tag": "",
-            "profile_url": "/pages/gersh",
+            "profile_url": "/pages/ibs",
             "is_demo": true,
             "m1": "1",
             "m2": "1",
             "m3": "",
             "m4": "3",
-            "m5": ""
+            "m5": "",
+            "logo": ""
           }
         },
         "empresa_amazon": {
@@ -448,6 +440,53 @@
             "m4": "3",
             "m5": ""
           }
+        },
+        "empresa_pg": {
+          "type": "empresa",
+          "name": "P&G",
+          "settings": {
+            "name": "P&G",
+            "sector": "Gran consumo y gestión de marcas",
+            "category": "Consumo",
+            "description": "Descubre el curso de Gestión de Marcas de Gran Consumo, de ocho horas en dos jornadas, el challenge Tu primera cesta y tres miniproyectos.",
+            "cover_asset": "",
+            "cover_url": "",
+            "cover_style": "brand",
+            "cover_color": "#003da6",
+            "logo": "shopify://shop_images/beway-pg-logo.webp",
+            "logo_asset": "",
+            "tag": "",
+            "profile_url": "/pages/pg",
+            "is_demo": true,
+            "m1": "1",
+            "m2": "1",
+            "m3": "",
+            "m4": "3",
+            "m5": ""
+          }
+        },
+        "empresa_seegman": {
+          "type": "empresa",
+          "name": "Seegman",
+          "settings": {
+            "name": "Seegman",
+            "sector": "Derecho de los negocios",
+            "category": "Consultoría",
+            "description": "Conoce el proceso de selección de Seegman, los cursos del Centro de Estudios Garrigues y una propuesta de reto jurídico.",
+            "cover_asset": "",
+            "cover_url": "https://seegman.com/wp-content/uploads/slider/cache/d164ca9872ad069c9ce0cbebb4c02242/portada_new2.jpg",
+            "cover_style": "photo",
+            "cover_color": "#161e20",
+            "logo_asset": "beway-seegman-mark.png",
+            "tag": "",
+            "profile_url": "/pages/seegman",
+            "is_demo": true,
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": ""
+          }
         }
       },
       "block_order": [
@@ -468,8 +507,10 @@
         "empresa_atresmedia",
         "empresa_heineken",
         "empresa_mapfre",
-        "empresa_gersh",
-        "empresa_amazon"
+        "empresa_ibs",
+        "empresa_amazon",
+        "empresa_pg",
+        "empresa_seegman"
       ],
       "settings": {
         "show_demo_notice": false,

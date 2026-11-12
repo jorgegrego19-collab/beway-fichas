@@ -32,12 +32,13 @@ Los cinco perfiles de embajadores se han contrastado con la web pública de CLH 
 
 La ficha de Deloitte incluye el Curso de Auditoría Financiera (ocho horas en dos días), el Deloitte Financial Challenge de España, tres miniproyectos y cinco perfiles propuestos de CLH. Su integración en Shopify se prepara en `shopify/` para el tema BEWAY en borrador.
 
-## Gersh en Beway
+## IBS en Beway
 
-- [Ficha reducida para Shopify](https://jorgegrego19-collab.github.io/beway-fichas/GershxBeway/).
-- Curso propuesto de Marketing aplicado al fútbol: 8 horas en dos jornadas de cuatro, 32 vídeos planificados y aplicaciones guiadas.
-- Challenge El fichaje fuera del campo, tres miniproyectos y presentación del programa de embajadores.
-- Docentes, precio, emisión del certificado y convocatoria se concretan con Gersh.
+- [Ficha IBS](https://jorgegrego19-collab.github.io/beway-fichas/IBSxBeway/), que sustituye a Gersh.
+- Marketing aplicado al fútbol: ocho clases de una hora de Hugo Pazos de Provens, certificación IBS y precio de 80 €.
+- IBS Content Challenge: campaña de contenido para la escuela y un máster gratuito para quien gane. Bases y fechas pendientes de publicación.
+- Tres miniproyectos, cinco miembros de CLH y enlaces oficiales a los másteres MMCS y MBAI.
+- Integración en Shopify mediante plantilla `page.ibs`, en el tema Beway existente.
 
 
 ## P&G en Beway
